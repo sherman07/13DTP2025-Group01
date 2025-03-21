@@ -1,0 +1,29 @@
+/* Define the custom font using @font-face */
+@font-face {
+    font-family: 'Phosphate'; /* Phosphate font */
+    src: url('font/PhosphatePro-Solid.otf'); /* font link in the folder */
+}
+
+/* Apply the custom font to elements */
+* {
+    font-family: 'Phosphate'; 
+    font-size: 1.1em;
+}
+
+
+:root{
+    background-color: white;
+}
+
+/* Style for the sidebar links */
+.nav-link {
+    color: #ffffff; /* Default text color */
+    padding: 10px 15px; /* Add padding for better spacing */
+    border-radius: 5px; /* Make corners are rounded */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the sidebar links */
+.nav-link:hover {
+    transform: translateX(5px); /* Move the link slightly to the right */
+}
