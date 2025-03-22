@@ -1,0 +1,15 @@
+/* Define the custom font using @font-face */
+@font-face {
+    font-family: 'Phosphate'; /* Name your font */
+    src: url('font/Phosphate Pro Cond Inline Regular.otf'); /* Correct format for .otf */
+}
+
+/* Apply the custom font to elements */
+* {
+    font-family: 'Phosphate'; /* Fallback to sans-serif */
+    font-size: 1.1em;
+}
+
+:root{
+    background-color: black;
+}
