@@ -15,3 +15,7 @@
 :root{
     background-color: white;
 }
+
+.navbar{
+    background: linear-gradient(to right, #FDC010 ,#2FBEC2,#E42D26);
+}

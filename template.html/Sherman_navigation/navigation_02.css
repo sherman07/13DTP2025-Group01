@@ -10,9 +10,12 @@
     font-size: 1.1em;
 }
 
-
+/* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
+    --primary-red: #E42D26;
+    --primary-yellow: #FDC010;
+    --primary-blue: #2FBEC2;
 }
 
 /* Style for the sidebar links */
@@ -26,4 +29,22 @@
 /* Hover effect for the sidebar links */
 .nav-link:hover {
     transform: translateX(5px); /* Move the link slightly to the right */
+}
+
+.navbar{
+    background-color: var(--primary-yellow);
+}
+
+.offcanvas{
+    background-color: var(--primary-blue) !important;
+    opacity: 0.8;
+}
+
+.dropdown-menu{
+    background-color: var(--primary-red) !important;
+}
+
+.dropdown-item{
+    background-color: var(--primary-red) !important;
+
 }

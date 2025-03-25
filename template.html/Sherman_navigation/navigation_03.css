@@ -12,4 +12,14 @@
 
 :root{
     background-color: white;
+    --primary-red: #eb625c;
+    --primary-blue: #2FBEC2;
+}
+
+.p-4{
+    background-color: var(--primary-red);
+}
+
+.navbar{
+    background-color: var(--primary-blue);
 }
