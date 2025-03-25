@@ -10,6 +10,7 @@
     font-size: 1.1em;
 }
 
+/* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
     --primary-red: #eb625c;

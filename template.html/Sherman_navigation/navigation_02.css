@@ -31,19 +31,23 @@
     transform: translateX(5px); /* Move the link slightly to the right */
 }
 
+/* Change navbar colour */
 .navbar{
     background-color: var(--primary-yellow);
 }
 
+/* Change offcanvas colour */
 .offcanvas{
     background-color: var(--primary-blue) !important;
     opacity: 0.8;
 }
 
+/* Changing dropdown colour */
 .dropdown-menu{
     background-color: var(--primary-red) !important;
 }
 
+/* Changing the colour in dropdown */
 .dropdown-item{
     background-color: var(--primary-red) !important;
 
