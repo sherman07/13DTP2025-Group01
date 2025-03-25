@@ -6,14 +6,14 @@ footer{
 
 #logo_div{
    
-    padding: 20px;
+
 
     margin: 0 auto;
 }
 
 .hr-lines{
     position: relative;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -21,7 +21,7 @@ footer{
 .hr-lines:before{
     content:" ";
     height: 2px;
-    width: 25%;
+    width: 35%;
     background: black;
     display: block;
     position:absolute;
@@ -33,7 +33,7 @@ footer{
 .hr-lines:after{
     content:"";
     height: 2px;
-    width: 25%;
+    width: 35%;
     background: black;
     display: block;
     position: absolute;
