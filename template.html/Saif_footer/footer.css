@@ -1,13 +1,10 @@
 footer{
   
-    background-color: white;
+    background-color: black;
     
 }
 
 #logo_div{
-   
-
-
     margin: 0 auto;
 }
 
@@ -21,8 +18,8 @@ footer{
 .hr-lines:before{
     content:" ";
     height: 2px;
-    width: 35%;
-    background: black;
+    width: calc(1.5rem + 31vw);
+    background: white;
     display: block;
     position:absolute;
     top: 50%;
@@ -33,10 +30,24 @@ footer{
 .hr-lines:after{
     content:"";
     height: 2px;
-    width: 35%;
-    background: black;
+    width: calc(1.5rem + 31vw);
+    background: white;
     display: block;
     position: absolute;
     top: 50%;
     right: 0;
+}
+
+
+#social_media{
+    font-size: calc(0.3rem + 1vw);
+    margin: 30px auto 20px auto;
+}
+
+
+p {
+    font-size: calc(0.1rem + 1vw);
+    color: white;
+
+    
 }
