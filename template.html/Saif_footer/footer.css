@@ -4,9 +4,16 @@ footer{
     
 }
 
+#logo_div{
+   
+    padding: 20px;
+
+    margin: 0 auto;
+}
+
 .hr-lines{
     position: relative;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -14,19 +21,20 @@ footer{
 .hr-lines:before{
     content:" ";
     height: 2px;
-    width: 40%;
-    background: red;
+    width: 25%;
+    background: black;
     display: block;
     position:absolute;
     top: 50%;
     left: 0;
+    right: 300px;
 }
   
 .hr-lines:after{
-    content:" ";
+    content:"";
     height: 2px;
-    width: 40%;
-    background: red;
+    width: 25%;
+    background: black;
     display: block;
     position: absolute;
     top: 50%;
