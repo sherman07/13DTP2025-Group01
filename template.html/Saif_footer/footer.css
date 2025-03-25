@@ -1,8 +1,34 @@
 footer{
-    width: 1400px;
-    height: 280px;
-    background-color: #45818E;
+  
+    background-color: white;
     
 }
 
-
+.hr-lines{
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.hr-lines:before{
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: red;
+    display: block;
+    position:absolute;
+    top: 50%;
+    left: 0;
+}
+  
+.hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 40%;
+    background: red;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
