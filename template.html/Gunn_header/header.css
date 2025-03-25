@@ -1,3 +1,59 @@
-.navbar-brand{
-    width:50px;
+/* Import the custom font */
+@font-face {
+    font-family: 'Phosphate Pro Cond Solid';
+    src: url('Phosphate\ Pro\ Cond\ Solid\ Regular.otf') format('opentype');
 }
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px; /* Shrink logo */
+    }
+    .navbar-brand {
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+/* Small devices (tablets, landscape phones) */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (desktops, larger tablets) */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+/* Large devices (large desktops) */
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+
+
+:root {
+    --main-font: 'Phosphate Pro Cond Solid', sans-serif;
+    --main-color: #000000; /* Replace with your desired color */
+}
+
+/* Apply the custom font and color */
+body {
+    font-family: var(--main-font) !important;
+    color: var(--main-color);
+}
+
