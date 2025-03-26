@@ -1,0 +1,17 @@
+footer{
+  
+    background-color: white;
+    border: black;
+   
+}
+
+
+
+.media_icons{
+ 
+    filter:grayscale(100%);
+    
+    width: 40px;
+    margin: 0 10px;
+    
+}
