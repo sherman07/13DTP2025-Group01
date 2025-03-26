@@ -68,7 +68,7 @@
 
 /* Toggler Icon Bars */
 .top-bar{
-    height: 3px;
+    height: 4px;
     width: 100%;
     border-radius: 2px;
     background-color: var(--primary-blue);
@@ -76,7 +76,7 @@
 }
 
 .middle-bar{
-    height: 3px;
+    height: 4px;
     width: 100%;
     border-radius: 2px;
     background-color: var(--primary-yellow);
@@ -84,7 +84,7 @@
 }
 
 .bottom-bar{
-    height: 3px;
+    height: 4px;
     width: 100%;
     border-radius: 2px;
     background-color: var(--primary-red);
@@ -93,7 +93,7 @@
 
 /* Toggler Animation */
 .navbar-toggler:not(.collapsed) .top-bar {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(8.5px) rotate(45deg);
 
     
 }
@@ -104,7 +104,7 @@
 }
 
 .navbar-toggler:not(.collapsed) .bottom-bar {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-8.5px) rotate(-45deg);
 
 }
 
