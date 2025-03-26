@@ -14,13 +14,16 @@
 <body>
 
     <!-- Navigation using Bootstrap navbar component -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg">
         <div class="container-fluid">
 
           <!-- Add Toggle button component that can be change into smaller sceen -->
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+             <span class="toggler-icon bottom-bar"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <!-- Navigation column size chnage when facing different screens -->
@@ -28,22 +31,22 @@
 
               <!-- Home link -->
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-light text-dark" aria-current="page" href="#">Home</a>
               </li>
 
               <!-- About us link -->
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#">About us</a>
+                <a class="nav-link active text-dark" href="#">About us</a>
               </li>
 
               <!-- Safety link -->
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#">Safety</a>
+                <a class="nav-link active text-dark" href="#">Safety</a>
               </li>
 
               <!-- Dropdown links for membership -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
                 <ul class="dropdown-menu">
 
                   <!-- New member link -->
@@ -57,7 +60,7 @@
 
               <!-- Contect us link -->
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#">Contact us</a>
+                <a class="nav-link active text-dark" href="#">Contact us</a>
               </li>
 
             </ul>
