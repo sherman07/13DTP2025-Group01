@@ -10,6 +10,7 @@
     font-size: 1.15em;
 }
 
+/* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
     --primary-white: #ffffff;
@@ -18,19 +19,17 @@
     --primary-blue: #2FBEC2;
 }
 
-.dropdown-item{
-    background-color: var(--primary-white);
-}
-
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
 }
 
+/* Remove border from the navbar toggler button */
 .navbar-light .navbar-toggler{
     border: 0 solid white;
 }
 
+/* Styling for navbar toggler button */
 .nav-toggler {
     width: 40px;
     height: 40px;
@@ -39,6 +38,7 @@
 
 }
 
+/* Remove focus outlines and borders from navbar toggler */
 .navbar-toggler, 
 .navbar-toggler:focus, 
 .navbar-toggler:active, 
@@ -48,6 +48,7 @@
     border: 0;
 }
 
+/* Remove margin and padding from span  */
 .navbar-toggler span{
     margin: 0;
     padding: 0;
@@ -67,6 +68,8 @@
 }
 
 /* Toggler Icon Bars */
+
+/* Styling for top bar */
 .top-bar{
     height: 5px;
     width: 100%;
@@ -75,6 +78,8 @@
     transition: all 0.3s ease-in-out;
 }
 
+
+/* Styling for middle bar */
 .middle-bar{
     height: 5px;
     width: 100%;
@@ -83,6 +88,8 @@
     transition: all 0.3s ease-in-out;
 }
 
+
+/* Styling for bottom bar */
 .bottom-bar{
     height: 5px;
     width: 100%;
@@ -92,17 +99,21 @@
 }
 
 /* Toggler Animation */
+
+/* Animation effect when the navbar toggler is active */
 .navbar-toggler:not(.collapsed) .top-bar {
     transform: translateY(12px) rotate(45deg);
 
     
 }
 
+/* Hide middle bar */
 .navbar-toggler:not(.collapsed) .middle-bar {
     opacity: 0;
 
 }
 
+/* Animation effect when the navbar toggler is active */
 .navbar-toggler:not(.collapsed) .bottom-bar {
     transform: translateY(-12px) rotate(-45deg);
 
@@ -114,6 +125,7 @@
     transform: none;
 }
 
+/* Show the bar again after the reset */
 .navbar-toggler.collapsed .middle-bar {
     opacity: 1;
     
