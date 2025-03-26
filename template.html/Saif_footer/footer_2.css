@@ -10,8 +10,7 @@ footer{
 .media_icons{
  
     filter:grayscale(100%);
-    
-    width: 40px;
+    width: calc(1.5rem + 1vw);
     margin: 0 10px;
     
 }
