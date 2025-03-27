@@ -4,6 +4,11 @@
     src: url('font/phosphate_pro_cond_solid_regular_fixed.otf'); /* Correct format for .otf */
 }
 
+/* Apply the custom font to elements */
+* {
+    font-family: 'Phosphate'; /* Fallback to sans-serif */
+    font-size: 1.15em;
+}
 
 /* The primary colours to make a consistency website colour */
 :root{
