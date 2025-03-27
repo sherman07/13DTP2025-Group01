@@ -132,6 +132,46 @@
 }
 
 
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px; /* Shrink logo */
+    }
+    .navbar-brand {
+        font-size: 14px; /* Smaller text */
+    }
+}
+
+/* Small devices (tablets, landscape phones) */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (desktops, larger tablets) */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+/* Large devices (large desktops) */
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
 
 
 
