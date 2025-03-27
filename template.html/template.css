@@ -8,10 +8,16 @@
 /* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
+    --primary-font: 'Phosphate';
     --primary-white: #ffffff;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
     --primary-blue: #2FBEC2;
+}
+
+/* Apply the custom font and color */
+body {
+    font-family: var(--primary-font) !important;
 }
 
 /* Changing the colour in navbar */
