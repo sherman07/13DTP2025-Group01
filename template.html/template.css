@@ -1,10 +1,8 @@
-/* Define the custom font using @font-face */
+/* Import the custom font */
 @font-face {
-    font-family: 'Phosphate'; /* Name your font */
-    src: url('font/phosphate_pro_cond_solid_regular_fixed.otf'); /* Correct format for .otf */
+    font-family: 'Phosphate Pro Cond Solid';
+    src: url('font/phosphate_pro_solid_fixed.otf') format('opentype');
 }
-
-
 /* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
