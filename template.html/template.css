@@ -1,12 +1,12 @@
 /* Import the custom font */
 @font-face {
     font-family: 'Phosphate Pro Cond Solid';
-    src: url('font/phosphate_pro_solid_fixed.otf') format('opentype');
+    src: url('') format('opentype');
 }
 /* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
-    --primary-font: 'Phosphate';
+    --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
     --primary-white: #ffffff;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
