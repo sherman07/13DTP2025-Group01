@@ -8,7 +8,7 @@
 /* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
-    --primary-font: 'Phosphate', sans-serif;
+    --primary-font: 'Phosphate';
     --primary-white: #ffffff;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
