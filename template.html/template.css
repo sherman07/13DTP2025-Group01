@@ -18,6 +18,10 @@ body {
     font-family: var(--primary-font) !important;
 }
 
+#RBOCC_header-title{
+    font-size: 1.5em;
+}
+
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
