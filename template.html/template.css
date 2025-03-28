@@ -1,7 +1,7 @@
 /* Import the custom font */
 @font-face {
     font-family: 'Phosphate Pro Cond Solid';
-    src: url('font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+    src: url('/Users/zhenghui/Desktop/13DTP2025-Group01/font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
 }
 /* The primary colours to make a consistency website colour */
 :root{
