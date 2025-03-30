@@ -261,12 +261,20 @@ body,html {
     }
 }
 
-#safety_guidelines_title{
+.safety_guidelines_title{
     font-family: var(--primary-font-fourth);
 }
 
-#safety_guidelines_text{
+.safety_guidelines_text{
     font-family: var(--primary-font-third);
 }
 
+#smaller_col_1-01{
+    width: 3.5%; 
+    flex: 0 0 3.5%;
+    max-width: 3.5%;
+}
 
+.smaller_size_br{
+    line-height:50%;
+}
