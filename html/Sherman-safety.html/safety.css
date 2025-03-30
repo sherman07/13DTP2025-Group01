@@ -14,13 +14,17 @@
     src: url('font/Adobe\ Garamond\ Pro\ Semibold.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Phosphate Pro Cond Inline';
+    src: url('font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
+}
 
 /* The primary colours to make a consistency website colour */
 :root{
-    background-color: white;
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
     --primary-font-second:'Phosphate Pro Solid', sans-serif ;
-    --primary-font-third:'Adobe Garamond Pro Semibold', sans-serif ;
+    --primary-font-third:'Adobe Garamond Pro Semibold', sans-serif;
+    --primary-font-fourth:'Phosphate Pro Cond Inline';
     --primary-white: #ffffff;
     --primary-black:#000000;
     --primary-red: #E42D26;
@@ -30,7 +34,9 @@
 
 /* Apply the custom font and color */
 body {
-    margin: 0;
+    background-color: var(--primary-black);
+    width: 100%;
+    height: 100%;
 }
 
 #RBOCC_header-title{
@@ -253,3 +259,13 @@ body {
         font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
     }
 }
+
+#safety_guidelines_title{
+    font-family: var(--primary-font-fourth);
+}
+
+#safety_guidelines_text{
+    font-family: var(--primary-font-third);
+}
+
+
