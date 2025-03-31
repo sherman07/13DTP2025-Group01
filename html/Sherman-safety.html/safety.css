@@ -158,47 +158,6 @@ body,html {
     
 }
 
-/* Extra small devices (phones) */
-@media (max-width: 576px) {
-    .navbar-brand img {
-        width: 40px; /* Shrink logo */
-    }
-    .navbar-brand {
-        font-size: 14px; /* Smaller text */
-    }
-}
-
-/* Small devices (tablets, landscape phones) */
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 50px;
-    }
-    .navbar-brand {
-        font-size: 16px;
-    }
-}
-
-/* Medium devices (desktops, larger tablets) */
-@media (max-width: 992px) {
-    .navbar-brand img {
-        width: 60px;
-    }
-    .navbar-brand {
-        font-size: 18px;
-    }
-}
-
-/* Large devices (large desktops) */
-@media (max-width: 1200px) {
-    .navbar-brand img {
-        width: 70px;
-    }
-    .navbar-brand {
-        font-size: 20px;
-    }
-}
-
-
 .front_img {
     background-size: cover;  
     background-position: center; /* Ensures the image is centered */ 
@@ -226,7 +185,7 @@ body,html {
 
 .safety_guidelines_title{
     font-family: var(--primary-font-fourth);
-    font-size: 3rem;
+    font-size: 2.8rem;
 
 }
 
@@ -245,11 +204,16 @@ body,html {
     line-height:50%;
 }
 
-/* Tablet screen size */
-@media (max-width: 1400px) { 
-    .safety_grid_structure_img{
-        min-height: 39vh;
-    }
+.safety_grid_structure_img{
+    width: 100%;
+    min-height: 70vh;
+    padding: 10;
+    position: relative;
+    background-size: cover;  
+}
+
+.hidden-li{
+    list-style-type: none;  
 }
 
 /* Tablet screen size */
@@ -260,16 +224,12 @@ body,html {
     #safety_title {
         font-size: calc(6rem + 1vw);
     }
-    .safety_grid_structure_img{
-        min-height: 40vh;
-        width: 100%;
-    }
     .safety_guidelines_title{
-        font-size: calc(1rem + 1vw); /* Even smaller for small mobile devices */
+        font-size: calc(1.3rem + 1vw); /* Even smaller for small mobile devices */
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.5rem + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.55rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
@@ -280,9 +240,6 @@ body,html {
     }
     #safety_title {
         font-size: calc(5rem + 1vw); /* smaller for small devices */
-    }
-    .safety_grid_structure_img{
-        min-height: 20vh;
     }
     .safety_guidelines_title{
         font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
@@ -301,9 +258,6 @@ body,html {
     #safety_title {
         font-size: calc(4rem + 1vw); /* Even smaller for small mobile devices */
     }
-    .safety_grid_structure_img{
-        min-height: 20vh;
-    }
     .safety_guidelines_title{
         font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
 
@@ -318,8 +272,4 @@ body,html {
     #safety_title {
         font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
     }
-}
-
-.hidden-li{
-    list-style-type: none;  
 }
