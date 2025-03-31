@@ -224,6 +224,34 @@ body,html {
 }
 
 
+.safety_guidelines_title{
+    font-family: var(--primary-font-fourth);
+    font-size: 3rem;
+
+}
+
+.safety_guidelines_text{
+    font-family: var(--primary-font-third);
+    font-size: 1rem;
+}
+
+#smaller_col_1-01{
+    width: 3.5%; 
+    flex: 0 0 3.5%;
+    max-width: 3.5%;
+}
+
+.smaller_size_br{
+    line-height:50%;
+}
+
+/* Tablet screen size */
+@media (max-width: 1400px) { 
+    .safety_grid_structure_img{
+        min-height: 39vh;
+    }
+}
+
 /* Tablet screen size */
 @media (max-width: 1024px) { 
     .front_img {
@@ -231,6 +259,17 @@ body,html {
     }
     #safety_title {
         font-size: calc(6rem + 1vw);
+    }
+    .safety_grid_structure_img{
+        min-height: 40vh;
+        width: 100%;
+    }
+    .safety_guidelines_title{
+        font-size: calc(1rem + 1vw); /* Even smaller for small mobile devices */
+
+    }
+    .safety_guidelines_text{
+        font-size: calc(0.5rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
@@ -242,15 +281,35 @@ body,html {
     #safety_title {
         font-size: calc(5rem + 1vw); /* smaller for small devices */
     }
+    .safety_grid_structure_img{
+        min-height: 20vh;
+    }
+    .safety_guidelines_title{
+        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
+
+    }
+    .safety_guidelines_text{
+        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
+    }
 }
 
 /* Small Mobile screen size */
 @media (max-width: 480px) { 
     .front_img {
-        min-height: 40vh; /* Reduce height more for small mobile devices */
+        min-height: 50vh; /* Reduce height more for small mobile devices */
     }
     #safety_title {
         font-size: calc(4rem + 1vw); /* Even smaller for small mobile devices */
+    }
+    .safety_grid_structure_img{
+        min-height: 20vh;
+    }
+    .safety_guidelines_title{
+        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
+
+    }
+    .safety_guidelines_text{
+        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
@@ -261,20 +320,6 @@ body,html {
     }
 }
 
-.safety_guidelines_title{
-    font-family: var(--primary-font-fourth);
-}
-
-.safety_guidelines_text{
-    font-family: var(--primary-font-third);
-}
-
-#smaller_col_1-01{
-    width: 3.5%; 
-    flex: 0 0 3.5%;
-    max-width: 3.5%;
-}
-
-.smaller_size_br{
-    line-height:50%;
+.hidden-li{
+    list-style-type: none;  
 }
