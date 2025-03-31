@@ -1,53 +1,35 @@
+@font-face {
+    font-family: 'Phosphate Pro Cond Solid';
+    src: url('Fonts/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+}
+
+
 footer{
-  
-    background-color: black;
-    
+    font-family: "Phosphate Pro Cond Solid";
+    background-color: white;
+    border: black;
+   
 }
 
-#logo_div{
-    margin: 0 auto;
-}
+#footer_text{
+    margin: 0px 20px;
+    font-size: 15px;
+    color: #E42D26;
 
-.hr-lines{
-    position: relative;
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-  
-.hr-lines:before{
-    content:" ";
-    height: 2px;
-    width: calc(1.5rem + 31vw);
-    background: white;
-    display: block;
-    position:absolute;
-    top: 50%;
-    left: 0;
-    right: 300px;
-}
-  
-.hr-lines:after{
-    content:"";
-    height: 2px;
-    width: calc(1.5rem + 31vw);
-    background: white;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
 }
 
 
-#social_media{
-    font-size: calc(0.3rem + 1vw);
-    margin: 30px auto 20px auto;
+.media_icons{
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+   
 }
 
 
-p {
-    font-size: calc(0.1rem + 1vw);
-    color: white;
+#small_logo{
+    width: 200px;
+}
 
-    
+#mobile_icons{
+    margin-top: 25px;
 }
