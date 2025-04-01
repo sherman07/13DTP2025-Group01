@@ -1,3 +1,5 @@
+/* document styling/setup */
+
 @font-face {
     font-family: 'Phosphate Pro Cond Solid';
     src: url('Fonts/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
@@ -13,6 +15,9 @@ body {
     color: var(--main-color);
 }
 
+
+/* footer styling */
+
 footer{
     font-family: "Phosphate Pro Cond Solid";
     background-color: white;
@@ -22,17 +27,14 @@ footer{
 
 #footer_text{
     margin: 0px 20px;
-    font-size: 15px;
+    font-size: calc(15px + 0.1vw);
     color: #E42D26;
-
-
 }
 
 
 .media_icons{
     width: calc(35px + 0.1vw);
     margin: 0 10px;
-   
 }
 
 
