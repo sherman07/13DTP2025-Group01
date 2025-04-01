@@ -216,6 +216,10 @@ body,html {
     list-style-type: none;  
 }
 
+.underline_colour{
+    text-decoration-color: var(--primary-red);
+}
+
 /* Tablet screen size */
 @media (max-width: 1024px) { 
     .front_img {
