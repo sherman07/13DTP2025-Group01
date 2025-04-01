@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: 'Adobe Garamond Pro Semibold';
-    src: url('font/Adobe\ Garamond\ Pro\ Semibold.otf') format('opentype');
+    font-family: 'Bookman Old Style';
+    src: url('font/bookman_old_style.TTF') format('opentype');
 }
 
 @font-face {
@@ -23,7 +23,7 @@
 :root{
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
     --primary-font-second:'Phosphate Pro Solid', sans-serif ;
-    --primary-font-third:'Adobe Garamond Pro Semibold', sans-serif;
+    --primary-font-third:'Bookman Old Style', sans-serif;
     --primary-font-fourth:'Phosphate Pro Cond Inline';
     --primary-white: #ffffff;
     --primary-black:#000000;
@@ -191,7 +191,7 @@ body,html {
 
 .safety_guidelines_text{
     font-family: var(--primary-font-third);
-    font-size: 1rem;
+    font-size: 0.935rem;
 }
 
 #smaller_col_1-01{
@@ -229,7 +229,7 @@ body,html {
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.55rem + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.4rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
@@ -246,7 +246,7 @@ body,html {
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
     }
 }
 
@@ -263,7 +263,7 @@ body,html {
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.7em + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
