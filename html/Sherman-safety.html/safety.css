@@ -161,7 +161,7 @@ body,html {
 .front_img {
     background-size: cover;  
     background-position: center; /* Ensures the image is centered */ 
-    min-height: 100vh; /* Tall on larger screens */
+    min-height: 100vh;
     position: relative;
     width: 100%;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
@@ -219,6 +219,38 @@ body,html {
 .underline_colour{
     text-decoration-color: var(--primary-red);
 }
+
+
+.hr-lines{
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.hr-lines:before{
+    content:" ";
+    height: 2px;
+    width: 35%;
+    background: black;
+    display: block;
+    position:absolute;
+    top: 50%;
+    left: 0;
+    right: 300px;
+}
+  
+.hr-lines:after{
+    content:"";
+    height: 2px;
+    width: 35%;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
 
 /* Tablet screen size */
 @media (max-width: 1024px) { 
