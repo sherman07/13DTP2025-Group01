@@ -3,28 +3,52 @@
     font-family: 'Phosphate Pro Cond Solid';
     src: url('/css/font/phosphate_solid_regular.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Phosphate Pro Solid';
+    src: url('/css/font/phosphate_solid_regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Semibold';
+    src: url('font/Adobe\ Garamond\ Pro\ Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Phosphate Pro Cond Inline';
+    src: url('font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
+}
+
 /* The primary colours to make a consistency website colour */
 :root{
-    background-color: white;
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
+    --primary-font-second:'Phosphate Pro Solid', sans-serif ;
+    --primary-font-third:'Adobe Garamond Pro Semibold', sans-serif;
+    --primary-font-fourth:'Phosphate Pro Cond Inline';
     --primary-white: #ffffff;
+    --primary-black:#000000;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
     --primary-blue: #2FBEC2;
 }
 
 /* Apply the custom font and color */
-body {
-    font-family: var(--primary-font) !important;
+body,html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #RBOCC_header-title{
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    font-family: var(--primary-font) !important;
 }
 
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
+    font-family: var(--primary-font) !important;
 }
 
 /* Remove border from the navbar toggler button */
@@ -134,42 +158,118 @@ body {
     
 }
 
-/* Extra small devices (phones) */
-@media (max-width: 576px) {
-    .navbar-brand img {
-        width: 40px; /* Shrink logo */
+.front_img {
+    background-size: cover;  
+    background-position: center; /* Ensures the image is centered */ 
+    min-height: 100vh; /* Tall on larger screens */
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#hero_title {
+    font-size: calc(5rem);
+    font-family: var(--primary-font-second) !important;
+    color: var(--primary-yellow);
+
+}
+
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    margin: auto;
+}
+
+
+.safety_guidelines_title{
+    font-family: var(--primary-font-fourth);
+    font-size: 2.8rem;
+
+}
+
+.safety_guidelines_text{
+    font-family: var(--primary-font-third);
+    font-size: 1rem;
+}
+
+#smaller_col_1-01{
+    width: 3.5%; 
+    flex: 0 0 3.5%;
+    max-width: 3.5%;
+}
+
+.smaller_size_br{
+    line-height:50%;
+}
+
+.safety_grid_structure_img{
+    width: 100%;
+    min-height: 70vh;
+    padding: 10;
+    position: relative;
+    background-size: cover;  
+}
+
+.hidden-li{
+    list-style-type: none;  
+}
+
+/* Tablet screen size */
+@media (max-width: 1024px) { 
+    .front_img {
+        min-height: 80vh;
     }
-    .navbar-brand {
-        font-size: 14px; /* Smaller text */
+    #safety_title {
+        font-size: calc(6rem + 1vw);
+    }
+    .safety_guidelines_title{
+        font-size: calc(1.3rem + 1vw); /* Even smaller for small mobile devices */
+
+    }
+    .safety_guidelines_text{
+        font-size: calc(0.55rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
-/* Small devices (tablets, landscape phones) */
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 50px;
+/* Mobile screen size */
+@media (max-width: 768px) { 
+    .front_img {
+        min-height: 60vh; /* Reduce height more for mobile devices */
     }
-    .navbar-brand {
-        font-size: 16px;
+    #safety_title {
+        font-size: calc(5rem + 1vw); /* smaller for small devices */
+    }
+    .safety_guidelines_title{
+        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
+
+    }
+    .safety_guidelines_text{
+        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
-/* Medium devices (desktops, larger tablets) */
-@media (max-width: 992px) {
-    .navbar-brand img {
-        width: 60px;
+/* Small Mobile screen size */
+@media (max-width: 480px) { 
+    .front_img {
+        min-height: 50vh; /* Reduce height more for small mobile devices */
     }
-    .navbar-brand {
-        font-size: 18px;
+    #safety_title {
+        font-size: calc(4rem + 1vw); /* Even smaller for small mobile devices */
+    }
+    .safety_guidelines_title{
+        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
+
+    }
+    .safety_guidelines_text{
+        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
-/* Large devices (large desktops) */
-@media (max-width: 1200px) {
-    .navbar-brand img {
-        width: 70px;
-    }
-    .navbar-brand {
-        font-size: 20px;
+/* Small Mobile screen size */
+@media (max-width: 280px) { 
+    #safety_title {
+        font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
     }
 }
