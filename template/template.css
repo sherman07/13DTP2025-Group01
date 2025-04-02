@@ -11,6 +11,7 @@
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
     --primary-blue: #2FBEC2;
+    --primary-black: #000000;
 }
 
 /* Apply the custom font and color */
@@ -29,7 +30,7 @@ body {
 
 /* Remove border from the navbar toggler button */
 .navbar-light .navbar-toggler{
-    border: 0 solid white;
+    border: 0 solid var(--primary-white);
 }
 
 /* Styling for navbar toggler button */
@@ -136,15 +137,15 @@ body {
 
 footer{
     font-family: "Phosphate Pro Cond Solid";
-    background-color: white;
-    border: black;
+    background-color: var(--primary-white);
+    border: var(--primary-black);
    
 }
 
 #footer_text{
     margin: 0px 20px;
     font-size: calc(15px + 0.1vw);
-    color: #E42D26;
+    color: var(--primary-red);
 }
 
 
