@@ -178,7 +178,7 @@ body,html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,0.43);
     margin: auto;
 }
 
@@ -243,6 +243,58 @@ body,html {
     left: 0;
 }
 
+#recommended_clothing_background_img{
+    background-size: cover;  
+    background-position: center; /* Ensures the image is centered */ 
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#recommended_clothing_title_colour{
+    color: var(--primary-white);
+
+}
+
+#recommended_clothing_text_colour{
+    color: var(--primary-white);
+}
+
+.content-box {
+    color: white;
+    padding: 15rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+footer{
+    font-family: "Phosphate Pro Cond Solid";
+    background-color: var(--primary-white);
+    border: var(--primary-black);
+   
+}
+
+#footer_text{
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: var(--primary-red);
+}
+
+
+.media_icons{
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+}
+
+
+#small_logo{
+    width: 200px;
+}
+
+#mobile_icons{
+    margin-top: 25px;
+}
 
 
 /* Tablet screen size */
@@ -260,6 +312,12 @@ body,html {
     .safety_guidelines_text{
         font-size: calc(0.42rem + 0.7vw); /* Even smaller for small mobile devices */
     }
+    #recommended_clothing_background_img{
+        min-height: 90vh;
+    }
+    .content-box{
+        padding: 10rem;
+    }
 }
 
 /* Mobile screen size */
@@ -276,6 +334,11 @@ body,html {
     }
     .safety_guidelines_text{
         font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
+    }#recommended_clothing_background_img{
+        min-height: 100vh;
+    }
+    .content-box{
+        padding: 8rem;
     }
 }
 
@@ -294,11 +357,23 @@ body,html {
     .safety_guidelines_text{
         font-size: calc(0.7em + 0.7vw); /* Even smaller for small mobile devices */
     }
+    #recommended_clothing_background_img{
+        min-height: 120vh;
+    }
+    .content-box{
+        padding:4rem;
+    }
 }
 
 /* Small Mobile screen size */
 @media (max-width: 280px) { 
     #safety_title {
         font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
+    }
+    .content-box{
+        padding: 2rem;
+    }
+    #recommended_clothing_background_img{
+        min-height: 120vh;
     }
 }
