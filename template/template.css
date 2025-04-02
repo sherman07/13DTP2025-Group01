@@ -138,7 +138,7 @@ body {
 footer{
     font-family: "Phosphate Pro Cond Solid";
     background-color: var(--primary-white);
-    border: black;
+    border: var(--primary-black);
    
 }
 
