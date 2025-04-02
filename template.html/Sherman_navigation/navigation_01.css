@@ -1,25 +1,22 @@
-/* Import the custom font */
+/* Define the custom font using @font-face */
 @font-face {
-    font-family: 'Phosphate Pro Cond Solid';
-    src: url('font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+    font-family: 'Phosphate'; /* Name your font */
+    src: url('/Users/zhenghui/Desktop/13DTP2025-Group01/font/phosphate_pro_cond_solid_regular_fixed.otf'); /* Correct format for .otf */
 }
+
+/* Apply the custom font to elements */
+* {
+    font-family: 'Phosphate'; /* Fallback to sans-serif */
+    font-size: 1.15em;
+}
+
 /* The primary colours to make a consistency website colour */
 :root{
     background-color: white;
-    --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
     --primary-white: #ffffff;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
     --primary-blue: #2FBEC2;
-}
-
-/* Apply the custom font and color */
-body {
-    font-family: var(--primary-font) !important;
-}
-
-#RBOCC_header-title{
-    font-size: 1.5em;
 }
 
 /* Changing the colour in navbar */
@@ -132,72 +129,4 @@ body {
 .navbar-toggler.collapsed .middle-bar {
     opacity: 1;
     
-}
-
-footer{
-    font-family: "Phosphate Pro Cond Solid";
-    background-color: white;
-    border: black;
-   
-}
-
-#footer_text{
-    margin: 0px 20px;
-    font-size: calc(15px + 0.1vw);
-    color: #E42D26;
-}
-
-
-.media_icons{
-    width: calc(35px + 0.1vw);
-    margin: 0 10px;
-}
-
-
-#small_logo{
-    width: 200px;
-}
-
-#mobile_icons{
-    margin-top: 25px;
-}
-
-/* Extra small devices (phones) */
-@media (max-width: 576px) {
-    .navbar-brand img {
-        width: 40px; /* Shrink logo */
-    }
-    .navbar-brand {
-        font-size: 14px; /* Smaller text */
-    }
-}
-
-/* Small devices (tablets, landscape phones) */
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 50px;
-    }
-    .navbar-brand {
-        font-size: 16px;
-    }
-}
-
-/* Medium devices (desktops, larger tablets) */
-@media (max-width: 992px) {
-    .navbar-brand img {
-        width: 60px;
-    }
-    .navbar-brand {
-        font-size: 18px;
-    }
-}
-
-/* Large devices (large desktops) */
-@media (max-width: 1200px) {
-    .navbar-brand img {
-        width: 70px;
-    }
-    .navbar-brand {
-        font-size: 20px;
-    }
 }
