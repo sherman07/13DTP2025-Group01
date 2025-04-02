@@ -213,41 +213,10 @@ body,html {
 }
 
 .underline_colour{
-    text-decoration-color: var(--primary-red);
+    text-decoration-color: var(--primary-yellow);
 }
 
 
-.hr-lines{
-    position: relative;
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-  
-.hr-lines:before{
-    content:" ";
-    height: 2px;
-    width: 35%;
-    background: black;
-    display: block;
-    position:absolute;
-    top: 50%;
-    left: 0;
-    right: 300px;
-}
-  
-.hr-lines:after{
-    content:"";
-    height: 2px;
-    width: 35%;
-    background: black;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-}
-
-/*
 .hr-lines {
     position: relative;
     height: 2px;
@@ -259,7 +228,7 @@ body,html {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: black;
+    background: var(--primary-black);
     top: 50%;
     right: 0;
 }
@@ -269,7 +238,7 @@ body,html {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: black;
+    background: var(--primary-black);
     top: 50%;
     left: 0;
 }
