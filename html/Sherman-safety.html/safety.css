@@ -213,7 +213,7 @@ body,html {
 }
 
 .underline_colour{
-    text-decoration-color: var(--primary-yellow);
+    text-decoration-color: var(--primary-red);
 }
 
 
