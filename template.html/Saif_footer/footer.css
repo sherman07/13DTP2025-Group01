@@ -1,0 +1,47 @@
+/* document styling/setup */
+
+@font-face {
+    font-family: 'Phosphate Pro Cond Solid';
+    src: url('Fonts/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+}
+
+:root {
+    --main-font: 'Phosphate Pro Cond Solid', sans-serif;
+    --main-color: black;
+}
+
+body {
+    font-family: var(--main-font) !important;
+    color: var(--main-color);
+}
+
+
+/* footer styling */
+
+footer{
+    font-family: "Phosphate Pro Cond Solid";
+    background-color: white;
+    border: black;
+   
+}
+
+#footer_text{
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: #E42D26;
+}
+
+
+.media_icons{
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+}
+
+
+#small_logo{
+    width: 200px;
+}
+
+#mobile_icons{
+    margin-top: 25px;
+}
