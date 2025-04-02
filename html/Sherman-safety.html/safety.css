@@ -200,10 +200,6 @@ body,html {
     max-width: 3.5%;
 }
 
-.smaller_size_br{
-    line-height:50%;
-}
-
 .safety_grid_structure_img{
     width: 100%;
     min-height: 70vh;
@@ -251,6 +247,34 @@ body,html {
     right: 0;
 }
 
+/*
+.hr-lines {
+    position: relative;
+    height: 2px;
+    margin: 0;
+}
+
+.hr-lines-left::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    top: 50%;
+    right: 0;
+}
+
+.hr-lines-right::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    top: 50%;
+    left: 0;
+}
+
+
 
 /* Tablet screen size */
 @media (max-width: 1024px) { 
@@ -265,7 +289,7 @@ body,html {
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.4rem + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.42rem + 0.7vw); /* Even smaller for small mobile devices */
     }
 }
 
