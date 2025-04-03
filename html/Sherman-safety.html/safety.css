@@ -330,7 +330,6 @@ footer{
     }
     .safety_guidelines_title{
         font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
-
     }
     .safety_guidelines_text{
         font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
@@ -340,6 +339,10 @@ footer{
     .content-box{
         padding: 8rem;
     }
+    .safety_grid_structure_img{
+        min-height: 50vh;
+    }
+
 }
 
 /* Small Mobile screen size */
@@ -358,7 +361,7 @@ footer{
         font-size: calc(0.7em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
-        min-height: 120vh;
+        min-height: 130vh;
     }
     .content-box{
         padding:4rem;
