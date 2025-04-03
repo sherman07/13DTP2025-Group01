@@ -158,118 +158,79 @@ body,html {
     
 }
 
-.front_img {
-    background-size: cover;  
-    background-position: center; /* Ensures the image is centered */ 
-    min-height: 100vh; /* Tall on larger screens */
+.hero-background {
+    background-image: url('/css/images/mens_race_group.jpg');
+    background-size: cover;  /* Ensures the image covers the entire div */
+    background-position: center; /* Ensures the image is centered */
+    min-height: 100vh;  /* Makes the div at least as tall as the viewport */
     position: relative;
-    width: 100%;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  /* Optional: add text shadow for better visibility on light images */
 }
 
-#hero_title {
-    font-size: calc(5rem);
-    font-family: var(--primary-font-second) !important;
-    color: var(--primary-yellow);
-
+footer{
+    font-family: "Phosphate Pro Cond Solid";
+    background-color: var(--primary-white);
+    border: var(--primary-black);
+   
 }
 
-.color-overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.2);
-    margin: auto;
+#footer_text{
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: var(--primary-red);
 }
 
 
-.safety_guidelines_title{
-    font-family: var(--primary-font-fourth);
-    font-size: 2.8rem;
-
+.media_icons{
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
 }
 
-.safety_guidelines_text{
-    font-family: var(--primary-font-third);
-    font-size: 1rem;
+
+#small_logo{
+    width: 200px;
 }
 
-#smaller_col_1-01{
-    width: 3.5%; 
-    flex: 0 0 3.5%;
-    max-width: 3.5%;
+#mobile_icons{
+    margin-top: 25px;
 }
 
-.smaller_size_br{
-    line-height:50%;
-}
-
-.safety_grid_structure_img{
-    width: 100%;
-    min-height: 70vh;
-    padding: 10;
-    position: relative;
-    background-size: cover;  
-}
-
-.hidden-li{
-    list-style-type: none;  
-}
-
-/* Tablet screen size */
-@media (max-width: 1024px) { 
-    .front_img {
-        min-height: 80vh;
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px; /* Shrink logo */
     }
-    #safety_title {
-        font-size: calc(6rem + 1vw);
-    }
-    .safety_guidelines_title{
-        font-size: calc(1.3rem + 1vw); /* Even smaller for small mobile devices */
-
-    }
-    .safety_guidelines_text{
-        font-size: calc(0.55rem + 0.7vw); /* Even smaller for small mobile devices */
+    .navbar-brand {
+        font-size: 14px; /* Smaller text */
     }
 }
 
-/* Mobile screen size */
-@media (max-width: 768px) { 
-    .front_img {
-        min-height: 60vh; /* Reduce height more for mobile devices */
+/* Small devices (tablets, landscape phones) */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;
     }
-    #safety_title {
-        font-size: calc(5rem + 1vw); /* smaller for small devices */
-    }
-    .safety_guidelines_title{
-        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
-
-    }
-    .safety_guidelines_text{
-        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
+    .navbar-brand {
+        font-size: 16px;
     }
 }
 
-/* Small Mobile screen size */
-@media (max-width: 480px) { 
-    .front_img {
-        min-height: 50vh; /* Reduce height more for small mobile devices */
+/* Medium devices (desktops, larger tablets) */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 60px;
     }
-    #safety_title {
-        font-size: calc(4rem + 1vw); /* Even smaller for small mobile devices */
-    }
-    .safety_guidelines_title{
-        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
-
-    }
-    .safety_guidelines_text{
-        font-size: calc(0.7rem + 0.7vw); /* Even smaller for small mobile devices */
+    .navbar-brand {
+        font-size: 18px;
     }
 }
 
-/* Small Mobile screen size */
-@media (max-width: 280px) { 
-    #safety_title {
-        font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
+/* Large devices (large desktops) */
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    .navbar-brand {
+        font-size: 20px;
     }
 }
