@@ -19,6 +19,7 @@
     src: url('font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
 }
 
+
 /* The primary colours to make a consistency website colour */
 :root{
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
@@ -156,6 +157,10 @@ body {
     
 }
 
+h1,h2,h3{
+    font-family: var(--primary-font-fourth) !important;
+    color: blue;
+}
 
 .text-justify{
     text-align: justify;
@@ -191,6 +196,8 @@ main{
 
     width: 700px;
     margin: 20px 0;
+
+    box-shadow: 2px 5px 15px;
 }
 
 
