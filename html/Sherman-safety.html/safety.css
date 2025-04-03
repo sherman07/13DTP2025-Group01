@@ -268,6 +268,31 @@ body,html {
     text-align: center;
 }
 
+.links_animation a {
+    color: var(--primary-white);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 0.4rem;
+}
+
+.links_animation a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 25%;
+    height: 0.25rem;
+    background-color: var(--primary-blue);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.links_animation a:hover::before {
+    width: 100%;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
 footer{
     font-family: "Phosphate Pro Cond Solid";
     background-color: var(--primary-white);
@@ -404,29 +429,4 @@ footer{
         font-size: calc(0.55em + 0.7vw); /* Even smaller for small mobile devices */
     }
     
-}
-
-.links_animation a {
-    color: var(--primary-white);
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    padding-bottom: 0.4rem;
-}
-
-.links_animation a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 25%;
-    height: 0.3rem; /* Adjust the thickness */
-    background-color: var(--primary-blue);
-    transform: translateX(-50%);
-    transition: width 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-.links_animation a:hover::before {
-    width: 100%; /* Expands to match text width */
-    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
