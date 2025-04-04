@@ -189,7 +189,7 @@ body,html {
 
 }
 
-.safety_guidelines_text{
+._guidelines_text{
     font-family: var(--primary-font-third);
     font-size: 0.935rem;
 }
@@ -263,7 +263,7 @@ body,html {
 
 .content-box {
     color: white;
-    padding: 15rem;
+    padding: 13rem;
     border-radius: 5px;
     text-align: center;
 }
@@ -321,7 +321,6 @@ footer{
     margin-top: 25px;
 }
 
-
 /* Tablet screen size */
 @media (max-width: 1024px) { 
     .front_img {
@@ -341,7 +340,7 @@ footer{
         min-height: 90vh;
     }
     .content-box{
-        padding: 10rem;
+        padding: 9rem;
     }
 }
 
@@ -359,10 +358,10 @@ footer{
     .safety_guidelines_text{
         font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
     }#recommended_clothing_background_img{
-        min-height: 100vh;
+        min-height: 120vh;
     }
     .content-box{
-        padding: 8rem;
+        padding: 6rem;
     }
     .safety_grid_structure_img{
         min-height: 50vh;
@@ -383,13 +382,13 @@ footer{
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.7em + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
         min-height: 130vh;
     }
     .content-box{
-        padding:4rem;
+        padding: 4rem;
     }
 }
 
@@ -399,13 +398,13 @@ footer{
 
     }
     .safety_guidelines_text{
-        font-size: calc(0.5em + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
         min-height: 110vh;
     }
     .content-box{
-        padding:3rem;
+        padding:2.5rem;
     }
 
 }
