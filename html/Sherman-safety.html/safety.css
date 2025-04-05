@@ -229,7 +229,7 @@ body,html {
     width: 100%;
     background: var(--primary-black);
     top: 50%;
-    right: 0%;
+    right: -5%;
 }
 
 .hr-lines-right::after {
@@ -239,7 +239,7 @@ body,html {
     width: 100%;
     background: var(--primary-black);
     top: 50%;
-    left: 0%;
+    left: -5%;
 }
 
 #recommended_clothing_background_img{
@@ -429,3 +429,17 @@ footer{
     }
     
 }
+
+.small-logo {
+    width: 120px;
+    height: auto;
+}
+
+.title {
+    margin-bottom: 8px; /* smaller space under title */
+  }
+  
+  .text {
+    margin-top: 0;
+  }
+  
