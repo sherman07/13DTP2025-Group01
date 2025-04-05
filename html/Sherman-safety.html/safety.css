@@ -189,7 +189,7 @@ body,html {
 
 }
 
-._guidelines_text{
+.safety_guidelines_text{
     font-family: var(--primary-font-third);
     font-size: 0.935rem;
 }
@@ -229,7 +229,7 @@ body,html {
     width: 100%;
     background: var(--primary-black);
     top: 50%;
-    right: 0;
+    right: 0%;
 }
 
 .hr-lines-right::after {
@@ -239,7 +239,7 @@ body,html {
     width: 100%;
     background: var(--primary-black);
     top: 50%;
-    left: 0;
+    left: 0%;
 }
 
 #recommended_clothing_background_img{
@@ -340,7 +340,7 @@ footer{
         min-height: 90vh;
     }
     .content-box{
-        padding: 9rem;
+        padding: 9.5rem;
     }
 }
 
@@ -385,7 +385,7 @@ footer{
         font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
-        min-height: 130vh;
+        min-height: 110vh;
     }
     .content-box{
         padding: 4rem;
@@ -401,7 +401,7 @@ footer{
         font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
-        min-height: 110vh;
+        min-height: 115vh;
     }
     .content-box{
         padding:2.5rem;
