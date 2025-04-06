@@ -178,7 +178,7 @@ body,html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.43);
+    background-color: rgba(0,0,0,0.50);
     margin: auto;
 }
 
@@ -244,11 +244,11 @@ body,html {
 
 #recommended_clothing_background_img{
     background-size: cover;  
-    background-position: center; /* Ensures the image is centered */ 
-    min-height: 100vh;
+    background-position: center;
+    min-height: 110vh;
     position: relative;
     width: 100%;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     background-image: url('./images-resized-compressed/mens_paddling_surf.jpg')
 }
 
@@ -337,7 +337,7 @@ footer{
         font-size: calc(0.42rem + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
-        min-height: 90vh;
+        min-height: 95vh;
     }
     .content-box{
         padding: 9.5rem;
@@ -358,7 +358,7 @@ footer{
     .safety_guidelines_text{
         font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
     }#recommended_clothing_background_img{
-        min-height: 120vh;
+        min-height: 130vh;
     }
     .content-box{
         padding: 6rem;
@@ -435,11 +435,8 @@ footer{
     height: auto;
 }
 
-.title {
-    margin-bottom: 8px; /* smaller space under title */
-  }
-  
-  .text {
-    margin-top: 0;
+.small-br {
+    display: block;
+    height: 0.7em; /* smaller space */
   }
   
