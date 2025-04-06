@@ -326,14 +326,14 @@ footer{
     .front_img {
         min-height: 90vh;
     }
-    #safety_title {
+    #safety_intro_title {
         font-size: calc(6rem + 1vw);
     }
-    .safety_guidelines_title{
+    .safety_title{
         font-size: calc(1.3rem + 1vw); /* Even smaller for small mobile devices */
 
     }
-    .safety_guidelines_text{
+    .safety_text{
         font-size: calc(0.42rem + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
@@ -349,13 +349,13 @@ footer{
     .front_img {
         min-height: 80vh; /* Reduce height more for mobile devices */
     }
-    #safety_title {
+    #safety_intro_title {
         font-size: calc(5rem + 1vw); /* smaller for small devices */
     }
-    .safety_guidelines_title{
+    .safety_title{
         font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
     }
-    .safety_guidelines_text{
+    .safety_text{
         font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
     }#recommended_clothing_background_img{
         min-height: 130vh;
@@ -374,14 +374,14 @@ footer{
     .front_img {
         min-height: 70vh; /* Reduce height more for small mobile devices */
     }
-    #safety_title {
+    #safety_intro_title {
         font-size: calc(4rem + 1vw); /* Even smaller for small mobile devices */
     }
-    .safety_guidelines_title{
+    .safety_title{
         font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
 
     }
-    .safety_guidelines_text{
+    .safety_text{
         font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
@@ -393,11 +393,11 @@ footer{
 }
 
 @media (max-width: 420px){
-    .safety_guidelines_title{
+    .safety_title{
         font-size: calc(1.4rem + 1vw); /* Even smaller for small mobile devices */
 
     }
-    .safety_guidelines_text{
+    .safety_text{
         font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
@@ -411,7 +411,7 @@ footer{
 
 /* Small Mobile screen size */
 @media (max-width: 280px) { 
-    #safety_title {
+    #safety_intro_title {
         font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
     }
     .content-box{
@@ -420,11 +420,11 @@ footer{
     #recommended_clothing_background_img{
         min-height: 120vh;
     }
-    .safety_guidelines_title{
+    .safety_title{
         font-size: calc(1.5rem + 1vw); /* Even smaller for small mobile devices */
 
     }
-    .safety_guidelines_text{
+    .safety_text{
         font-size: calc(0.55em + 0.7vw); /* Even smaller for small mobile devices */
     }
     
