@@ -167,7 +167,7 @@ body,html {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-#safety_title {
+#safety_intro_title {
     font-size: 10rem;
     font-family: var(--primary-font-second) !important;
     color: var(--primary-yellow);
@@ -183,13 +183,13 @@ body,html {
 }
 
 
-.safety_guidelines_title{
+.safety_title{
     font-family: var(--primary-font-fourth);
     font-size: 2.8rem;
 
 }
 
-.safety_guidelines_text{
+.safety_text{
     font-family: var(--primary-font-third);
     font-size: 0.935rem;
 }
