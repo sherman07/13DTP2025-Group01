@@ -38,6 +38,7 @@ body,html {
     margin: 0;
     width: 100%;
     height: 100%;
+
 }
 
 #RBOCC_header-title{
@@ -172,7 +173,11 @@ body,html {
     color: var(--primary-yellow);
 }
 
-
+#aboutus_title {
+    font-size: 3rem;
+    font-family: var(--primary-font) !important;
+    color: var(--primary-black);
+}
 
 footer{
     font-family: "Phosphate Pro Cond Solid";
