@@ -20,7 +20,7 @@
 <body>
 
     <!-- Navigation using Bootstrap navbar component -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg position-sticky">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
               <img src="/css/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70"  class="d-inline-block">
@@ -86,18 +86,15 @@
           
           </div>-->
 
-          <div class="px-4 py-5 my-5 text-center hero-background">
+          <div class="px-4 py-5 text-center hero-background">
             
-            <h1 class="display-5 fw-bold">Our Mission</h1>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">
+            
+              <h1 class="display-5 fw-bold mt-5" id="hero_title">Our Mission</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 text-white">
 
-                To grow the Red Beach Outrigger Canoe Club through inclusive on water activities for our community whilst promoting safety, education, health and fitness.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                  To grow the Red Beach Outrigger Canoe Club through inclusive on water activities for our community whilst promoting safety, education, health and fitness.</p>
               </div>
-            </div>
           </div>
           <div class="container mt-5 pt-5">
             <div class="row">
@@ -150,7 +147,44 @@
 
           </footer>
         </div>
-
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/css/images/Masters_crew.jpg" class="d-block w-100" alt="/css/images/Masters_crew.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/css/images/Masters_crew.jpg" class="d-block w-100" alt="/css/images/Masters_crew.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/css/images/Masters_crew.jpg" class="d-block w-100" alt="/css/images/Masters_crew.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
         
 
 

@@ -166,6 +166,13 @@ body,html {
     position: relative;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  /* Optional: add text shadow for better visibility on light images */
 }
+#hero_title {
+    font-size: 5rem;
+    font-family: var(--primary-font) !important;
+    color: var(--primary-yellow);
+}
+
+
 
 footer{
     font-family: "Phosphate Pro Cond Solid";
