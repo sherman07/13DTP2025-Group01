@@ -41,6 +41,14 @@ body,html {
 
 }
 
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    margin: auto;
+}
+
 #RBOCC_header-title{
     font-size: 1.5rem;
     font-family: var(--primary-font) !important;
@@ -178,6 +186,14 @@ body,html {
     font-family: var(--primary-font) !important;
     color: var(--primary-black);
 }
+
+.bg-image {
+    background-image: url('/css/images/waka_prep.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px; /* adjust as needed */
+  }
+  
 
 footer{
     font-family: "Phosphate Pro Cond Solid";
