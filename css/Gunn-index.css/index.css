@@ -187,6 +187,9 @@ body,html {
     color: var(--primary-black);
 }
 
+.big-heading{
+    font-size: 4rem;
+}
 .bg-image {
     background-image: url('/css/images/waka_prep.jpg');
     background-size: cover;
