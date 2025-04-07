@@ -19,16 +19,26 @@
     <!-- Add Bootstrap libary -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
+    <!-- Javascript animation for recommended clothing and links sections -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const recommended_clothing_background_img = document.querySelector('.recommended_clothing_background_img');
+
+        // Making the recommended_clothing_background_img class equal to the elememnt
+        const recommended_clothing_background_img = document.querySelector('#recommended_clothing_background_img');
     
+        // Adding oberver to watch the view of the end user in the viewport, either lease or enters
         const observer = new IntersectionObserver(
           entries => {
             entries.forEach(entry => {
+              
+              // If the element is in the viewport (based on the threshold)
               if (entry.isIntersecting) {
+
+                //Adding 'visible' id when enters
                 recommended_clothing_background_img.classList.add('visible');
               } else {
+
+                // Else remove 'visible' id after leave
                 recommended_clothing_background_img.classList.remove('visible');
               }
             });
@@ -37,7 +47,8 @@
             threshold: 0.3,
           }
         );
-    
+        
+        // Start observing the element
         observer.observe(recommended_clothing_background_img);
       });
     </script>
@@ -227,7 +238,7 @@
     <br>
 
     <div class="container">
-      <div class="rounded recommended_clothing_background_img">
+      <div class="rounded" id="recommended_clothing_background_img">
          <div class="color-overlay d-flex justify-content-center align-items-center flex-column content-box">
           <h1 class="safety_title" id="recommended_clothing_title_colour"><u class="underline_colour">Recommended Clothing</u></h1>
             <div class="safety_text"><span class="small-br"></span>

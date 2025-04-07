@@ -252,21 +252,21 @@ body,html {
     height: 0.7em; /* smaller space */
 }
   
-.recommended_clothing_background_img{
+#recommended_clothing_background_img{
     background-size: cover;  
     background-position: center;
     min-height: 110vh;
     position: relative;
-    transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
     width: 100%;
     opacity: 0;
 }
 
 
-.recommended_clothing_background_img.visible {
+#recommended_clothing_background_img.visible {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     opacity: 1;
-    background-image: url('./images-resized-compressed/mens_paddling_surf.jpg');
+    background-image: url('./images-resized-compressed/Mens_korero2.jpg');
 }
 
 #recommended_clothing_title_colour{
