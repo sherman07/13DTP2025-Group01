@@ -242,12 +242,22 @@ body,html {
     left: -5%;
 }
 
+.small-logo {
+    width: 120px;
+    height: auto;
+}
+
+.small-br {
+    display: block;
+    height: 0.7em; /* smaller space */
+}
+  
 .recommended_clothing_background_img{
     background-size: cover;  
     background-position: center;
     min-height: 110vh;
     position: relative;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
     width: 100%;
     opacity: 0;
 }
@@ -327,6 +337,7 @@ footer{
 #mobile_icons{
     margin-top: 25px;
 }
+
 
 /* Tablet screen size */
 @media (max-width: 1024px) { 
@@ -436,14 +447,3 @@ footer{
     }
     
 }
-
-.small-logo {
-    width: 120px;
-    height: auto;
-}
-
-.small-br {
-    display: block;
-    height: 0.7em; /* smaller space */
-  }
-  
