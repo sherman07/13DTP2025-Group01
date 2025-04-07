@@ -242,14 +242,21 @@ body,html {
     left: -5%;
 }
 
-#recommended_clothing_background_img{
+.recommended_clothing_background_img{
     background-size: cover;  
     background-position: center;
     min-height: 110vh;
     position: relative;
+    transition: opacity 1s ease-in-out;
     width: 100%;
+    opacity: 0;
+}
+
+
+.recommended_clothing_background_img.visible {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-    background-image: url('./images-resized-compressed/mens_paddling_surf.jpg')
+    opacity: 1;
+    background-image: url('./images-resized-compressed/mens_paddling_surf.jpg');
 }
 
 #recommended_clothing_title_colour{

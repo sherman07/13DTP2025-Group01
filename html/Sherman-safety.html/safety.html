@@ -18,6 +18,30 @@
 
     <!-- Add Bootstrap libary -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const recommended_clothing_background_img = document.querySelector('.recommended_clothing_background_img');
+    
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                recommended_clothing_background_img.classList.add('visible');
+              } else {
+                recommended_clothing_background_img.classList.remove('visible');
+              }
+            });
+          },
+          {
+            threshold: 0.3,
+          }
+        );
+    
+        observer.observe(recommended_clothing_background_img);
+      });
+    </script>
+
 </head>
 <body>
 
@@ -203,7 +227,7 @@
     <br>
 
     <div class="container">
-      <div id="recommended_clothing_background_img" class="rounded">
+      <div class="rounded recommended_clothing_background_img">
          <div class="color-overlay d-flex justify-content-center align-items-center flex-column content-box">
           <h1 class="safety_title" id="recommended_clothing_title_colour"><u class="underline_colour">Recommended Clothing</u></h1>
             <div class="safety_text"><span class="small-br"></span>
@@ -280,8 +304,7 @@
       </footer>
     </div>
 
-      
-
+    
 
 
     <!-- Add Bootstrap libary -->
