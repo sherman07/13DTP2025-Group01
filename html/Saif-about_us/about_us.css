@@ -157,73 +157,44 @@ body {
     
 }
 
+
+/* About Us page styling */
+
+/* Heading's styling */
 h1,h2,h3{
     font-family: var(--primary-font-fourth) !important;
     color: blue;
 }
 
-.text-justify{
-    text-align: justify;
-}
-
+/* Underline styling */
 .underline_styling{
-
-    
     text-decoration: underline;
     text-decoration-color: var(--primary-red);
-
- 
 }
 
-
+/* main div styling*/
 main{
-
     margin: 100px auto 0px auto;
-   
-    
 }
 
 
 #about_us_landing{
     margin: 10px 0px;
-
-    
-    
 }
 
-
+/* Styling for the first section of the page*/
 #about_us_landing img{
-
     width: 700px;
     margin: 20px 0;
-
     box-shadow: 2px 5px 15px;
 }
 
-
-
+/* Styling for the value 'cards' of value section*/
 .values_styling{
     background-color: #FDC010;
     padding: 10px;
     border-radius: 10px;
-    font-family: var(--primary-font-third) !important;
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
