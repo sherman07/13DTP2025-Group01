@@ -356,10 +356,10 @@ footer{
         font-size: calc(0.42rem + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
-        min-height: 95vh;
+        min-height: 100vh;
     }
     .content-box{
-        padding: 9.5rem;
+        padding: 9rem;
     }
 }
 
@@ -380,7 +380,7 @@ footer{
         min-height: 130vh;
     }
     .content-box{
-        padding: 6rem;
+        padding: 5.5rem;
     }
     .safety_grid_structure_img{
         min-height: 50vh;
@@ -404,7 +404,7 @@ footer{
         font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
     }
     #recommended_clothing_background_img{
-        min-height: 110vh;
+        min-height: 115vh;
     }
     .content-box{
         padding: 4rem;
