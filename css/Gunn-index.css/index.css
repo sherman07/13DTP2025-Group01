@@ -167,25 +167,25 @@ body,html {
     
 }
 
-.hero-background {
+#hero {
     background-image: url('/css/images/mens_race_group.jpg');
-    background-size: cover;  /* Ensures the image covers the entire div */
-    background-position: center; /* Ensures the image is centered */
-    min-height: 100vh;  /* Makes the div at least as tall as the viewport */
-    position: relative;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  /* Optional: add text shadow for better visibility on light images */
-}
-#hero_title {
-    font-size: 5rem;
-    font-family: var(--primary-font) !important;
-    color: var(--primary-yellow);
+    background-color: black;
+    object-fit: cover;
+    height:100vh;
 }
 
-#aboutus_title {
-    font-size: 3rem;
-    font-family: var(--primary-font) !important;
-    color: var(--primary-black);
+
+#hero h1 {
+    font-family: var(--primary-font);
+    color: var(--primary-yellow);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
+
+#hero p{
+    color: var(--primary-white)
+} 
 
 .big-heading{
     font-size: 4rem;
@@ -194,7 +194,6 @@ body,html {
     background-image: url('/css/images/waka_prep.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 300px; /* adjust as needed */
   }
   
 
@@ -233,6 +232,9 @@ footer{
     }
     .navbar-brand {
         font-size: 14px; /* Smaller text */
+    }
+    #hero{
+        height:150vh;
     }
 }
 
