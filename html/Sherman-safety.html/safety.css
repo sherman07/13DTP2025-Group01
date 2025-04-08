@@ -203,7 +203,7 @@ body,html {
 .safety_grid_structure_img{
     width: 100%;
     min-height: 70vh;
-    padding: 10;
+    padding: 10px;
     position: relative;
     background-size: cover;  
 }
