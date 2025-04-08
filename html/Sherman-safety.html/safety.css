@@ -40,11 +40,6 @@ body,html {
     height: 100%;
 }
 
-#RBOCC_header-title{
-    font-size: 1.5rem;
-    font-family: var(--primary-font) !important;
-}
-
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
