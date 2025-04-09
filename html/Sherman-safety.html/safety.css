@@ -207,7 +207,7 @@ body,html {
 /* Image size for grid structure */
 .safety_grid_structure_img{
     width: 100%;
-    min-height: 70vh;
+    min-height: 73.5vh;
     padding: 10px;
     position: relative;
     background-size: cover;  
@@ -366,16 +366,41 @@ footer{
         font-size: calc(6rem + 1vw);
     }
     .safety_title{
-        font-size: calc(1.3rem + 1vw);
+        font-size: calc(1.4rem + 1vw);
     }
     .safety_text{
-        font-size: calc(0.42rem + 0.7vw);
+        font-size: calc(0.52rem + 0.5vw);
     }
     #recommended_clothing_background_img{
         min-height: 100vh;
     }
     .content-box{
         padding: 9rem;
+    }
+}
+
+/* Tablet screen size of changing texts, content and images*/
+@media (max-width: 980px) { 
+    .front_img {
+        min-height: 80vh;
+    }
+    #safety_intro_title {
+        font-size: calc(5rem + 1vw);
+    }
+    .safety_title{
+        font-size: calc(2rem + 1vw);
+    }
+    .safety_text{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+    #recommended_clothing_background_img{
+        min-height: 130vh;
+    }
+    .content-box{
+        padding: 5.5rem;
+    }
+    .safety_grid_structure_img{
+        min-height: 70vh;
     }
 }
 
