@@ -89,7 +89,7 @@ body,html {
     width: 65px;
 }
 
-/* Toggler Icon Bars */
+/* ----------- Toggler Icon Bars ----------- */
 
 /* Styling for top bar */
 .top-bar{
@@ -120,7 +120,7 @@ body,html {
     transition: all 0.3s ease-in-out;
 }
 
-/* Toggler Animation */
+/* ----------- Toggler Animation ----------- */
 
 /* Animation effect when the navbar toggler is active */
 .navbar-toggler:not(.collapsed) .top-bar {
@@ -153,15 +153,19 @@ body,html {
     
 }
 
+/* ----------- Front images and front title----------- */
+
+/* Fullscreen image with overlay text support */
 .front_img {
     background-size: cover;  
-    background-position: center; /* Ensures the image is centered */ 
+    background-position: center;
     min-height: 100vh;
     position: relative;
     width: 100%;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Large title in the front image section */
 #safety_intro_title {
     font-size: 10rem;
     font-family: var(--primary-font-second) !important;
@@ -169,6 +173,7 @@ body,html {
 
 }
 
+/* Overlay for a dark opacity over background image */
 .color-overlay{
     position: absolute;
     width: 100%;
@@ -177,24 +182,29 @@ body,html {
     margin: auto;
 }
 
+/* ----------- Titles, images, and texts sizes ----------- */
 
+/* Size for safety title */
 .safety_title{
     font-family: var(--primary-font-fourth);
     font-size: 2.8rem;
 
 }
 
+/* Size for safety text */
 .safety_text{
     font-family: var(--primary-font-third);
     font-size: 0.935rem;
 }
 
+/* Smaller size col-1 */
 #smaller_col_1-01{
     width: 3.5%; 
     flex: 0 0 3.5%;
     max-width: 3.5%;
 }
 
+/* Image size for grid structure */
 .safety_grid_structure_img{
     width: 100%;
     min-height: 70vh;
@@ -203,20 +213,21 @@ body,html {
     background-size: cover;  
 }
 
-.hidden-li{
-    list-style-type: none;  
-}
-
+/* Colour for underline */
 .underline_colour{
     text-decoration-color: var(--primary-red);
 }
 
+/* ----------- Divider Breakdown ----------- */
+
+/* Horizontal line across sections */
 .hr-lines {
     position: relative;
     height: 2px;
     margin: 0;
 }
 
+/* Horizontal line across sections first one */
 .hr-lines-left::before {
     content: "";
     position: absolute;
@@ -227,6 +238,7 @@ body,html {
     right: -5%;
 }
 
+/* Horizontal line across sections second one*/
 .hr-lines-right::after {
     content: "";
     position: absolute;
@@ -237,16 +249,21 @@ body,html {
     left: -5%;
 }
 
+/* Size for the breakdown logo */
 .small-logo {
     width: 120px;
     height: auto;
 }
 
+/* Smaller br size */
 .small-br {
     display: block;
     height: 0.7em; /* smaller space */
 }
-  
+
+/* ----------- Recommended clothing, links section -----------*/
+
+/* Background image for the section */
 #recommended_clothing_background_img{
     background-size: cover;  
     background-position: center;
@@ -257,22 +274,25 @@ body,html {
     opacity: 0;
 }
 
-
+/* Javascript visible class at the end, with overlay colour */
 #recommended_clothing_background_img.visible {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     opacity: 1;
     background-image: url('./images-resized-compressed/Mens_korero2.jpg');
 }
 
+/* Colour for recommended clothing title */
 #recommended_clothing_title_colour{
     color: var(--primary-white);
 
 }
 
+/* Colour for recommended clothing text */
 #recommended_clothing_text_colour{
     color: var(--primary-white);
 }
 
+/* A container box to style and center content */
 .content-box {
     color: white;
     padding: 13rem;
@@ -280,6 +300,7 @@ body,html {
     text-align: center;
 }
 
+/* Link animation */
 .links_animation a {
     color: var(--primary-white);
     position: relative;
@@ -288,6 +309,7 @@ body,html {
     padding-bottom: 0.4rem;
 }
 
+/* Link animation before */
 .links_animation a::before {
     content: "";
     position: absolute;
@@ -300,11 +322,15 @@ body,html {
     transition: width 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
+/* Link animation before with hover on */
 .links_animation a:hover::before {
     width: 100%;
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
+/* ----------- The footer section ----------- */
+
+/* Customize footer section's colour and text font */
 footer{
     font-family: "Phosphate Pro Cond Solid";
     background-color: var(--primary-white);
@@ -312,30 +338,26 @@ footer{
    
 }
 
+/* Text size in footer section */
 #footer_text{
     margin: 0px 20px;
     font-size: calc(15px + 0.1vw);
     color: var(--primary-red);
 }
 
-
+/* Size and margin for media icons in large screen */
 .media_icons{
     width: calc(35px + 0.1vw);
     margin: 0 10px;
 }
 
-
-#small_logo{
-    width: 100px;
-
-}
-
+/* Margin for media icons in small screen */
 #mobile_icons{
     margin-top: 25px;
 }
 
 
-/* Tablet screen size */
+/* Desktop screen size of changing texts, content and images*/
 @media (max-width: 1024px) { 
     .front_img {
         min-height: 90vh;
@@ -344,11 +366,10 @@ footer{
         font-size: calc(6rem + 1vw);
     }
     .safety_title{
-        font-size: calc(1.3rem + 1vw); /* Even smaller for small mobile devices */
-
+        font-size: calc(1.3rem + 1vw);
     }
     .safety_text{
-        font-size: calc(0.42rem + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.42rem + 0.7vw);
     }
     #recommended_clothing_background_img{
         min-height: 100vh;
@@ -358,20 +379,21 @@ footer{
     }
 }
 
-/* Mobile screen size */
+/* Tablet screen size of changing texts, content and images*/
 @media (max-width: 768px) { 
     .front_img {
-        min-height: 80vh; /* Reduce height more for mobile devices */
+        min-height: 80vh;
     }
     #safety_intro_title {
-        font-size: calc(5rem + 1vw); /* smaller for small devices */
+        font-size: calc(5rem + 1vw);
     }
     .safety_title{
-        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
+        font-size: calc(2rem + 1vw);
     }
     .safety_text{
-        font-size: calc(0.7rem + 0.5vw); /* Even smaller for small mobile devices */
-    }#recommended_clothing_background_img{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    #recommended_clothing_background_img{
         min-height: 130vh;
     }
     .content-box{
@@ -380,23 +402,21 @@ footer{
     .safety_grid_structure_img{
         min-height: 50vh;
     }
-
 }
 
-/* Small Mobile screen size */
+/* Mobile screen size of changing texts, content and images*/
 @media (max-width: 480px) { 
     .front_img {
-        min-height: 70vh; /* Reduce height more for small mobile devices */
+        min-height: 70vh;
     }
     #safety_intro_title {
-        font-size: calc(4rem + 1vw); /* Even smaller for small mobile devices */
+        font-size: calc(4rem + 1vw);
     }
     .safety_title{
-        font-size: calc(2rem + 1vw); /* Even smaller for small mobile devices */
-
+        font-size: calc(2rem + 1vw);
     }
     .safety_text{
-        font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.6em + 0.7vw);
     }
     #recommended_clothing_background_img{
         min-height: 115vh;
@@ -406,27 +426,26 @@ footer{
     }
 }
 
+/* Smaller mobile screen size of changing texts, content and images*/
 @media (max-width: 420px){
     .safety_title{
-        font-size: calc(1.4rem + 1vw); /* Even smaller for small mobile devices */
-
+        font-size: calc(1.4rem + 1vw);
     }
     .safety_text{
-        font-size: calc(0.6em + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.6em + 0.7vw);
     }
     #recommended_clothing_background_img{
         min-height: 115vh;
     }
     .content-box{
-        padding:2.5rem;
+        padding: 2.5rem;
     }
-
 }
 
-/* Small Mobile screen size */
+/* Even smaller mobile screen size of changing texts, content and images*/
 @media (max-width: 280px) { 
     #safety_intro_title {
-        font-size: calc(3rem + 1vw); /* Even smaller for small mobile devices */
+        font-size: calc(3rem + 1vw);
     }
     .content-box{
         padding: 2rem;
@@ -435,11 +454,9 @@ footer{
         min-height: 120vh;
     }
     .safety_title{
-        font-size: calc(1.5rem + 1vw); /* Even smaller for small mobile devices */
-
+        font-size: calc(1.5rem + 1vw);
     }
     .safety_text{
-        font-size: calc(0.55em + 0.7vw); /* Even smaller for small mobile devices */
+        font-size: calc(0.55em + 0.7vw);
     }
-    
 }
