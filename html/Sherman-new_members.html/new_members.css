@@ -170,6 +170,7 @@ body,html {
     font-size: 10rem;
     font-family: var(--primary-font-second) !important;
     color: var(--primary-yellow);
+    text-align : center;
 
 }
 
@@ -180,4 +181,35 @@ body,html {
     height: 100%;
     background-color: rgba(0,0,0,0.50);
     margin: auto;
+}
+
+
+/* Desktop screen size of changing texts, content and images*/
+@media (max-width: 1024px) { 
+    .front_img {
+        min-height: 90vh;
+    }
+    #new_members_intro_title {
+        font-size: calc(6rem + 1vw);
+    }
+}
+
+/* Tablet screen size of changing texts, content and images*/
+@media (max-width: 768px) { 
+    .front_img {
+        min-height: 80vh;
+    }
+    #new_members_intro_title {
+        font-size: calc(5rem + 1vw);
+    }
+}
+
+/* Mobile screen size of changing texts, content and images*/
+@media (max-width: 480px) { 
+    .front_img {
+        min-height: 70vh;
+    }
+    #new_members_intro_title {
+        font-size: calc(4rem + 1vw);
+    }
 }
