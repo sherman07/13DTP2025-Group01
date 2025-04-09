@@ -1,7 +1,7 @@
 /* Define the custom font using @font-face */
 @font-face {
     font-family: 'Phosphate'; /* Phosphate font */
-    src: url('/font/phosphate_pro_cond_solid_regular_fixed.otf'); /* font link in the folder */
+    src: url('/Users/zhenghui/Desktop/13DTP2025-Group01/font/phosphate_pro_solid_fixed.otf'); /* font link in the folder */
 }
 
 /* Apply the custom font to elements */

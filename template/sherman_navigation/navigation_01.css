@@ -1,12 +1,12 @@
 /* Define the custom font using @font-face */
 @font-face {
-    font-family: 'Phosphate Pro Cond Solid'; /* Name your font */
-    src: url('font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype'); /* Correct format for .otf */
+    font-family: 'Phosphate'; /* Name your font */
+    src: url('/Users/zhenghui/Desktop/13DTP2025-Group01/font/phosphate_pro_cond_solid_regular_fixed.otf'); /* Correct format for .otf */
 }
 
 /* Apply the custom font to elements */
 * {
-    font-family: 'Phosphate Pro Cond Solid' sans-serif; /* Fallback to sans-serif */
+    font-family: 'Phosphate'; /* Fallback to sans-serif */
     font-size: 1.15em;
 }
 
