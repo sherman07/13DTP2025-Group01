@@ -183,6 +183,23 @@ body,html {
     margin: auto;
 }
 
+/* Size for safety title */
+.new_members_title{
+    font-family: var(--primary-font-fourth);
+    font-size: 2.8rem;
+
+}
+
+/* Size for safety text */
+.new_members_text{
+    font-family: var(--primary-font-third);
+    font-size: 0.935rem;
+}
+
+/* Colour for underline */
+.underline_colour{
+    text-decoration-color: var(--primary-red);
+}
 
 /* Desktop screen size of changing texts, content and images*/
 @media (max-width: 1024px) { 
