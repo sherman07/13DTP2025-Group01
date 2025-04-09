@@ -100,10 +100,10 @@
                   <p class="lead">Red Beach Outrigger Canoe Club is a young up and coming Waka Ama club that was established in 2018 to lead the development and practice of Waka Ama, With a key focus to promote kaupapa waka as a positive activity to support cultural and physical wellbeing within the community.</p>
                   <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design">Learn More</button>
               </div>
-             <!-- <div class="col-md-5">
+              <div class="col-md-5">
                 <div class="ms-md-2 ms-lg-5 mt-1"><img class="img-fluid rounded-3" src="/css/logos/RBOCC_BLACKONWHITE.png"></div>
               </div>
-            </div>-->
+            </div>
           </div>
       </section>
       <section id="contact_us">
@@ -119,7 +119,7 @@
               <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design" data-bs-toggle="modal" data-bs-target="#contact_us_modal" data-bs-whatever="@getbootstrap">Contact Us</button>
             </div>   
             <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="contact_us_modalLabel">Contact Us</h1>
@@ -128,7 +128,15 @@
                   <div class="modal-body">
                     <form>
                       <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Name:</label>
+                        <label for="recipient-name" class="col-form-label">First Name:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
                         <input type="text" class="form-control" id="recipient-name">
                       </div>
                       <div class="mb-3">

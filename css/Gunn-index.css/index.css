@@ -52,9 +52,19 @@ body,html {
 .navbar{
     background: var(--primary-white);
     font-family: var(--primary-font) !important;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
 
+/* Add drop shadow to the logo */
+.navbar-brand img {
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4)); 
+}
+
+/* Add text shadow to the navbar brand text */
+.navbar-brand {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
 /* Remove border from the navbar toggler button */
 .navbar-light .navbar-toggler{
     border: 0 solid white;
@@ -164,7 +174,7 @@ body,html {
 
 #hero {
     background: 
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), 
         url('/css/images/mens_race_group.jpg');
     background-size: cover;
     background-position: center;
