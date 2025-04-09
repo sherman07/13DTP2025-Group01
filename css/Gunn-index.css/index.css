@@ -54,6 +54,7 @@ body,html {
     font-family: var(--primary-font) !important;
 }
 
+
 /* Remove border from the navbar toggler button */
 .navbar-light .navbar-toggler{
     border: 0 solid white;
@@ -167,6 +168,7 @@ body,html {
         url('/css/images/mens_race_group.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; 
     color: white;
     height: 100vh;
     display: flex;
@@ -199,6 +201,14 @@ body,html {
     padding:8rem;
 }
 
+#contact_us{
+    background-color:#292929;
+    color: var(--primary-white);
+}
+
+.modal-content{
+    color: var(--primary-black) !important;
+}
 /* Show the bar again after the reset .container
 {
   display: flex;
@@ -449,7 +459,7 @@ footer{
     #hero{
         height:150vh;
     }
-}
+
 
 /* Small devices (tablets, landscape phones) */
 @media (max-width: 768px) {
@@ -459,6 +469,8 @@ footer{
     .navbar-brand {
         font-size: 16px;
     }
+
+}
 }
 
 /* Medium devices (desktops, larger tablets) */
