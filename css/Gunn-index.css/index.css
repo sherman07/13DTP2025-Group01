@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Phosphate Pro Cond Inline';
-    src: url('font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
+    src: url('/css/font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
 }
 
 /* The primary colours to make a consistency website colour */
@@ -212,7 +212,7 @@ body,html {
     padding:8rem;
 }
 /* Colour for underline */
-.underline_colour{
+.underline_colour {
     text-decoration-color: var(--primary-red);
     font-family: var(--primary-font-fourth) !important;
 }
@@ -220,6 +220,10 @@ body,html {
 
 #about_us{
     font-family: var(--primary-font-third);
+}
+
+about_us u{
+    font-family
 }
 #contact_us{
     background-color:#292929;
