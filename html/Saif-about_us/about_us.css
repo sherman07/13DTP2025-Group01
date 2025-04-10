@@ -156,19 +156,22 @@ body {
     
 }
 
+
 /* Fullscreen image with overlay text support */
 .front_img {
     background-size: cover;  
     background-position: center;
-    min-height: 80vh;
+    min-height: 50vh;
     position: relative;
     width: 100%;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    margin: 97px auto 0px auto;
+  
 }
 
 /* Large title in the front image section */
 #safety_intro_title {
-    font-size: 10rem;
+    font-size: calc(2rem + 10vw);
     font-family: var(--primary-font-second) !important;
     color: var(--primary-yellow);
 
@@ -289,6 +292,13 @@ main{
 
     }
 
+    #safety_intro_title {
+        font-size: calc(1rem + 10vw);
+        font-family: var(--primary-font-second) !important;
+        color: var(--primary-yellow);
+    
+    }
+
 
 
 }
@@ -337,12 +347,7 @@ footer{
         font-size: 14px; /* Smaller text */
     }
 
-    .safety_title{
-        font-size: calc(0.3rem + 1vw);
-    }
-    .safety_text{
-        font-size: calc(0.6em + 0.7vw);
-    }
+    
 }
 
 /* Small devices (tablets, landscape phones) */
