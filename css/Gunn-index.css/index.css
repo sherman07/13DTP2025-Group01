@@ -1,17 +1,17 @@
 /* Import the custom font */
 @font-face {
     font-family: 'Phosphate Pro Cond Solid';
-    src: url('/css/font/phosphate_solid_regular.otf') format('opentype');
+    src: url('/css/font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Phosphate Pro Solid';
-    src: url('/css/font/phosphate_solid_regular.otf') format('opentype');
+    src: url('/css/font/phosphate_pro_solid_fixed.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'Adobe Garamond Pro Semibold';
-    src: url('font/Adobe\ Garamond\ Pro\ Semibold.otf') format('opentype');
+    font-family: 'Bookman Old Style';
+    src: url('/css/font/bookman_old_style.TTF') format('opentype');
 }
 
 @font-face {
@@ -211,6 +211,12 @@ body,html {
 .container{
     padding:8rem;
 }
+/* Colour for underline */
+.underline_colour{
+    text-decoration-color: var(--primary-red);
+    font-family: var(--primary-font-fourth) !important;
+}
+
 
 #about_us{
     font-family: var(--primary-font-third);
