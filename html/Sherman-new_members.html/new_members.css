@@ -201,6 +201,35 @@ body,html {
     text-decoration-color: var(--primary-red);
 }
 
+.background_image_cards{
+    background-size: cover;  
+    background-position: center;
+    min-height: 30vh;
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  
+
+}
+
+.new_members_cards_title{
+    font-family: var(--primary-font-fourth);
+    color: var(--primary-white);
+    font-size: 2.8rem;
+
+}
+
+#button_colour_yearly_fees {
+    color: var(--primary-red);
+    border: solid var(--primary-red);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#button_colour_yearly_fees:hover {
+    color: var(--primary-white);
+    background-color: var(--primary-red);
+}
+
 /* Desktop screen size of changing texts, content and images*/
 @media (max-width: 1024px) { 
     .front_img {
