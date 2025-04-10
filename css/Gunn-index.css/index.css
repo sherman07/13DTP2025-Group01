@@ -174,7 +174,7 @@ body,html {
 
 #hero {
     background: 
-        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
         url('/css/images/mens_race_group.jpg');
     background-size: cover;
     background-position: center;
@@ -198,7 +198,8 @@ body,html {
 }
 
 #hero p{
-    color: var(--primary-white)
+    color: var(--primary-white);
+    font-family:var(--primary-font)!important;
 } 
 
 .button-design{
@@ -211,9 +212,13 @@ body,html {
     padding:8rem;
 }
 
+#about_us{
+    font-family: var(--primary-font-third);
+}
 #contact_us{
     background-color:#292929;
     color: var(--primary-white);
+    font-family: var(--primary-font-third);
 }
 
 .modal-content{
