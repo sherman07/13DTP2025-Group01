@@ -394,7 +394,7 @@ footer{
         font-size: calc(0.5rem + 0.5vw);
     }
     #recommended_clothing_background_img{
-        min-height: 130vh;
+        min-height: 110vh;
     }
     .content-box{
         padding: 5.5rem;
