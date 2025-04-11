@@ -61,10 +61,7 @@ body,html {
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4)); 
 }
 
-/* Add text shadow to the navbar brand text */
-.navbar-brand {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-}
+
 /* Remove border from the navbar toggler button */
 .navbar-light .navbar-toggler{
     border: 0 solid white;
@@ -222,9 +219,7 @@ body,html {
     font-family: var(--primary-font-third);
 }
 
-about_us u{
-    font-family
-}
+
 #contact_us{
     background-color:#292929;
     color: var(--primary-white);
