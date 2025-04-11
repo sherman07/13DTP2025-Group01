@@ -36,6 +36,15 @@
                 Red Beach Outrigger Canoe Club
             </a>
 
+            <!-- Appear in large viewport -->
+            <a class="navbar-brand d-block d-sm-none" href="#">
+                R.B.O.C.C
+            </a>
+
+            
+
+            
+
 
           <!-- Add Toggle button component that can be change into smaller sceen -->
           <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -217,50 +226,53 @@
                         </div>
 
                         <div class="card-footer bg-white">
-                            <button type="button" class="btn w-100 fw-bold button-design btn btn-primary" data-toggle="modal" data-target="new_members_modal" id="button_colour_yearly_fees">Select Membership</button>
+                            <button 
+                                type="button" 
+                                class="btn w-100 fw-bold button-design btn btn-primary" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#new_members_modal" 
+                                id="button_colour_yearly_fees">
+                                Select Membership
+                            </button>
                         </div>
-
-
+                        
                         <div class="modal fade" id="new_members_modal" tabindex="-1" aria-labelledby="new_members_modalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="new_members_modalLabel">Contact Us</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h1 class="modal-title fs-5 new_members_form_title" id="new_members_modalLabel"><u class="underline_colour">Contact us</u></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-
-                                    <div class="modal-body">
+                        
+                                    <div class="modal-body new_members_text">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="recipient-name" class="col-form-label">First Name:</label>
-                                                  <input type="text" class="form-control" id="recipient-name">
+                                                <label for="first-name" class="col-form-label">First Name:</label>
+                                                <input type="text" class="form-control" id="first-name">
                                             </div>
-                                                
                                             <div class="mb-3">
-                                                <label for="recipient-name" class="col-form-label">Last Name:</label>
-                                                <input type="text" class="form-control" id="recipient-name">
+                                                <label for="last-name" class="col-form-label">Last Name:</label>
+                                                <input type="text" class="form-control" id="last-name">
                                             </div>
-
                                             <div class="mb-3">
-                                                <label for="recipient-name" class="col-form-label">Email:</label>
-                                                <input type="text" class="form-control" id="recipient-name">
+                                                <label for="email" class="col-form-label">Email:</label>
+                                                <input type="email" class="form-control" id="email">
                                             </div>
-
                                             <div class="mb-3">
                                                 <label for="message-text" class="col-form-label">Message:</label>
                                                 <textarea class="form-control" id="message-text"></textarea>
                                             </div>
                                         </form>
-
                                     </div>
-                                            
+                        
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                         <button type="button" class="btn btn-primary">Send message</button>
                                     </div>
-                    </div>
-                </div>
-            </div>
+                                </div>
+                            </div>
+                        </div>
+                        
         </div>
     </div>
                     

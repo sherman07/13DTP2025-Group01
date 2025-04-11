@@ -44,7 +44,7 @@ body,html {
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
-    font-family: var(--primary-font) !important;
+    font-family: var(--primary-font-second) !important;
 }
 
 /* Remove border from the navbar toggler button */
@@ -153,6 +153,7 @@ body,html {
     opacity: 1;
     
 }
+
 /* ----------- Front images and front title----------- */
 
 /* Fullscreen image with overlay text support */
@@ -313,3 +314,8 @@ body,html {
     transform: scale(0.5);
 }
 
+.new_members_form_title{
+    color: var(--primary-black);
+    font-family: var(--primary-font);
+    
+}
