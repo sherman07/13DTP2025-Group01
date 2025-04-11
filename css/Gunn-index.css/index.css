@@ -263,6 +263,33 @@ body,html {
     font-family: var(--primary-font-third);
 }
 
+.links_animation a {
+    color: var(--primary-white);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 0.4rem;
+}
+
+/* Link animation before */
+.links_animation a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 25%;
+    height: 0.25rem;
+    background-color: var(--primary-blue);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* Link animation before with hover on */
+.links_animation a:hover::before {
+    width: 100%;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
 .modal-content{
     color: var(--primary-black) !important;
     font-family: var(--primary-font) !important;
