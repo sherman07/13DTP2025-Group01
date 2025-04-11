@@ -203,13 +203,11 @@ body,html {
 .button-design {
     position: relative;
     z-index: 1;
-    background-color: var(--primary-red);
-    color: var(--primary-white);
-    border: 2px solid var(--primary-red);
-    padding: 0.75rem 2rem;
-    font-weight: bold;
+    background-color: var(--primary-red)!important;
+    color: var(--primary-white) !important;
+    font-family:var(--primary-font-third) !important;
     border-radius: 5px;
-    overflow: hidden;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -267,6 +265,13 @@ body,html {
 
 .modal-content{
     color: var(--primary-black) !important;
+    font-family: var(--primary-font) !important;
+}
+
+.modal-title{
+    font-family: var(--primary-font-fourth) !important;
+    color: var(--primary-black) !important;
+    
 }
 
 
