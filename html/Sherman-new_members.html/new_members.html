@@ -70,7 +70,7 @@
                 <ul class="dropdown-menu">
 
                   <!-- New member link -->
-                  <li><a class="dropdown-item" href="new_members.html">New Member</a></li>
+                  <li><a class="dropdown-item" href="../Sherman-new_members.html/new_members.html">New Member</a></li>
                   <li><hr class="dropdown-divider"></li>
 
                   <!-- Existing link -->
@@ -87,7 +87,6 @@
           </div>
         </div>
       </nav>
-
 
 
       <div class="front_img" style="background-image: url('./images-resized-compressed/mens_korero.jpg')">
@@ -197,7 +196,7 @@
                      <div class="card shadow-lg rounded">
                         <div class="background_image_cards" style="background-image: url('./images-resized-compressed/waka_sunrise.jpg')">
                             <div class="color-overlay d-flex justify-content-center align-items-center">
-                                h1 class="new_members_cards_title"><u class="underline_colour">Yearly Member Fee</u></h1>
+                                <h1 class="new_members_cards_title"><u class="underline_colour">Yearly Member Fee</u></h1>
                             </div>
                         </div>
                     
@@ -218,14 +217,15 @@
                         </div>
 
                         <div class="card-footer bg-white">
-                            <button class="btn w-100 fw-bold" id="button_colour_yearly_fees">Select Membership</button>
+                            <button type="button" class="btn w-100 fw-bold button-design btn btn-primary" data-toggle="modal" data-target="new_members_modal" id="button_colour_yearly_fees">Select Membership</button>
                         </div>
 
-                        <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
+
+                        <div class="modal fade" id="new_members_modal" tabindex="-1" aria-labelledby="new_members_modalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="contact_us_modalLabel">Contact Us</h1>
+                                        <h1 class="modal-title fs-5" id="new_members_modalLabel">Contact Us</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
 
@@ -346,6 +346,16 @@
         <br><br>
         <br><br>
         <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+
+        <br><br>
+        <br><br>
+        <br><br>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -357,14 +367,6 @@
             spaceBetween: -350,
             centeredSlides: true,
             loop: true,
-            navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
             breakpoints: {
                 480: { slidesPerView: 1 },
                 768: { slidesPerView: 2 },
@@ -377,8 +379,6 @@
 
 
 
-<!-- Bootstrap JS (required for modal functionality) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Add Bootstrap libary -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
