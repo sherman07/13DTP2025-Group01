@@ -43,8 +43,6 @@
 
             
 
-            
-
 
           <!-- Add Toggle button component that can be change into smaller sceen -->
           <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +96,7 @@
       </nav>
 
 
-      <div class="front_img" style="background-image: url('./images-resized-compressed/mens_korero.jpg')">
+      <div class="front_img mb-5" style="background-image: url('./images-resized-compressed/mens_korero.jpg')">
 
 
           <div class="color-overlay d-flex justify-content-center align-items-center">
@@ -106,11 +104,6 @@
           </div>
       </div>
       <br>
-      <br>
-      <br>
-    
-      <br>
-      
       
       <div class="container">
         <div class="row g-3 justify-content-center">
@@ -188,6 +181,7 @@
                             <li>$15 per Open/Senior (20 years and over) </li>
                             <li>$12 per Junior (14 to 19 years) </li>
                             <li>$5 per Midget/Intermediate (13 years and under) </li>
+
                         </menu>
                     </div>
                 </div>
@@ -236,42 +230,6 @@
                             </button>
                         </div>
                         
-                        <div class="modal fade" id="new_members_modal" tabindex="-1" aria-labelledby="new_members_modalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5 new_members_form_title" id="new_members_modalLabel"><u class="underline_colour">Contact us</u></h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                        
-                                    <div class="modal-body new_members_text">
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="first-name" class="col-form-label">First Name:</label>
-                                                <input type="text" class="form-control" id="first-name">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="last-name" class="col-form-label">Last Name:</label>
-                                                <input type="text" class="form-control" id="last-name">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="email" class="col-form-label">Email:</label>
-                                                <input type="email" class="form-control" id="email">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Message:</label>
-                                                <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-                                        </form>
-                                    </div>
-                        
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Send message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         
         </div>
     </div>
@@ -355,19 +313,48 @@
 
         </div>
 
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-
-
-        <br><br>
-        <br><br>
-        <br><br>
-
-
+        <div class="modal fade" id="new_members_modal" tabindex="-1" aria-labelledby="new_members_modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 new_members_form_title" id="new_members_modalLabel"><u class="underline_colour">Yearly Fee Payment</u></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+        
+                    <div class="modal-body new_members_text">
+                        <form>
+                            <div class="mb-3">
+                                <label for="first-name" class="col-form-label">First Name:</label>
+                                <input type="text" class="form-control" id="first-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="last-name" class="col-form-label">Last Name:</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Payment Link:</label><br>
+                                <a href="https://buy.stripe.com/test_00g2b87ZN2aQc4U8ww" class="btn btn-info" role="button" target="_blank" id="button_colour_yearly_fees_payment">
+                                    Go to Payment
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="button_form_colour_">Close</button>
+                        <button type="button" class="btn btn-primary" id="button_colour_yearly_fees">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
