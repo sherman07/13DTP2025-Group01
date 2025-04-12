@@ -256,6 +256,10 @@ body,html {
     font-family: var(--primary-font-third);
 }
 
+#about_us img{
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3)); 
+}
+
 
 #contact_us{
     background-color:#292929;
@@ -305,10 +309,9 @@ body,html {
     height: 90vh;
     object-fit: cover;
   }
-s  
 
 footer{
-    font-family: "Phosphate Pro Cond Solid";
+    font-family: var(--primary-font) !important;
     background-color: var(--primary-white);
     border: var(--primary-black);
    
