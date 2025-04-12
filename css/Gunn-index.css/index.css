@@ -292,15 +292,20 @@ body,html {
 
 .modal-content{
     color: var(--primary-black) !important;
-    font-family: var(--primary-font) !important;
+
 }
 
-.modal-title{
-    font-family: var(--primary-font-fourth) !important;
-    color: var(--primary-black) !important;
-    
+
+.send-button{
+    background-color: var(--primary-red) !important;
+    color: var(--primary-white) !important;
 }
 
+.carousel-image {
+    height: 90vh;
+    object-fit: cover;
+  }
+s  
 
 footer{
     font-family: "Phosphate Pro Cond Solid";
@@ -351,6 +356,10 @@ footer{
     .navbar-brand {
         font-size: 16px;
     }
+    .carousal-image{
+        aspect-ratio: 9/16;
+        object-fit: cover;
+    }
 
 }
 }
@@ -363,6 +372,7 @@ footer{
     .navbar-brand {
         font-size: 18px;
     }
+
 }
 
 /* Large devices (large desktops) */
