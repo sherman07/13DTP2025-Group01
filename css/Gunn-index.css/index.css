@@ -45,13 +45,13 @@ body,html {
 
 #RBOCC_header-title{
     font-size: 1.5rem;
-    font-family: var(--primary-font) !important;
+    font-family: var(--primary-font-second) !important;
 }
 
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
-    font-family: var(--primary-font) !important;
+    font-family: var(--primary-font-second) !important;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -194,9 +194,9 @@ body,html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-#hero p{
+#hero h4{
     color: var(--primary-white);
-    font-family:var(--primary-font)!important;
+    font-family:var(--primary-font-third)!important;
 } 
 
 
