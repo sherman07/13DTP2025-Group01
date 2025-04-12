@@ -20,35 +20,36 @@
 }
 
 /* The primary colours to make a consistency website colour */
-:root{
+:root {
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
-    --primary-font-second:'Phosphate Pro Solid', sans-serif ;
-    --primary-font-third:'Bookman Old Style', sans-serif;
-    --primary-font-fourth:'Phosphate Pro Cond Inline';
+    --primary-font-second: 'Phosphate Pro Solid', sans-serif;
+    --primary-font-third: 'Bookman Old Style', sans-serif;
+    --primary-font-fourth: 'Phosphate Pro Cond Inline';
     --primary-white: #ffffff;
-    --primary-black:#000000;
+    --primary-black: #000000;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
     --primary-blue: #2FBEC2;
 }
 
 /* Apply the custom font and color */
-body,html {
+body,
+html {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    overflow-x : hidden;
+    overflow-x: hidden;
 }
 
 /* Changing the colour in navbar */
-.navbar{
+.navbar {
     background: var(--primary-white);
     font-family: var(--primary-font-second) !important;
 }
 
 /* Remove border from the navbar toggler button */
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     border: 0 solid white;
 }
 
@@ -62,17 +63,17 @@ body,html {
 }
 
 /* Remove focus outlines and borders from navbar toggler */
-.navbar-toggler, 
-.navbar-toggler:focus, 
-.navbar-toggler:active, 
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline:none;
+    outline: none;
     box-shadow: none;
     border: 0;
 }
 
 /* Remove margin and padding from span  */
-.navbar-toggler span{
+.navbar-toggler span {
     margin: 0;
     padding: 0;
 }
@@ -93,7 +94,7 @@ body,html {
 /* ----------- Toggler Icon Bars ----------- */
 
 /* Styling for top bar */
-.top-bar{
+.top-bar {
     height: 5px;
     width: 100%;
     border-radius: 2px;
@@ -103,7 +104,7 @@ body,html {
 
 
 /* Styling for middle bar */
-.middle-bar{
+.middle-bar {
     height: 5px;
     width: 100%;
     border-radius: 2px;
@@ -113,7 +114,7 @@ body,html {
 
 
 /* Styling for bottom bar */
-.bottom-bar{
+.bottom-bar {
     height: 5px;
     width: 100%;
     border-radius: 2px;
@@ -127,7 +128,7 @@ body,html {
 .navbar-toggler:not(.collapsed) .top-bar {
     transform: translateY(12px) rotate(45deg);
 
-    
+
 }
 
 /* Hide middle bar */
@@ -151,14 +152,14 @@ body,html {
 /* Show the bar again after the reset */
 .navbar-toggler.collapsed .middle-bar {
     opacity: 1;
-    
+
 }
 
 /* ----------- Front images and front title----------- */
 
 /* Fullscreen image with overlay text support */
 .front_img {
-    background-size: cover;  
+    background-size: cover;
     background-position: center;
     min-height: 100vh;
     position: relative;
@@ -171,48 +172,48 @@ body,html {
     font-size: 10rem;
     font-family: var(--primary-font-second) !important;
     color: var(--primary-yellow);
-    text-align : center;
+    text-align: center;
 
 }
 
 /* Overlay for a dark opacity over background image */
-.color-overlay{
+.color-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.50);
+    background-color: rgba(0, 0, 0, 0.50);
     margin: auto;
 }
 
 /* Size for safety title */
-.new_members_title{
+.new_members_title {
     font-family: var(--primary-font-fourth);
     font-size: 2.8rem;
 
 }
 
 /* Size for safety text */
-.new_members_text{
+.new_members_text {
     font-family: var(--primary-font-third);
     font-size: 0.935rem;
 }
 
 /* Colour for underline */
-.underline_colour{
+.underline_colour {
     text-decoration-color: var(--primary-red);
 }
 
-.background_image_cards{
-    background-size: cover;  
+.background_image_cards {
+    background-size: cover;
     background-position: center;
     min-height: 30vh;
     position: relative;
     width: 100%;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);  
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 
 }
 
-.new_members_cards_title{
+.new_members_cards_title {
     font-family: var(--primary-font-fourth);
     color: var(--primary-white);
     font-size: 2.8rem;
@@ -233,36 +234,52 @@ body,html {
 }
 
 
-.correct_sign{
-    color: red; 
+.correct_sign {
+    color: red;
     font-size: 20px;
 }
 
+.swiper-card-lg-container {
+    display: none;
+}
+
 /* Desktop screen size of changing texts, content and images*/
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
     .front_img {
         min-height: 90vh;
     }
+
     #new_members_intro_title {
         font-size: calc(6rem + 1vw);
+    }
+
+
+    .cards-bar {
+        display: block !important;
+    }
+
+    .swiper-card-lg-container {
+        display: block !important;
     }
 }
 
 /* Tablet screen size of changing texts, content and images*/
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .front_img {
         min-height: 80vh;
     }
+
     #new_members_intro_title {
         font-size: calc(5rem + 1vw);
     }
 }
 
 /* Mobile screen size of changing texts, content and images*/
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .front_img {
         min-height: 70vh;
     }
+
     #new_members_intro_title {
         font-size: calc(4rem + 1vw);
     }
@@ -287,7 +304,7 @@ body,html {
 }
 
 
-        
+
 
 .swiper-slide-active {
     transform: scale(1.1);
@@ -298,13 +315,13 @@ body,html {
 
 .swiper-slide-prev,
 .swiper-slide-next {
-    transform: scale(0.9) translateX(-10%);
+    transform: scale(0.8) translateX(-10%);
     z-index: 2;
     opacity: 0.5;
 }
 
 .swiper-slide-next {
-    transform: scale(0.9) translateX(10%);
+    transform: scale(0.8) translateX(10%);
 }
 
 
@@ -315,16 +332,56 @@ body,html {
     transform: scale(0.5);
 }
 
-.new_members_form_title{
+.new_members_form_title {
     color: var(--primary-black);
     font-family: var(--primary-font);
-    
+
 }
 
-#button_form_colour_close{
+#button_form_colour_close {
+    color: var(--primary-black);
+    border: solid var(--primary-black);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#button_form_colour_close:hover {
+    color: var(--primary-white);
     background-color: var(--primary-black);
 }
 
-#button_form_colour_send{
-    background-color: var(--primary-red);
+.new_members_button_text {
+    font-family: var(--primary-font-second);
+}
+
+
+/* Popup styles matching the video demonstration */
+.popup {
+    width: 300px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1050;
+
+}
+
+
+.popup.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 10px;
 }
