@@ -1,23 +1,23 @@
 /* Import the custom fonts */
 @font-face {
     font-family: 'Phosphate Pro Cond Solid';
-    src: url('/html/Gunn-contact_us.html/fonts/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+    src: url('/css/fonts/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Phosphate Pro Solid';
-    src: url('/html/Gunn-contact_us.html/fonts/phosphate_pro_solid_fixed.otf') format('opentype');
+    src: url('/css/fonts/phosphate_pro_solid_fixed.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Bookman Old Style';
-    src: url('/html/Gunn-contact_us.html/fonts/bookman_old_style.TTF') format('truetype');
+    src: url('/css/fonts/bookman_old_style.TTF') format('truetype');
 }
 
 
 @font-face {
     font-family: 'Phosphate Pro Cond Inline';
-    src: url('/html/Gunn-contact_us.html/fonts/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
+    src: url('/css/fonts/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
 }
 
 /* Primary colors and fonts for consistency */
