@@ -349,6 +349,22 @@ footer{
     #hero{
         height:150vh;
     }
+    #about_us .col-md-6 {
+        margin-bottom: 2rem; /* Adds space below the text */
+    }
+    
+    #about_us .col-md-5 {
+        margin-top: 0 !important; /* Removes too much top space above logo */
+        margin-bottom: 1rem; /* Reduces bottom space */
+    }
+    
+
+    
+    /* Optional: reduce global container padding */
+    .container {
+        padding: 2rem 1rem;
+    }
+    
 
 
 /* Small devices (tablets, landscape phones) */
