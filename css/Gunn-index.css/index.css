@@ -1,4 +1,4 @@
-/* Import the custom font */
+/* Import the custom fonts */
 @font-face {
     font-family: 'Phosphate Pro Cond Solid';
     src: url('/css/font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
@@ -19,51 +19,47 @@
     src: url('/css/font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
 }
 
-/* The primary colours to make a consistency website colour */
-:root{
+/* Primary colors and fonts for consistency */
+:root {
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
-    --primary-font-second:'Phosphate Pro Solid', sans-serif ;
-    --primary-font-third:'Adobe Garamond Pro Semibold', sans-serif;
-    --primary-font-fourth:'Phosphate Pro Cond Inline';
+    --primary-font-second: 'Phosphate Pro Solid', sans-serif;
+    --primary-font-third: 'Adobe Garamond Pro Semibold', sans-serif;
+    --primary-font-fourth: 'Phosphate Pro Cond Inline';
     --primary-white: #ffffff;
-    --primary-black:#000000;
+    --primary-black: #000000;
     --primary-red: #E42D26;
     --primary-yellow: #FDC010;
     --primary-blue: #2FBEC2;
 }
 
-/* Apply the custom font and color */
-body,html {
+/* Apply custom fonts and reset basic styles for body and html */
+body, html {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-
 }
 
-
-
-#RBOCC_header-title{
+/* Header title styling */
+#RBOCC_header-title {
     font-size: 1.5rem;
     font-family: var(--primary-font-second) !important;
 }
 
-/* Changing the colour in navbar */
-.navbar{
+/* Navbar styling */
+.navbar {
     background: var(--primary-white);
     font-family: var(--primary-font-second) !important;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Add drop shadow to the logo */
 .navbar-brand img {
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4)); 
 }
 
-
 /* Remove border from the navbar toggler button */
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     border: 0 solid white;
 }
 
@@ -73,7 +69,6 @@ body,html {
     height: 40px;
     position: relative;
     transition: .5s ease-in-out;
-
 }
 
 /* Remove focus outlines and borders from navbar toggler */
@@ -81,17 +76,16 @@ body,html {
 .navbar-toggler:focus, 
 .navbar-toggler:active, 
 .navbar-toggler-icon:focus {
-    outline:none;
+    outline: none;
     box-shadow: none;
     border: 0;
 }
 
-/* Remove margin and padding from span  */
-.navbar-toggler span{
+/* Remove margin and padding from span inside navbar toggler */
+.navbar-toggler span {
     margin: 0;
     padding: 0;
 }
-
 
 /* Fixing Navbar Toggler Styling */
 .navbar-toggler {
@@ -105,10 +99,8 @@ body,html {
     width: 65px;
 }
 
-/* Toggler Icon Bars */
-
-/* Styling for top bar */
-.top-bar{
+/* Styling for each bar of the toggler */
+.top-bar {
     height: 5px;
     width: 100%;
     border-radius: 2px;
@@ -116,9 +108,7 @@ body,html {
     transition: all 0.3s ease-in-out;
 }
 
-
-/* Styling for middle bar */
-.middle-bar{
+.middle-bar {
     height: 5px;
     width: 100%;
     border-radius: 2px;
@@ -126,9 +116,7 @@ body,html {
     transition: all 0.3s ease-in-out;
 }
 
-
-/* Styling for bottom bar */
-.bottom-bar{
+.bottom-bar {
     height: 5px;
     width: 100%;
     border-radius: 2px;
@@ -136,25 +124,17 @@ body,html {
     transition: all 0.3s ease-in-out;
 }
 
-/* Toggler Animation */
-
-/* Animation effect when the navbar toggler is active */
+/* Toggler Animation effects */
 .navbar-toggler:not(.collapsed) .top-bar {
     transform: translateY(12px) rotate(45deg);
-
-    
 }
 
-/* Hide middle bar */
 .navbar-toggler:not(.collapsed) .middle-bar {
     opacity: 0;
-
 }
 
-/* Animation effect when the navbar toggler is active */
 .navbar-toggler:not(.collapsed) .bottom-bar {
     transform: translateY(-12px) rotate(-45deg);
-
 }
 
 /* Reset when collapsed */
@@ -163,19 +143,16 @@ body,html {
     transform: none;
 }
 
-/* Show the bar again after the reset */
 .navbar-toggler.collapsed .middle-bar {
     opacity: 1;
-    
 }
 
+/* Hero section styling */
 #hero {
-    background: 
-        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-        url('/css/images/mens_race_group.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/css/images/mens_race_group.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     color: white;
     height: 100vh;
     display: flex;
@@ -185,7 +162,7 @@ body,html {
     text-align: center;
 }
 
-
+/* Hero title styling */
 #hero h1 {
     font-family: var(--primary-font);
     color: var(--primary-yellow);
@@ -194,24 +171,24 @@ body,html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-#hero h4{
+#hero h4 {
     color: var(--primary-white);
-    font-family:var(--primary-font-third)!important;
-} 
+    font-family: var(--primary-font-third) !important;
+}
 
-
+/* Button Design */
 .button-design {
     position: relative;
     z-index: 1;
-    background-color: var(--primary-red)!important;
+    background-color: var(--primary-red) !important;
     color: var(--primary-white) !important;
-    font-family:var(--primary-font-third) !important;
+    font-family: var(--primary-font-third) !important;
     border-radius: 5px;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Background layer */
+/* Background layer for button */
 .button-design::after {
     content: "";
     position: absolute;
@@ -225,49 +202,49 @@ body,html {
     transition: width 0.4s ease;
 }
 
-/* Hover styles */
+/* Button hover effects */
 .button-design:hover {
     color: var(--primary-red) !important;
-    background-color: transparent; /* Needed to let ::after show through */
+    background-color: transparent;
 }
 
 .button-design:hover::after {
     width: 100%;
 }
 
-/* Optional: active press-down */
+/* Active press-down effect */
 .button-design:active {
-    transform: scale(0.98); /* Tiny press-in effect */
+    transform: scale(0.98);
 }
 
-
-
-.container{
-    padding:8rem;
+/* Container padding */
+.container {
+    padding: 8rem;
 }
+
 /* Colour for underline */
 .underline_colour {
     text-decoration-color: var(--primary-red);
     font-family: var(--primary-font-fourth) !important;
 }
 
-
-#about_us{
+/* About Us section styling */
+#about_us {
     font-family: var(--primary-font-third);
 }
 
-#about_us img{
+#about_us img {
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3)); 
 }
 
-
-
-#contact_us{
-    background-color:#292929;
+/* Contact Us section styling */
+#contact_us {
+    background-color: #292929;
     color: var(--primary-white);
     font-family: var(--primary-font-third);
 }
 
+/* Animation for links */
 .links_animation a {
     color: var(--primary-white);
     position: relative;
@@ -289,84 +266,78 @@ body,html {
     transition: width 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-/* Link animation before with hover on */
+/* Link animation on hover */
 .links_animation a:hover::before {
     width: 100%;
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
-.modal-content{
+/* Modal content styling */
+.modal-content {
     color: var(--primary-black) !important;
-
 }
 
 
-.send-button{
-    background-color: var(--primary-red) !important;
-    color: var(--primary-white) !important;
-}
-
+/* Carousel image styling */
 .carousel-image {
     height: 90vh;
     object-fit: cover;
-  }
+}
 
-footer{
+/* Footer styling */
+footer {
     font-family: var(--primary-font) !important;
     background-color: var(--primary-white);
     border: var(--primary-black);
-   
 }
 
-#footer_text{
+/* Footer text styling */
+#footer_text {
     margin: 0px 20px;
     font-size: calc(15px + 0.1vw);
     color: var(--primary-red);
 }
 
-
-.media_icons{
+/* Media icons styling */
+.media_icons {
     width: calc(35px + 0.1vw);
     margin: 0 10px;
 }
 
-
-#small_logo{
+/* Small logo styling */
+#small_logo {
     width: 200px;
 }
 
-#mobile_icons{
+/* Mobile icons margin */
+#mobile_icons {
     margin-top: 25px;
 }
+
+/* Media Queries */
 
 /* Extra small devices (phones) */
 @media (max-width: 576px) {
     .navbar-brand img {
-        width: 40px; /* Shrink logo */
+        width: 40px;
     }
     .navbar-brand {
-        font-size: 14px; /* Smaller text */
+        font-size: 14px;
     }
-    #hero{
-        height:150vh;
+    #hero {
+        height: 150vh;
     }
     #about_us .col-md-6 {
-        margin-bottom: 2rem; /* Adds space below the text */
+        margin-bottom: 2rem;
     }
-    
     #about_us .col-md-5 {
-        margin-top: 0 !important; /* Removes too much top space above logo */
-        margin-bottom: 1rem; /* Reduces bottom space */
+        margin-top: 0 !important;
+        margin-bottom: 1rem;
     }
-    
-
-    
-    /* Optional: reduce global container padding */
     .container {
         padding: 2rem 1rem;
     }
-    
-
+}
 
 /* Small devices (tablets, landscape phones) */
 @media (max-width: 768px) {
@@ -376,12 +347,10 @@ footer{
     .navbar-brand {
         font-size: 16px;
     }
-    .carousal-image{
+    .carousal-image {
         aspect-ratio: 9/16;
         object-fit: cover;
     }
-
-}
 }
 
 /* Medium devices (desktops, larger tablets) */
@@ -392,7 +361,6 @@ footer{
     .navbar-brand {
         font-size: 18px;
     }
-
 }
 
 /* Large devices (large desktops) */
