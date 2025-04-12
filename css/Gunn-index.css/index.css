@@ -11,8 +11,9 @@
 
 @font-face {
     font-family: 'Bookman Old Style';
-    src: url('/css/font/bookman_old_style.TTF') format('opentype');
+    src: url('/css/font/bookman_old_style.TTF') format('truetype');
 }
+
 
 @font-face {
     font-family: 'Phosphate Pro Cond Inline';
