@@ -1,0 +1,318 @@
+
+/* Import the custom font */
+@font-face {
+    font-family: 'Phosphate Pro Cond Solid';
+    src: url('font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Phosphate Pro Solid';
+    src: url('font/phosphate_pro_solid_fixed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('font/bookman_old_style.TTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'Phosphate Pro Cond Inline';
+    src: url('font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
+}
+
+
+/* The primary colours to make a consistency website colour */
+:root{
+    --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
+    --primary-font-second:'Phosphate Pro Solid', sans-serif ;
+    --primary-font-third:'Bookman Old Style', sans-serif;
+    --primary-font-fourth:'Phosphate Pro Cond Inline';
+    --primary-white: #ffffff;
+    --primary-black:#000000;
+    --primary-red: #E42D26;
+    --primary-yellow: #FDC010;
+    --primary-blue: #2FBEC2;
+}
+
+/* Apply the custom font and color */
+body {
+    font-family: var(--primary-font) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Changing the colour in navbar */
+.navbar{
+    background: var(--primary-white);
+    font-family: var(--primary-font-second) !important;
+    
+}
+
+/* Remove border from the navbar toggler button */
+.navbar-light .navbar-toggler{
+    border: 0 solid var(--primary-white);
+}
+
+/* Styling for navbar toggler button */
+.nav-toggler {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: .5s ease-in-out;
+
+}
+
+/* Remove focus outlines and borders from navbar toggler */
+.navbar-toggler, 
+.navbar-toggler:focus, 
+.navbar-toggler:active, 
+.navbar-toggler-icon:focus {
+    outline:none;
+    box-shadow: none;
+    border: 0;
+}
+
+/* Remove margin and padding from span  */
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Fixing Navbar Toggler Styling */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38px;
+    width: 65px;
+}
+
+/* Toggler Icon Bars */
+
+/* Styling for top bar */
+.top-bar{
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling for middle bar */
+.middle-bar{
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-yellow);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling for bottom bar */
+.bottom-bar{
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-red);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Toggler Animation */
+
+/* Animation effect when the navbar toggler is active */
+.navbar-toggler:not(.collapsed) .top-bar {
+    transform: translateY(12px) rotate(45deg);
+
+    
+}
+
+/* Hide middle bar */
+.navbar-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+
+}
+
+/* Animation effect when the navbar toggler is active */
+.navbar-toggler:not(.collapsed) .bottom-bar {
+    transform: translateY(-12px) rotate(-45deg);
+
+}
+
+/* Reset when collapsed */
+.navbar-toggler.collapsed .top-bar,
+.navbar-toggler.collapsed .bottom-bar {
+    transform: none;
+}
+
+/* Show the bar again after the reset */
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    
+}
+
+
+/* Fullscreen image with overlay text support */
+.front_img {
+    background-size: cover;  
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    margin: 97px auto 0px auto;
+  
+}
+
+/* Large title in the front image section */
+#safety_intro_title {
+    font-size: calc(1rem + 9vw);
+    font-family: var(--primary-font-second) !important;
+    color: var(--primary-yellow);
+    text-align: center;
+
+}
+
+/* Overlay for a dark opacity over background image */
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.50);
+    margin: auto;
+
+}
+
+
+
+
+
+
+
+/* Heading's styling */
+h1,h2{
+    font-family: var(--primary-font-fourth) !important;
+    color: blue;
+}
+
+h3{
+    font-family: var(--primary-font-third);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+
+}
+
+/* Underline styling */
+.underline_styling{
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+}
+
+/* main div styling*/
+main{
+    margin: 100px auto 0px auto;
+    font-family: var(--primary-font-third);
+}
+
+
+#existing_members_landing{
+    margin: 10px 0px;
+}
+
+/* Styling for the first section of the page*/
+#existing_members_landing_img{
+    width: 700px;
+    margin: 20px 0;
+    box-shadow: 2px 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+footer{
+    font-family: var(--primary-font);
+    background-color: var(--primary-white);
+    border: var(--primary-black);
+   
+}
+
+/* Text styling */
+#footer_text{
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: var(--primary-red);
+}
+
+/* Icons styling */
+.media_icons{
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+}
+
+/* Small size logo styling */
+#small_logo{
+    width: 200px;
+}
+
+/* Small size icons styling */
+#mobile_icons{
+    margin-top: 25px;
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px; /* Shrink logo */
+    }
+    .navbar-brand {
+        font-size: 14px; /* Smaller text */
+    }
+
+    
+}
+
+/* Small devices (tablets, landscape phones) */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (desktops, larger tablets) */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+/* Large devices (large desktops) */
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
