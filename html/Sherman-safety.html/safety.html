@@ -1,326 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="author" content="Sherman Zheng, Saif Ahmed, Gunn Jeong">
-    <meta name="keywords" content="keywords, RBOCC, Waka Ama, Community, responsive, culture">
-    <meta name="description" content="A Website for Red Beach Outrigger Canoe Club, a club for Waka Ama">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sherman Zheng, Saif Ahmed, Gunn Jeong">
+  <meta name="keywords" content="keywords, RBOCC, Waka Ama, Community, responsive, culture">
+  <meta name="description" content="A Website for Red Beach Outrigger Canoe Club, a club for Waka Ama">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title of the page -->
-    <title>Safety</title>
+  <!-- Title of the page -->
+  <title>Safety</title>
 
-    <!-- Linked to safety.css -->
-    <link rel="stylesheet" href="safety.css">
+  <!-- Linked to safety.css -->
+  <link rel="stylesheet" href="safety.css">
 
-    <!-- The RBOCC icon logo -->
-    <link rel="The RBOCC Icon" type="image/x-icon" href="logos/RBOCC_BLACK_COLOUR.png" />
+  <!-- The RBOCC icon logo -->
+  <link rel="The RBOCC Icon" type="image/x-icon" href="logos/RBOCC_BLACK_COLOUR.png" />
 
-    <!-- Add Bootstrap libary -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!-- Javascript animation for recommended clothing and links sections -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
+  <!-- Add Bootstrap libary -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        // Making the recommended_clothing_background_img class equal to the elememnt
-        const recommended_clothing_background_img = document.querySelector('#recommended_clothing_background_img');
-    
-        // Adding oberver to watch the view of the end user in the viewport, either lease or enters
-        const observer = new IntersectionObserver(
-          entries => {
-            entries.forEach(entry => {
-              
-              // If the element is in the viewport (based on the threshold)
-              if (entry.isIntersecting) {
+  <!-- Javascript animation for recommended clothing and links sections -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
-                //Adding 'visible' id when enters
-                recommended_clothing_background_img.classList.add('visible');
-              } else {
+      // Making the recommended_clothing_background_img class equal to the elememnt
+      const recommended_clothing_background_img = document.querySelector('#recommended_clothing_background_img');
 
-                // Else remove 'visible' id after leave
-                recommended_clothing_background_img.classList.remove('visible');
-              }
-            });
-          },
-          {
-            threshold: 0.3,
-          }
-        );
-        
-        // Start observing the element
-        observer.observe(recommended_clothing_background_img);
-      });
-    </script>
+      // Adding oberver to watch the view of the end user in the viewport, either lease or enters
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+
+            // If the element is in the viewport (based on the threshold)
+            if (entry.isIntersecting) {
+
+              //Adding 'visible' id when enters
+              recommended_clothing_background_img.classList.add('visible');
+            } else {
+
+              // Else remove 'visible' id after leave
+              recommended_clothing_background_img.classList.remove('visible');
+            }
+          });
+        },
+        {
+          threshold: 0.3,
+        }
+      );
+
+      // Start observing the element
+      observer.observe(recommended_clothing_background_img);
+    });
+  </script>
 
 </head>
+
 <body>
 
-    <!-- Navigation using Bootstrap navbar component -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
-        <div class="container-fluid">
+  <!-- Navigation using Bootstrap navbar component -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
+    <div class="container-fluid">
 
-          <!-- The Navigation RBOCC Logo --> 
-            <a href="#" class="navbar-brand">
-              <img src="logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70"  class="d-inline-block">
-            </a>
+      <!-- The Navigation RBOCC Logo -->
+      <a href="#" class="navbar-brand">
+        <img src="logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70" class="d-inline-block">
+      </a>
 
-            <!-- Appear in large viewport -->
-            <a class="navbar-brand d-none d-sm-block" href="#">
-                Red Beach Outrigger Canoe Club
-            </a>
+      <!-- Appear in large viewport -->
+      <a class="navbar-brand d-none d-sm-block" href="#">
+        Red Beach Outrigger Canoe Club
+      </a>
 
 
-          <!-- Add Toggle button component that can be change into smaller sceen -->
-          <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-             <span class="toggler-icon bottom-bar"></span>
-          </button>
+      <!-- Add Toggle button component that can be change into smaller sceen -->
+      <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <!-- Navigation column size chnage when facing different screens -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
+        <!-- Navigation column size chnage when facing different screens -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
 
-              <!-- Home link -->
-              <li class="nav-item">
-                <a class="nav-link active text-light text-dark" aria-current="page" href="#">Home</a>
+          <!-- Home link -->
+          <li class="nav-item">
+            <a class="nav-link active text-light text-dark" aria-current="page" href="#">Home</a>
+          </li>
+
+          <!-- About us link -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="#">About us</a>
+          </li>
+
+          <!-- Safety link -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="safety.html">Safety</a>
+          </li>
+
+          <!-- Dropdown links for membership -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Membership</a>
+            <ul class="dropdown-menu">
+
+              <!-- New member link -->
+              <li><a class="dropdown-item" href="../Sherman-new_members.html/new_members.html">New Member</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
 
-              <!-- About us link -->
-              <li class="nav-item">
-                <a class="nav-link active text-dark" href="#">About us</a>
-              </li>
-
-              <!-- Safety link -->
-              <li class="nav-item">
-                <a class="nav-link active text-dark" href="safety.html">Safety</a>
-              </li>
-
-              <!-- Dropdown links for membership -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
-                <ul class="dropdown-menu">
-
-                  <!-- New member link -->
-                  <li><a class="dropdown-item" href="../Sherman-new_members.html/new_members.html">New Member</a></li>
-                  <li><hr class="dropdown-divider"></li>
-
-                  <!-- Existing link -->
-                  <li><a class="dropdown-item" href="#">Existing Member</a></li>
-                </ul>
-              </li>
-
-              <!-- Contect us link -->
-              <li class="nav-item">
-                <a class="nav-link active text-dark" href="#">Contact us</a>
-              </li>
-
+              <!-- Existing link -->
+              <li><a class="dropdown-item" href="#">Existing Member</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
 
+          <!-- Contect us link -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="#">Contact us</a>
+          </li>
 
-      <!-- Add front image for the safety page -->
-      <div class="front_img mb-5" style="background-image: url('./images-resized-compressed/mens_race_group.jpg')">
-
-      <!-- Add title for the saftey page -->
-          <div class="color-overlay d-flex justify-content-center align-items-center">
-            <h1 id="safety_intro_title">Safety</h1>
-          </div>
-      </div>
-
-      <br>
-
-      <!-- Grid structure information with Safety Guidlines and On Water -->
-      <div class="container mb-5">
-        <div class="row align-items-center g-0">
-
-          <!-- Safety Guidelines Section -->
-            <div class="col-md-6 text-center">
-              <div style="background-image: url('images-resized-compressed/Mens_team_resized.jpg')" class="img-fluid safety_grid_structure_img">
-                <span class="visually-hidden">A men's team paddling together in a canoe Image.</span>
-              </div>
-            </div>
-
-            <div class="col-sm-1" id="smaller_col_1-01"></div>
-            
-            <div class="col-md-5">&nbsp;
-
-             <h1 class="safety_title"><u class="underline_colour">Safety Guidelines</u></h1>
-                  <div class="safety_text"><span class="small-br"></span>
-                    <p>Red Beach Outrigger Canoe Club endorses the safe practice of waka ama/outrigger canoe paddling, both on and off the water. Minimum requirements for participation include a swimming proficiency test over 100m in open water and treading water for five minutes, as well as good health and at least a moderate level of fitness.
-
-                      <br><br>
-
-                      Any pre-existing medical conditions should be notified to the coach and/or club in the interests of your own well-being. This should not be treated lightly; people die in Waka Ama every season. Build your fitness level over time, and if you are in need, ask for help.</p>&nbsp;&nbsp;&nbsp;
-                  
-                </div>
-            </div>
-
-            
-            <div class="col-md-1 order-md-2 order-1"></div>
-            <div class="col-md-5 order-md-1 order-2">&nbsp;
-              
-
-              <!-- On water Section -->
-                <h1 class="safety_title">&nbsp;&nbsp;<u class="underline_colour">On water</u></h1><span class="small-br"></span>
-                  <ul class="safety_text">
-                      <li>Make sure you are well hydrated. Have a water bottle or hydration system for both training and regattas.</li>
-                      <li>Use sun protection, caps, and sunscreen.</li>
-                      <li>Before you get in the canoe, check the rigging and make sure it has two bailers (this is everybody's responsibility).</li>
-                      <li>The Steerer is in control of the canoe. Listen and respond to their directions.</li>
-                      <li>Respect the ocean, consider the conditions, and know your limits.</li>
-                      <li>Make sure your canoe (and all in it) is ready and able to handle the conditions.</li>
-                      <li>Everyone must know what to do in the event of a huli / capsize.</li>
-                      <li>If you will be paddling in the dark, make sure the canoe has a navigation light.</li>
-
-                  </ul>
-          </div>
-            <div class="col-md-6 text-center order-md-2 order-1">
-              <div style="background-image: url('images-resized-compressed/mens_race_resized.jpg')" class="img-fluid safety_grid_structure_img">
-                <span class="visually-hidden">A men's team paddling together in a race Image.</span>
-              </div>
-              
-          </div>
-          
-        </div>
-    </div>
-    <br>
-
-    <!-- Divider with brakdown logo and horizontal lines -->
-    <div class="container mb-5">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-5">
-          <div class="hr-lines hr-lines-left"></div>
-        </div>
-        <div class="col-2 d-flex justify-content-center">
-          <img class="img-fluid small-logo" src="logos/RBOCC_WHITEONBLACK.png" alt="RBOCC breakdown logo">
-        </div>
-        <div class="col-5">
-          <div class="hr-lines hr-lines-right"></div>
-        </div>
+        </ul>
       </div>
     </div>
-    
-    <br>
-    <div class="container mb-5">
-      <div class="row text-center">
+  </nav>
 
-        <!-- Capsize Drill section -->
-        <h1 class="safety_title"><u class="underline_colour">Capsize Drill</u></h1>
+
+  <!-- Add front image for the safety page -->
+  <div class="front_img mb-5" style="background-image: url('./images-resized-compressed/mens_race_group.jpg')">
+
+    <!-- Add title for the saftey page -->
+    <div class="color-overlay d-flex justify-content-center align-items-center">
+      <h1 id="safety_intro_title">Safety</h1>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Grid structure information with Safety Guidlines and On Water -->
+  <div class="container mb-5">
+    <div class="row align-items-center g-0">
+
+      <!-- Safety Guidelines Section -->
+      <div class="col-md-6 text-center">
+        <div style="background-image: url('images-resized-compressed/Mens_team_resized.jpg')"
+          class="img-fluid safety_grid_structure_img">
+          <span class="visually-hidden">A men's team paddling together in a canoe Image.</span>
+        </div>
+      </div>
+
+      <div class="col-sm-1" id="smaller_col_1-01"></div>
+
+      <div class="col-md-5">&nbsp;
+
+        <h1 class="safety_title"><u class="underline_colour">Safety Guidelines</u></h1>
         <div class="safety_text"><span class="small-br"></span>
-          <p>Outrigger canoes can and will capsize. This is called a "huli," all new members will be introduced to the rules and hopefully complete a drill before experiencing a real huli. <br><br>
+          <p>Red Beach Outrigger Canoe Club endorses the safe practice of waka ama/outrigger canoe paddling, both on and
+            off the water. Minimum requirements for participation include a swimming proficiency test over 100m in open
+            water and treading water for five minutes, as well as good health and at least a moderate level of fitness.
 
-            In the event of the boat tipping, do not try to jump; sit and roll with the canoe. Once upside down, push your legs against the bottom of the canoe, and your body will go down away from the canoe and surface close to the canoe.<br><br>
-            The first thing we do is check that our "buddy" is also safe. Buddies are: seats 1 and 2, seats 3 and 4, and seats 5 and Steerer. If your buddy has not surfaced, please investigate. Paddles are passed down to seat 1 and Steerer for protection.<br><br>
-            Next, we take positions for the righting of the canoe. <br><br>
+            <br><br>
 
-            <menu>
-            <li>Seat 1 and Steerer control the canoe's position based on wind and waves and ordered by Steerer. </li>
-            <li> Seats 3 and 4 position themselves next to Kiato overhangs, ready to jump on them.</li>
-            <li>Seats 2 and 5 are below the ama, ready to push it upwards.</li>
-            </menu><br><br>
+            Any pre-existing medical conditions should be notified to the coach and/or club in the interests of your own
+            well-being. This should not be treated lightly; people die in Waka Ama every season. Build your fitness
+            level over time, and if you are in need, ask for help.
+          </p>&nbsp;&nbsp;&nbsp;
 
-            At the Steerer's command, the ama is raised, the Kiato is pushed down, and hopefully, the canoe is righted. Be careful of your heads at all times, and don't let the ama "bang" onto the water, as it can split. Once righted, two paddlers jump in and start bailing, and as the water level falls, more people can hop in and paddle at the Steerer's request.
+        </div>
+      </div>
+
+
+      <div class="col-md-1 order-md-2 order-1"></div>
+      <div class="col-md-5 order-md-1 order-2">&nbsp;
+
+
+        <!-- On water Section -->
+        <h1 class="safety_title">&nbsp;&nbsp;<u class="underline_colour">On water</u></h1><span class="small-br"></span>
+        <ul class="safety_text">
+          <li>Make sure you are well hydrated. Have a water bottle or hydration system for both training and regattas.
+          </li>
+          <li>Use sun protection, caps, and sunscreen.</li>
+          <li>Before you get in the canoe, check the rigging and make sure it has two bailers (this is everybody's
+            responsibility).</li>
+          <li>The Steerer is in control of the canoe. Listen and respond to their directions.</li>
+          <li>Respect the ocean, consider the conditions, and know your limits.</li>
+          <li>Make sure your canoe (and all in it) is ready and able to handle the conditions.</li>
+          <li>Everyone must know what to do in the event of a huli / capsize.</li>
+          <li>If you will be paddling in the dark, make sure the canoe has a navigation light.</li>
+
+        </ul>
+      </div>
+      <div class="col-md-6 text-center order-md-2 order-1">
+        <div style="background-image: url('images-resized-compressed/mens_race_resized.jpg')"
+          class="img-fluid safety_grid_structure_img">
+          <span class="visually-hidden">A men's team paddling together in a race Image.</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <br>
+
+  <!-- Divider with brakdown logo and horizontal lines -->
+  <div class="container mb-5">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-5">
+        <div class="hr-lines hr-lines-left"></div>
+      </div>
+      <div class="col-2 d-flex justify-content-center">
+        <img class="img-fluid small-logo" src="logos/RBOCC_WHITEONBLACK.png" alt="RBOCC breakdown logo">
+      </div>
+      <div class="col-5">
+        <div class="hr-lines hr-lines-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container mb-5">
+    <div class="row text-center">
+
+      <!-- Capsize Drill section -->
+      <h1 class="safety_title"><u class="underline_colour">Capsize Drill</u></h1>
+      <div class="safety_text"><span class="small-br"></span>
+        <p>Outrigger canoes can and will capsize. This is called a "huli," all new members will be introduced to the
+          rules and hopefully complete a drill before experiencing a real huli. <br><br>
+
+          In the event of the boat tipping, do not try to jump; sit and roll with the canoe. Once upside down, push your
+          legs against the bottom of the canoe, and your body will go down away from the canoe and surface close to the
+          canoe.<br><br>
+          The first thing we do is check that our "buddy" is also safe. Buddies are: seats 1 and 2, seats 3 and 4, and
+          seats 5 and Steerer. If your buddy has not surfaced, please investigate. Paddles are passed down to seat 1 and
+          Steerer for protection.<br><br>
+          Next, we take positions for the righting of the canoe. <br><br>
+
+        <menu>
+          <li>Seat 1 and Steerer control the canoe's position based on wind and waves and ordered by Steerer. </li>
+          <li> Seats 3 and 4 position themselves next to Kiato overhangs, ready to jump on them.</li>
+          <li>Seats 2 and 5 are below the ama, ready to push it upwards.</li>
+        </menu><br><br>
+
+        At the Steerer's command, the ama is raised, the Kiato is pushed down, and hopefully, the canoe is righted. Be
+        careful of your heads at all times, and don't let the ama "bang" onto the water, as it can split. Once righted,
+        two paddlers jump in and start bailing, and as the water level falls, more people can hop in and paddle at the
+        Steerer's request.
+
+      </div>
+
+
+    </div>
+  </div>
+  <br>
+
+  <div class="container mb-5">
+    <div class="rounded" id="recommended_clothing_background_img">
+      <div class="color-overlay d-flex justify-content-center align-items-center flex-column content-box">
+
+        <!-- Recommended Clothing Section -->
+        <h1 class="safety_title" id="recommended_clothing_title_colour"><u class="underline_colour">Recommended
+            Clothing</u></h1>
+        <div class="safety_text"><span class="small-br"></span>
+          <p>During winter, we recommend full cover of the body, excluding hands (fingerless gloves) and face, for
+            practical reasons. Members generally wear padded or neoprene shorts over long tights and long-sleeve tops.
+            Aquashoes are also recommended during cold conditions.<br><br>
+
+            During the summer season, members can wear any sport-appropriate clothing, but we recommend protecting
+            against UV either by wearing UV clothing or using sunscreen. Water is needed for all sessions, and water
+            packs or bottles are needed for long-distance training. All personal items taken in the boat could be lost
+            in a capsize, so don't bring something you can't afford to lose.
+          </p><br>
+        </div>
+
+        <!-- External link section -->
+        <h1 class="safety_title"><u class="underline_colour">Links</u></h1>
+        <div class="safety_text links_animation"><span class="small-br"></span>
+          <a href="http://www.maritimenz.govt.nz/default.asp" target="_blank">Maritime Rules</a><br><br>
+          <a href="https://www.windy.com/?-36.568,174.868,11" target="_blank">Weather</a><br><br>
+          <a href="http://www.swellmap.com/surfing/new-zealand/orewa-beach" target="_blank">Swell Map</a><br><br>
+          <a href="https://www.watersafetynz.org/" target="_blank">Water Safety</a><br><br>
+          <a href="https://www.tide-forecast.com/locations/Auckland-New-Zealand/tides/latest" target="_blank">Auckland
+            Tides</a><br><br>
+          <a href="https://www.coastguard.nz/" target="_blank">Coastguard</a>
 
         </div>
 
-
       </div>
     </div>
-    <br>
 
-    <div class="container mb-5">
-      <div class="rounded" id="recommended_clothing_background_img">
-         <div class="color-overlay d-flex justify-content-center align-items-center flex-column content-box">
+  </div>
 
-          <!-- Recommended Clothing Section -->
-          <h1 class="safety_title" id="recommended_clothing_title_colour"><u class="underline_colour">Recommended Clothing</u></h1>
-            <div class="safety_text"><span class="small-br"></span>
-              <p>During winter, we recommend full cover of the body, excluding hands (fingerless gloves) and face, for practical reasons. Members generally wear padded or neoprene shorts over long tights and long-sleeve tops. Aquashoes are also recommended during cold conditions.<br><br>
-                
-                 During the summer season, members can wear any sport-appropriate clothing, but we recommend protecting against UV either by wearing UV clothing or using sunscreen. Water is needed for all sessions, and water packs or bottles are needed for long-distance training. All personal items taken in the boat could be lost in a capsize, so don't bring something you can't afford to lose.
-              </p><br>
-             </div>
 
-             <!-- External link section -->
-             <h1 class="safety_title"><u class="underline_colour">Links</u></h1>
-             <div class="safety_text links_animation"><span class="small-br"></span>
-                 <a href="http://www.maritimenz.govt.nz/default.asp" target="_blank">Maritime Rules</a><br><br>
-                 <a href="https://www.windy.com/?-36.568,174.868,11" target="_blank">Weather</a><br><br>
-                 <a href="http://www.swellmap.com/surfing/new-zealand/orewa-beach" target="_blank">Swell Map</a><br><br>
-                 <a href="https://www.watersafetynz.org/" target="_blank">Water Safety</a><br><br>
-                 <a href="https://www.tide-forecast.com/locations/Auckland-New-Zealand/tides/latest" target="_blank">Auckland Tides</a><br><br>
-                 <a href="https://www.coastguard.nz/" target="_blank">Coastguard</a>
-                 
-             </div>
+  <br>
 
-         </div>
+
+  <div class="container">
+    <footer class=" d-flex flex-wrap  py-3 my-4 border-top">
+
+      <!-- This is the medium and up screen layout -->
+      <div class="d-flex col-md-12 d-none d-md-flex justify-content-between align-items-center ">
+
+        <!-- Logo , title and copyright mark for the desktop version -->
+        <div class="col-md-7 d-flex align-items-center">
+
+          <img class="col-2" src="Logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
+
+
+          <div class="row" id="footer_text">
+            <span class="mb-4 mb-md-0 text-body-primary h3">Red Beach Outrigger Club </span>
+            <span class="mb-4 mb-md-0 text-body-tertiary p5">© 2025 Company, Inc</span>
+          </div>
+
+        </div>
+
+        <!-- Media icons for the Medium and up version -->
+        <div class="nav col-md-4 justify-content-end d-flex">
+
+          <a href="https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons"
+              src="icons/facebook.png" alt="Facebook logo"></a>
+          <a href="https://www.instagram.com/redbeach_occ/?hl=zh-cn" target="_blank"><img class=" img-fluid media_icons"
+              src="icons/instagram.png" alt="Instagram Logo"></a>
+          <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img
+              class=" img-fluid media_icons" src="icons/youtube.png" alt="Youtube Logo"></a>
+
+        </div>
+
+      </div>
+      <!-- This is the small and below screen layout -->
+      <div class="d-flex d-md-none flex-column align-items-center w-100">
+
+        <!-- Logo image -->
+        <div class="col-4 d-flex justify-content-center">
+          <img class="img-fluid " id="small_logo" src="logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
+        </div>
+
+        <!-- Media icons for the small version -->
+        <div class="nav col-sm-12 justify-content-center d-flex" id="mobile_icons">
+
+          <a href="https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons"
+              src="icons/facebook.png" alt="Facebook logo"></a>
+          <a href="https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank"><img class=" img-fluid media_icons"
+              src="icons/instagram.png" alt="Instagram Logo"></a>
+          <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img
+              class=" img-fluid media_icons" src="icons/youtube.png" alt="Youtube Logo"></a>
+        </div>
       </div>
 
-    </div>
-    
-
-    <br>
-
-
-    <div class="container">
-      <footer class=" d-flex flex-wrap  py-3 my-4 border-top">
-
-          <!-- This is the medium and up screen layout -->
-          <div class="d-flex col-md-12 d-none d-md-flex justify-content-between align-items-center ">
-
-              <!-- Logo , title and copyright mark for the desktop version -->
-              <div class="col-md-7 d-flex align-items-center">
-                  
-                 <img class="col-2" src="Logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
-                  
-                  
-                  <div class="row" id = "footer_text"> 
-                      <span class="mb-4 mb-md-0 text-body-primary h3">Red Beach Outrigger Club </span>
-                      <span class="mb-4 mb-md-0 text-body-tertiary p5">© 2025 Company, Inc</span>
-                  </div>
-                    
-             </div>
-
-             <!-- Media icons for the Medium and up version -->
-             <div class="nav col-md-4 justify-content-end d-flex">
-              
-                  <a href = "https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons" src="icons/facebook.png" alt="Facebook logo"></a>
-                  <a href = "https://www.instagram.com/redbeach_occ/?hl=zh-cn" target="_blank"><img class=" img-fluid media_icons" src="icons/instagram.png" alt="Instagram Logo"></a>
-                  <a href = "https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img class=" img-fluid media_icons" src="icons/youtube.png" alt="Youtube Logo"></a>
-          
-             </div>
-
-          </div>
-          <!-- This is the small and below screen layout -->
-          <div class="d-flex d-md-none flex-column align-items-center w-100" >
-            
-              <!-- Logo image -->
-              <div class="col-4 d-flex justify-content-center">
-                  <img class="img-fluid " id = "small_logo" src="logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
-              </div>
-                
-             <!-- Media icons for the small version -->
-             <div class="nav col-sm-12 justify-content-center d-flex" id = "mobile_icons">
-                  
-                  <a href = "https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons" src="icons/facebook.png" alt="Facebook logo"></a>
-                  <a href = "https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank"><img class=" img-fluid media_icons" src="icons/instagram.png" alt="Instagram Logo"></a>
-                  <a href = "https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img class=" img-fluid media_icons" src="icons/youtube.png" alt="Youtube Logo"></a>
-             </div>
-          </div>
-
-      </footer>
-    </div>
-
-    
+    </footer>
+  </div>
 
 
 
-    <!-- Add Bootstrap libary -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+
+  <!-- Add Bootstrap libary -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
