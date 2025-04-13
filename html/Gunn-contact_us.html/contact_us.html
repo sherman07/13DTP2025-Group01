@@ -147,6 +147,64 @@
                       </div>
                     </div>
                   </div>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#contact_us_modal" 
+                            data-bs-whatever="@getbootstrap">
+                      Contact Us
+                    </button>
+                  </div>   
+        
+                  <!-- Contact modal form -->
+                  <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        
+                        <!-- Modal header with logo and title -->
+                        <div class="modal-header">
+                          <img src="/css/logos/RBOCC_BLACK_COLOUR.png" alt="Red Beach Outrigger Canoe Club coloured logo" width="70" class="d-inline-block m-3 display-5">
+                          <div class="modal-title fs-1 fw-bold" id="contact_us_modalLabel">Contact Us</div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+        
+                        <!-- Modal body with contact form -->
+                        <div class="modal-body">
+                          <form>
+                            <!-- First Name field -->
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">First Name:</label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+        
+                            <!-- Last Name field -->
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Last Name:</label>
+                              <input type="text" class="form-control" id="recipient-name-2">
+                            </div>
+        
+                            <!-- Email field -->
+                            <div class="mb-3">
+                              <label for="recipient-name" class="col-form-label">Email:</label>
+                              <input type="text" class="form-control" id="recipient-name-3">
+                            </div>
+        
+                            <!-- Message field -->
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Message:</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                          </form>
+                        </div>
+        
+                        <!-- Modal footer with action buttons -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-danger">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
       
