@@ -230,7 +230,7 @@ main{
    
     border: 1px solid var(--primary-blue);
     border-left: 0;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 10px 10px 0;
 
 
 }
@@ -239,7 +239,7 @@ main{
    
     border: 1px solid var(--primary-red);
     border-right: 0;
-    border-radius: 30px 0 0 30px;
+    border-radius: 10px 0 0 10px;
     text-align: end;
 
 
@@ -252,11 +252,11 @@ main{
 }
 
 #our_vision_img{
-    border-radius: 30px 0 0 30px;
+    border-radius: 10px 0 0 10px;
 }
 
 #our_mission_img{
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 
@@ -267,7 +267,7 @@ main{
 
 #constitution{
     border: 3px dashed var(--primary-blue);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
 
@@ -284,14 +284,14 @@ main{
 @media (max-width: 992px) {
     #our_vision{
         border: 1px solid var(--primary-blue);
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 10px;
         margin: 10px 0;
         text-align: center;
     }
     
     #our_mission{   
         border: 1px solid var(--primary-red);
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 10px;
         margin: 5px 0;
         text-align: center;  
     }
