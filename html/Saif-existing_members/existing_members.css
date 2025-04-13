@@ -268,15 +268,7 @@ main{
 
 
 
-#club_id_list div{
-    border: 2px dashed var(--primary-blue);
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
 
-
-
-}
   
 #club_portal_img{
     box-shadow: 2px 5px 15px;
