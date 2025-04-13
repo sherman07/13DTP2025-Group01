@@ -290,7 +290,7 @@
                         <div class="card-footer bg-white new_members_button_text">
                             <button type="button" class="btn w-100 fw-bold button-design btn btn-primary"
                                 data-bs-toggle="modal" data-bs-target="#new_members_modal"
-                                id="button_colour_yearly_fees">
+                                id="button_colour_yearly_fees_mobile">
                                 Select Membership
                             </button>
                         </div>
@@ -388,9 +388,9 @@
 
             <!-- Simple Navigation -->
             <div class="carousel-nav">
-                <button class="btn btn-sm btn-outline-primary me-2" id="button_colour_change_card"
+                <button class="btn btn-sm btn-outline-primary me-2" id="button_colour_change_card_prev"
                     onclick="prevCard()">←</button>
-                <button class="btn btn-sm btn-outline-primary" id="button_colour_change_card"
+                <button class="btn btn-sm btn-outline-primary" id="button_colour_change_card_next"
                     onclick="nextCard()">→</button>
             </div>
         </div>
@@ -522,7 +522,7 @@
                         <label for="message-text" class="col-form-label">Payment Link:</label><br>
                         <div class="mb-3 new_members_button_text">
                             <a href="https://buy.stripe.com/test_00g2b87ZN2aQc4U8ww" class="btn btn-info" role="button"
-                                target="_blank" id="button_colour_yearly_fees">
+                                target="_blank" id="button_colour_yearly_fees_payment">
                                 Go to Payment
                             </a>
                         </div>
@@ -533,7 +533,7 @@
                 <div class="modal-footer new_members_button_text">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                         id="button_form_colour_close">Close</button>
-                    <button type="submit" class="btn btn-primary" id="button_colour_yearly_fees"
+                    <button type="submit" class="btn btn-primary" id="button_colour_yearly_fees_submit"
                         onclick="openPopup()">Submit Application</button>
                 </div>
 
@@ -543,7 +543,7 @@
                         alt="Correct Sign">
                     <h2 class="new_members_form_title"><u class="underline_colour">Thank You!</u></h2>
                     <p class="new_members_text">Your application has successfully Submitted. Thanks!</p>
-                    <button type="button" class="btn btn-primary" id="button_colour_yearly_fees"
+                    <button type="button" class="btn btn-primary" id="button_colour_yearly_fees_ok"
                         onclick="closePopup()">OK</button>
                 </div>
 
