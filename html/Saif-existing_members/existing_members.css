@@ -226,7 +226,7 @@ main{
 }
 
 /* Styling for the first section of the page*/
-#existing_members_landing_img{
+.existing_members_landing_img{
     width: 700px;
     margin: 20px 0;
     box-shadow: 2px 5px 15px;
@@ -270,13 +270,13 @@ main{
 
 
   
-#club_portal_img{
+.club_portal_img{
     box-shadow: 2px 5px 15px;
 
 }
 
 #club_portal_link{
-    border: 3px dashed var(--primary-blue);
+    border: 3px dashed var(--primary-red);
     border-radius: 10px;
     padding: 10px;
     text-align: center;
