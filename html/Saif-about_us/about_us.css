@@ -189,9 +189,16 @@ body {
 /* About Us page styling */
 
 /* Heading's styling */
-h1,h2,h3{
+h1,h2{
     font-family: var(--primary-font-fourth) !important;
     color: blue;
+}
+
+h3{
+    font-family: var(--primary-font-third);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+
 }
 
 /* Underline styling */
