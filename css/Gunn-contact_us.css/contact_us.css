@@ -289,7 +289,10 @@ body, html {
 #committee_members h4 {
     font-family: var(--primary-font-second);
 }
-
+/* Committee Member Names Styling */
+#committee_members_additional h4 {
+    font-family: var(--primary-font-second);
+}
 /* Modal Content Styling */
 .modal-content {
     color: var(--primary-black) !important;
