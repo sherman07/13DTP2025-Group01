@@ -234,7 +234,7 @@ body, html {
 
 /* Animation for links */
 .links_animation a {
-    color: var(--primary-white);
+    color:var(--primary-white);  
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -261,55 +261,57 @@ body, html {
 }
 
 
-.committee{
+/* Committee Section Styling */
+.committee {
     font-family: var(--primary-font-third);
     font-size: calc(15px + 0.1vw);
 }
 
-#committee-brief{
+/* Committee Brief Styling */
+#committee-brief {
     font-family: var(--primary-font-second);
-    
 }
 
+/* Heading within the Committee Brief */
+#committee-brief h2 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-#committee_text{
+/* Committee Text Styling */
+#committee_text {
     font-family: var(--primary-font-third);
     font-size: calc(15px + 0.1vw);
-    
-    
+    font-size: 1.3rem;
 }
 
-#committee_members h4{
+/* Committee Member Titles Styling */
+#committee_members h4 {
     font-family: var(--primary-font-second);
-    
 }
-/* Modal content styling */
+
+/* Modal Content Styling */
 .modal-content {
     color: var(--primary-black) !important;
 }
 
-
+/* Emergency Box Styling */
 .emergency-box {
-    background: linear-gradient(135deg, var(--primary-blue), #81c3e8); 
-    border-left: 8px solid #fff;
+    background: var(--primary-red);
     animation: pulse-glow 2s infinite;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .highlight {
+    color: #0a0a0a;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+/* Highlighted Text Styling */
+.highlight {
     background-color: #fff;
-    color: var(--primary-blue);
+    color: var(--primary-black);
     padding: 0.2rem 0.5rem;
     border-radius: 6px;
     font-weight: bold;
-
-  }
-  
-  @keyframes pulse-glow {
-    0% { box-shadow: 0 0 10px rgba(47, 190, 194, 0.5); }
-    50% { box-shadow: 0 0 20px rgba(47, 190, 194, 0.8); }
-    100% { box-shadow: 0 0 10px rgba(47, 190, 194, 0.5); }
-  }
+}
 
 
 /* Footer styling */
