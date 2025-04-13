@@ -288,6 +288,30 @@ body, html {
     color: var(--primary-black) !important;
 }
 
+
+.emergency-box {
+    background: linear-gradient(135deg, var(--primary-blue), #81c3e8); 
+    border-left: 8px solid #fff;
+    animation: pulse-glow 2s infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .highlight {
+    background-color: #fff;
+    color: var(--primary-blue);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+
+  }
+  
+  @keyframes pulse-glow {
+    0% { box-shadow: 0 0 10px rgba(47, 190, 194, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(47, 190, 194, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(47, 190, 194, 0.5); }
+  }
+
+
 /* Footer styling */
 footer {
     font-family: var(--primary-font) !important;
