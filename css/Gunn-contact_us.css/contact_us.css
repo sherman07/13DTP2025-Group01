@@ -24,7 +24,7 @@
 :root {
     --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
     --primary-font-second: 'Phosphate Pro Solid', sans-serif;
-    --primary-font-third: 'Adobe Garamond Pro Semibold', sans-serif;
+    --primary-font-third: 'Bookman Old Style', sans-serif;
     --primary-font-fourth: 'Phosphate Pro Cond Inline';
     --primary-white: #ffffff;
     --primary-black: #000000;
@@ -219,6 +219,11 @@ body, html {
     transform: scale(0.98);
 }
 
+/* Colour for underline */
+.underline_colour {
+    text-decoration-color: var(--primary-red);
+    font-family: var(--primary-font-fourth) !important;
+}
 
 /* Contact Us section styling */
 #contact_us {
@@ -263,6 +268,20 @@ body, html {
 
 #committee-brief{
     font-family: var(--primary-font-second);
+    
+}
+
+
+#committee_text{
+    font-family: var(--primary-font-third);
+    font-size: calc(15px + 0.1vw);
+    
+    
+}
+
+#committee_members h4{
+    font-family: var(--primary-font-second);
+    
 }
 /* Modal content styling */
 .modal-content {
