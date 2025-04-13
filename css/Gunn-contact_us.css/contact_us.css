@@ -178,6 +178,47 @@ body, html {
     margin: auto;
 }
 
+/* Button Design */
+.button-design {
+    position: relative;
+    z-index: 1;
+    background-color: var(--primary-red) !important;
+    color: var(--primary-white) !important;
+    font-family: var(--primary-font-third) !important;
+    border-radius: 5px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Background layer for button */
+.button-design::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-white);
+    border-radius: 5px;
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+/* Button hover effects */
+.button-design:hover {
+    color: var(--primary-red) !important;
+    background-color: transparent;
+}
+
+.button-design:hover::after {
+    width: 100%;
+}
+
+/* Active press-down effect */
+.button-design:active {
+    transform: scale(0.98);
+}
+
 
 
 
