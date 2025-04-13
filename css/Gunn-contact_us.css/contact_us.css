@@ -148,6 +148,39 @@ body, html {
     opacity: 1;
 }
 
+
+/* ----------- Front images and front title----------- */
+
+/* Fullscreen image with overlay text support */
+.front_img {
+    background-size: cover;  
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Large title in the front image section */
+#contact_intro_title {
+    font-size: 10rem;
+    font-family: var(--primary-font-second) !important;
+    color: var(--primary-yellow);
+
+}
+
+/* Overlay for a dark opacity over background image */
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.50);
+    margin: auto;
+}
+
+
+
+
 /* Footer styling */
 footer {
     font-family: var(--primary-font) !important;
@@ -180,59 +213,52 @@ footer {
 
 /* Media Queries */
 
-/* Extra small devices (phones) */
-@media (max-width: 576px) {
-    .navbar-brand img {
-        width: 40px;
+/* Desktop screen size of changing texts, content and images*/
+@media (max-width: 1024px) { 
+    #contact_intro_title {
+        font-size: calc(6rem + 1vw);
     }
-    .navbar-brand {
-        font-size: 14px;
+
+}
+
+/* Tablet screen size of changing texts, content and images*/
+@media (max-width: 980px) { 
+    #contact_intro_title {
+        font-size: calc(5rem + 1vw);
     }
-    #hero {
-        height: 150vh;
+
+}
+
+/* Tablet screen size of changing texts, content and images*/
+@media (max-width: 768px) { 
+
+    #contact_intro_title {
+        font-size: calc(5rem + 1vw);
     }
-    #about_us .col-md-6 {
-        margin-bottom: 2rem;
+
+}
+
+/* Mobile screen size of changing texts, content and images*/
+@media (max-width: 480px) { 
+
+    #contact_intro_title {
+        font-size: calc(4rem + 1vw);
     }
-    #about_us .col-md-5 {
-        margin-top: 0 !important;
-        margin-bottom: 1rem;
-    }
-    .container {
-        padding: 2rem 1rem;
+
+}
+
+/* Smaller mobile screen size of changing texts, content and images*/
+@media (max-width: 420px){
+
+    #contact_intro_title {
+        font-size: calc(4rem + 1vw);
     }
 }
 
-/* Small devices (tablets, landscape phones) */
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 50px;
+/* Even smaller mobile screen size of changing texts, content and images*/
+@media (max-width: 280px) { 
+    #contact_intro_title {
+        font-size: calc(3rem + 1vw);
     }
-    .navbar-brand {
-        font-size: 16px;
-    }
-    .carousal-image {
-        aspect-ratio: 9/16;
-        object-fit: cover;
-    }
-}
 
-/* Medium devices (desktops, larger tablets) */
-@media (max-width: 992px) {
-    .navbar-brand img {
-        width: 60px;
-    }
-    .navbar-brand {
-        font-size: 18px;
-    }
-}
-
-/* Large devices (large desktops) */
-@media (max-width: 1200px) {
-    .navbar-brand img {
-        width: 70px;
-    }
-    .navbar-brand {
-        font-size: 20px;
-    }
 }
