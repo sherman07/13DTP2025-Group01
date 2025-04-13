@@ -45,7 +45,7 @@ body {
 /* Changing the colour in navbar */
 .navbar{
     background: var(--primary-white);
-    font-family: var(--primary-font) !important;
+    font-family: var(--primary-font-second) !important;
     
 }
 
@@ -236,10 +236,16 @@ main{
     text-align: end;
 
 
+
 }
 
-#image_large{
+#our_vision_img{
+    border-radius: 30px 0px 30px 0px;
+}
+
+.image_large{
     display:inline-block;
+    
 }
 
 #image_small{
@@ -262,7 +268,7 @@ main{
 }
 
 /* Small devices (tablets, landscape phones) */
-@media (max-width: 850px) {
+@media (max-width: 992px) {
     #our_vision{
         border: 1px solid var(--primary-blue);
         border-radius: 30px 30px 30px 30px;
