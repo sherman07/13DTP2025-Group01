@@ -203,6 +203,14 @@ html {
     text-decoration-color: var(--primary-red);
 }
 
+.card_slider {
+    display: block;
+}
+
+.card_gallery_mobile {
+    display: none;
+}
+
 .background_image_cards {
     background-size: cover;
     background-position: center;
@@ -242,49 +250,6 @@ html {
 .swiper-card-lg-container {
     display: none;
 }
-
-/* Desktop screen size of changing texts, content and images*/
-@media (max-width: 1024px) {
-    .front_img {
-        min-height: 90vh;
-    }
-
-    #new_members_intro_title {
-        font-size: calc(6rem + 1vw);
-    }
-
-    .cards-bar {
-        display: block !important;
-    }
-
-    .swiper-card-lg-container {
-        display: block !important;
-    }
-}
-
-/* Tablet screen size of changing texts, content and images*/
-@media (max-width: 768px) {
-    .front_img {
-        min-height: 80vh;
-    }
-
-    #new_members_intro_title {
-        font-size: calc(5rem + 1vw);
-    }
-}
-
-/* Mobile screen size of changing texts, content and images*/
-@media (max-width: 480px) {
-    .front_img {
-        min-height: 70vh;
-    }
-
-    #new_members_intro_title {
-        font-size: calc(4rem + 1vw);
-    }
-}
-
-
 
 
 
@@ -378,17 +343,17 @@ html {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.popup img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
 #new_members_background_text {
     font-size: 20rem;
     font-family: var(--primary-font);
     color: var(--primary-white);
 
-}
-
-.popup img {
-    max-width: 80px;
-    display: block;
-    margin: 0 auto 10px;
 }
 
 
@@ -400,11 +365,14 @@ html {
 
 /* Individual Rotating Words */
 .rotating-text span {
-    opacity: 0;
-    font-weight: bold;
-    white-space: nowrap;
-    animation: rotateWords 12s linear infinite;
+    position: absolute;
+    left: 50%;
+    margin-top: 17vh;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    white-space: nowrap;
+    animation: rotateWords 16s linear infinite;
+    width: max-content;
     /* Perfect centering */
 }
 
@@ -413,15 +381,15 @@ html {
 }
 
 .rotating-text span:nth-child(2) {
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 .rotating-text span:nth-child(3) {
-    animation-delay: 6s;
+    animation-delay: 8s;
 }
 
 .rotating-text span:nth-child(4) {
-    animation-delay: 9s;
+    animation-delay: 12s;
 }
 
 @keyframes rotateWords {
@@ -466,7 +434,7 @@ html {
 
 .content-box {
     color: var(--primary-white);
-    padding: 13rem;
+    padding: 15rem;
     text-align: center;
 }
 
@@ -477,4 +445,202 @@ html {
     position: relative;
     width: 100%;
 
+}
+
+.new_clubs_members_title {
+    font-family: var(--primary-font-fourth);
+    font-size: 4rem;
+    margin-bottom: 6rem;
+
+}
+
+.new_clubs_members_text {
+    font-family: var(--primary-font-third);
+    font-size: 1.5rem;
+
+}
+
+/* ----------- The footer section ----------- */
+
+/* Customize footer section's colour and text font */
+footer {
+    font-family: "Phosphate Pro Cond Solid";
+    background-color: var(--primary-white);
+    border: var(--primary-black);
+
+}
+
+/* Text size in footer section */
+#footer_text {
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: var(--primary-red);
+}
+
+/* Size and margin for media icons in large screen */
+.media_icons {
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+}
+
+/* Margin for media icons in small screen */
+#mobile_icons {
+    margin-top: 25px;
+}
+
+
+@media (max-width: 1200px) {
+    #new_members_background_text {
+        font-size: 12rem !important;
+    }
+
+    .rotating-text span {
+        margin-top: 25vh !important;
+    }
+
+}
+
+/* Desktop screen size of changing texts, content and images*/
+@media (max-width: 1024px) {
+    .front_img {
+        min-height: 90vh;
+    }
+
+    #new_members_intro_title {
+        font-size: calc(6rem + 1vw);
+    }
+
+    .content-box {
+        padding: 9rem !important;
+    }
+
+    .new_clubs_members_title {
+        font-size: 3rem !important;
+
+    }
+
+    .new_clubs_members_text {
+        font-size: 1.3rem !important;
+
+    }
+
+    .rotating-text span {
+        margin-top: 25vh !important;
+    }
+
+    .card_slider {
+        display: none;
+    }
+
+    .card_gallery_mobile {
+        display: block;
+    }
+}
+
+/* Tablet screen size of changing texts, content and images*/
+@media (max-width: 768px) {
+    .front_img {
+        min-height: 80vh;
+    }
+
+    #new_members_intro_title {
+        font-size: calc(5rem + 1vw);
+    }
+
+    .content-box {
+        padding: 4rem !important;
+    }
+
+    .new_clubs_members_title {
+        font-size: 3rem !important;
+
+    }
+
+    .new_clubs_members_text {
+        font-size: 1.3rem !important;
+
+    }
+
+    .rotating-text span {
+        margin-top: 30vh !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .front_img {
+        min-height: 70vh;
+    }
+
+    #new_members_intro_title {
+        font-size: calc(4rem + 1vw);
+    }
+
+    .content-box {
+        padding: 2rem !important;
+    }
+
+    .new_clubs_members_title {
+        font-size: 2.5rem !important;
+
+    }
+
+    .new_clubs_members_text {
+        font-size: 1.1rem !important;
+
+    }
+}
+
+
+@media (max-height: 875px) {
+    .rotating-text span {
+        margin-top: 5vh !important;
+    }
+}
+
+@media (max-height: 700px) {
+    .rotating-text span {
+        margin-top: 8vh !important;
+    }
+}
+
+@media (max-height: 600px) {
+    .rotating-text span {
+        margin-top: -20vh !important;
+    }
+}
+
+.simple-carousel {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-card {
+    min-width: 100%;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#button_colour_change_card {
+    color: var(--primary-red);
+    border: solid var(--primary-red);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 10rem;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#button_colour_change_card:hover {
+    color: var(--primary-white);
+    background-color: var(--primary-red);
 }

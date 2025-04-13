@@ -212,6 +212,7 @@ html {
     padding: 10px;
     position: relative;
     background-size: cover;
+    background-position: center;
 }
 
 /* Colour for underline */
