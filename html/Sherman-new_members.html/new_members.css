@@ -341,6 +341,7 @@ html {
 .popup.open-popup {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
 .popup img {
