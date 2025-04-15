@@ -552,67 +552,67 @@
     </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        <script>
-            // Get the popup element by its ID
-            const popup = document.getElementById('popup');
+    <script>
+        // Get the popup element by its ID
+        const popup = document.getElementById('popup');
 
-            // Function to open the popup (adding the "open-popup" class makes it visible)
-            function openPopup() {
-                popup.classList.add('open-popup');
-            }
+        // Function to open the popup (adding the "open-popup" class makes it visible)
+        function openPopup() {
+            popup.classList.add('open-popup');
+        }
 
-            // Function to close the popup (removes the "open-popup" class)
-            function closePopup() {
-                popup.classList.remove('open-popup');
-            }
+        // Function to close the popup (removes the "open-popup" class)
+        function closePopup() {
+            popup.classList.remove('open-popup');
+        }
 
-            var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper", {
 
-                slidesPerView: 3,
-                spaceBetween: -350,
-                centeredSlides: true,
-                loop: true,
-                breakpoints: {
-                    480: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 }
-                },
+            slidesPerView: 3,
+            spaceBetween: -350,
+            centeredSlides: true,
+            loop: true,
+            breakpoints: {
+                480: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            },
 
-            });
+        });
 
-            let currentIndex = 0;
-            const carousel = document.querySelector('.carousel-container');
-            const cards = document.querySelectorAll('.carousel-card');
-            const totalCards = cards.length;
+        let currentIndex = 0;
+        const carousel = document.querySelector('.carousel-container');
+        const cards = document.querySelectorAll('.carousel-card');
+        const totalCards = cards.length;
 
-            function updateCarousel() {
-                carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
 
-            function nextCard() {
-                currentIndex = (currentIndex + 1) % totalCards;
-                updateCarousel();
-            }
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % totalCards;
+            updateCarousel();
+        }
 
-            function prevCard() {
-                currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-                updateCarousel();
-            }
-
-
-
-        </script>
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            updateCarousel();
+        }
 
 
 
+    </script>
 
 
-        <!-- Add Bootstrap libary -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+
+
+
+    <!-- Add Bootstrap libary -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

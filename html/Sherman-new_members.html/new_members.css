@@ -241,7 +241,7 @@ html {
     background-color: var(--primary-red);
 }
 
-#button_colour_yearly_fees_mobile{
+#button_colour_yearly_fees_mobile {
     color: var(--primary-red);
     border: solid var(--primary-red);
     background-color: transparent;
@@ -253,7 +253,7 @@ html {
     background-color: var(--primary-red);
 }
 
-#button_colour_yearly_fees_payment{
+#button_colour_yearly_fees_payment {
     color: var(--primary-red);
     border: solid var(--primary-red);
     background-color: transparent;
@@ -265,7 +265,7 @@ html {
     background-color: var(--primary-red);
 }
 
-#button_colour_yearly_fees_submit{
+#button_colour_yearly_fees_submit {
     color: var(--primary-red);
     border: solid var(--primary-red);
     background-color: transparent;
@@ -277,7 +277,7 @@ html {
     background-color: var(--primary-red);
 }
 
-#button_colour_yearly_fees_ok{
+#button_colour_yearly_fees_ok {
     color: var(--primary-red);
     border: solid var(--primary-red);
     background-color: transparent;
