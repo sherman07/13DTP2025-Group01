@@ -499,7 +499,7 @@ html {
 .new_clubs_members_title {
     font-family: var(--primary-font-fourth);
     font-size: 4rem;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 
 }
 
@@ -597,11 +597,12 @@ footer {
     }
 
     .content-box {
-        padding: 4rem !important;
+        padding: 3rem !important;
     }
 
     .new_clubs_members_title {
         font-size: 3rem !important;
+        margin-bottom: 1.5rem;
 
     }
 
@@ -625,7 +626,7 @@ footer {
     }
 
     .content-box {
-        padding: 2rem !important;
+        padding: 1rem !important;
     }
 
     .new_clubs_members_title {
