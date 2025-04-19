@@ -414,9 +414,10 @@ html {
 
 /* Individual Rotating Words */
 .rotating-text span {
+    display: block;
     position: absolute;
     left: 50%;
-    margin-top: 17vh;
+    margin-top: 20vh;
     transform: translate(-50%, -50%);
     opacity: 0;
     white-space: nowrap;
@@ -584,6 +585,9 @@ footer {
     .card_gallery_mobile {
         display: block;
     }
+    .rotating-text{
+        display: none;
+    }
 }
 
 /* Tablet screen size of changing texts, content and images*/
@@ -640,16 +644,21 @@ footer {
     }
 }
 
+@media (max-height: 975px) {
+    .rotating-text span {
+        margin-top: 8vh !important;
+    }
+}
 
 @media (max-height: 875px) {
     .rotating-text span {
-        margin-top: 5vh !important;
+        margin-top: 10vh !important;
     }
 }
 
 @media (max-height: 700px) {
     .rotating-text span {
-        margin-top: 8vh !important;
+        margin-top: 15vh !important;
     }
 }
 
