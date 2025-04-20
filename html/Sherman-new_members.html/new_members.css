@@ -585,7 +585,7 @@ footer {
     .card_gallery_mobile {
         display: block;
     }
-    
+
 }
 
 /* Tablet screen size of changing texts, content and images*/
@@ -616,10 +616,11 @@ footer {
     .rotating-text span {
         margin-top: 30vh !important;
     }
-    .rotating-text{
+
+    .rotating-text {
         display: none;
     }
-    
+
 }
 
 @media (max-width: 480px) {
