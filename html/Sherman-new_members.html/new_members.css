@@ -541,7 +541,7 @@ footer {
 
 @media (max-width: 1200px) {
     #new_members_background_text {
-        font-size: 12rem !important;
+        font-size: 15rem !important;
     }
 
     .rotating-text span {
@@ -648,7 +648,7 @@ footer {
 
 @media (max-height: 975px) {
     .rotating-text span {
-        margin-top: 8vh !important;
+        margin-top: 15vh !important;
     }
 }
 
@@ -658,7 +658,7 @@ footer {
     }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 729px) {
     .rotating-text span {
         margin-top: 15vh !important;
     }
