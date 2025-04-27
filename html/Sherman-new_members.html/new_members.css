@@ -203,14 +203,17 @@ html {
     text-decoration-color: var(--primary-red);
 }
 
+/* Make the card slider visible as defult */
 .card_slider {
     display: block;
 }
 
+/* Hide the card gallery for mobile by default */
 .card_gallery_mobile {
     display: none;
 }
 
+/* Background image for card slider's sub-header */
 .background_image_cards {
     background-size: cover;
     background-position: center;
@@ -221,6 +224,7 @@ html {
 
 }
 
+/* Sub-header title for new members card slider */
 .new_members_cards_title {
     font-family: var(--primary-font-fourth);
     color: var(--primary-white);
@@ -229,54 +233,11 @@ html {
 
 }
 
-#button_colour_yearly_fees {
-    color: var(--primary-red);
-    border: solid var(--primary-red);
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#button_colour_yearly_fees:hover {
-    color: var(--primary-white);
-    background-color: var(--primary-red);
-}
-
-#button_colour_yearly_fees_mobile {
-    color: var(--primary-red);
-    border: solid var(--primary-red);
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#button_colour_yearly_fees_mobile:hover {
-    color: var(--primary-white);
-    background-color: var(--primary-red);
-}
-
-#button_colour_yearly_fees_payment {
-    color: var(--primary-red);
-    border: solid var(--primary-red);
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#button_colour_yearly_fees_payment:hover {
-    color: var(--primary-white);
-    background-color: var(--primary-red);
-}
-
-#button_colour_yearly_fees_submit {
-    color: var(--primary-red);
-    border: solid var(--primary-red);
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#button_colour_yearly_fees_submit:hover {
-    color: var(--primary-white);
-    background-color: var(--primary-red);
-}
-
+/* Style for multiple buttons: yearly fees, mobile fees, payment, submit, and OK */
+#button_colour_yearly_fees,
+#button_colour_yearly_fees_mobile,
+#button_colour_yearly_fees_payment,
+#button_colour_yearly_fees_submit,
 #button_colour_yearly_fees_ok {
     color: var(--primary-red);
     border: solid var(--primary-red);
@@ -284,28 +245,29 @@ html {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect for the same set of buttons */
+#button_colour_yearly_fees:hover,
+#button_colour_yearly_fees_mobile:hover,
+#button_colour_yearly_fees_payment:hover,
+#button_colour_yearly_fees_submit:hover,
 #button_colour_yearly_fees_ok:hover {
     color: var(--primary-white);
     background-color: var(--primary-red);
 }
 
-
+/* Red colour for the correct sign */
 .correct_sign {
     color: red;
     font-size: 20px;
 }
 
-.swiper-card-lg-container {
-    display: none;
-}
-
-
-
+/* Swiper card slider flex container that  align horizontally and vertically */
 .swiper-wrapper {
     display: flex;
     align-items: center;
 }
 
+/* Styling for Swiper card slider, with scaling and transition effects */
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -315,16 +277,14 @@ html {
     transform: scale(0.8);
 }
 
-
-
-
+/* Enlarge the present card with a higehr opacity and z-index */
 .swiper-slide-active {
     transform: scale(1.1);
     z-index: 3;
     opacity: 1;
 }
 
-
+/* Reduce the hiden card with a higehr opacity and z-index */
 .swiper-slide-prev,
 .swiper-slide-next {
     transform: scale(0.8) translateX(-10%);
@@ -332,24 +292,71 @@ html {
     opacity: 0.5;
 }
 
+/* Adjusts the next card's position specifically */
 .swiper-slide-next {
     transform: scale(0.8) translateX(10%);
 }
 
-
-
+/* Hidden the Swiper cards that are not in the active */
 .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
     opacity: 0;
     visibility: hidden;
     transform: scale(0.5);
 }
 
+/* Styling for the new members form title */
 .new_members_form_title {
     color: var(--primary-black);
     font-family: var(--primary-font);
 
 }
 
+/* The carousel card gallery */
+.simple-carousel {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* The carousel card gallery container */
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* Styling for cards in the gallery */
+.carousel-card {
+    min-width: 100%;
+}
+
+
+/* Styling navigation container for carousel controls */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Styling for the previous and next button in the gallery */
+#button_colour_change_card_prev,
+#button_colour_change_card_next {
+    color: var(--primary-red);
+    border: solid var(--primary-red);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 10rem;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Hover effect for the same set of buttons */
+#button_colour_change_card_prev:hover,
+#button_colour_change_card_next:hover {
+    color: var(--primary-white);
+    background-color: var(--primary-red);
+}
+
+/* Styling for the close button in the form */
 #button_form_colour_close {
     color: var(--primary-black);
     border: solid var(--primary-black);
@@ -357,15 +364,16 @@ html {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect for the close button in the form*/
 #button_form_colour_close:hover {
     color: var(--primary-white);
     background-color: var(--primary-black);
 }
 
+/*  */
 .new_members_button_text {
     font-family: var(--primary-font-second);
 }
-
 
 /* Popup styles matching the video demonstration */
 .popup {
@@ -385,31 +393,32 @@ html {
 
 }
 
-
+/* Styling for popup when the second pop-up is open */
 .popup.open-popup {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Correct second pop-up image */
 .popup img {
     max-width: 80px;
     display: block;
     margin: 0 auto 10px;
 }
 
+/* Changable Text Container */
+.rotating-text-container {
+    pointer-events: none;
+    /* Allows clicks through to content */
+}
+
+/* The background changeable text's colour, font, and size */
 #new_members_background_text {
     font-size: 20rem;
     font-family: var(--primary-font);
     color: var(--primary-white);
 
-}
-
-
-/* Rotating Text Container (FULL VIEWPORT COVER) */
-.rotating-text-container {
-    pointer-events: none;
-    /* Allows clicks through to content */
 }
 
 /* Individual Rotating Words */
@@ -423,25 +432,29 @@ html {
     white-space: nowrap;
     animation: rotateWords 16s linear infinite;
     width: max-content;
-    /* Perfect centering */
 }
 
+/* First word that appears */
 .rotating-text span:nth-child(1) {
     animation-delay: 0s;
 }
 
+/* Second word that appears */
 .rotating-text span:nth-child(2) {
     animation-delay: 4s;
 }
 
+/* Third word that appears */
 .rotating-text span:nth-child(3) {
     animation-delay: 8s;
 }
 
+/* Fourth word that appears */
 .rotating-text span:nth-child(4) {
     animation-delay: 12s;
 }
 
+/* Keyframes for rotating text animation with fade-in, hold, and fade-out effects */
 @keyframes rotateWords {
     0% {
         opacity: 0;
@@ -468,6 +481,7 @@ html {
     }
 }
 
+/* Overlay for new club members section */
 .new_members-overlay {
     position: absolute;
     width: 100%;
@@ -476,18 +490,14 @@ html {
     margin: auto;
 }
 
-.small-br {
-    display: block;
-    height: 0.7em;
-    /* smaller space */
-}
-
+/* A content box that act as a container to control the padding for new members club section */
 .content-box {
     color: var(--primary-white);
     padding: 15rem;
     text-align: center;
 }
 
+/* Backgound image for new club members section */
 .new_members_background_img {
     background-size: cover;
     background-position: center;
@@ -497,6 +507,7 @@ html {
 
 }
 
+/* Sub-header title for new club members */
 .new_clubs_members_title {
     font-family: var(--primary-font-fourth);
     font-size: 4rem;
@@ -504,6 +515,7 @@ html {
 
 }
 
+/* Content information for new club members */
 .new_clubs_members_text {
     font-family: var(--primary-font-third);
     font-size: 1.5rem;
@@ -623,6 +635,7 @@ footer {
 
 }
 
+/* Smaller mobile screen size of changing texts, content and images */
 @media (max-width: 480px) {
     .front_img {
         min-height: 70vh;
@@ -647,78 +660,30 @@ footer {
     }
 }
 
+/* Changing the changeable text's margin in 975px */
 @media (max-height: 975px) {
     .rotating-text span {
         margin-top: 15vh !important;
     }
 }
 
+/* Changing the changeable text's margin in 875px */
 @media (max-height: 875px) {
     .rotating-text span {
         margin-top: 5vh !important;
     }
 }
 
+/* Changing the changeable text's margin in 729px */
 @media (max-height: 729px) {
     .rotating-text span {
         margin-top: 15vh !important;
     }
 }
 
+/* Changing the changeable text's margin in 600px */
 @media (max-height: 600px) {
     .rotating-text span {
         margin-top: -20vh !important;
     }
-}
-
-.simple-carousel {
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-container {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.carousel-card {
-    min-width: 100%;
-}
-
-.carousel-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-#button_colour_change_card_prev {
-    color: var(--primary-red);
-    border: solid var(--primary-red);
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    width: 10rem;
-    height: 3rem;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#button_colour_change_card_prev:hover {
-    color: var(--primary-white);
-    background-color: var(--primary-red);
-}
-
-#button_colour_change_card_next {
-    color: var(--primary-red);
-    border: solid var(--primary-red);
-    background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    width: 10rem;
-    height: 3rem;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#button_colour_change_card_next:hover {
-    color: var(--primary-white);
-    background-color: var(--primary-red);
 }
