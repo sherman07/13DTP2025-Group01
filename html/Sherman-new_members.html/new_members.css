@@ -336,10 +336,10 @@ html {
     margin-top: 15px;
 }
 
-/* Styling for the previous and next button in the gallery */
+/* Styling for the previous and next buttons in the gallery */
 #button_colour_change_card_prev,
 #button_colour_change_card_next {
-    color: var(--primary-red);
+    color: var(--primary-red); 
     border: solid var(--primary-red);
     background-color: transparent;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -349,7 +349,7 @@ html {
     font-weight: bold;
 }
 
-/* Hover effect for the same set of buttons */
+/* Hover effect for the previous and next buttons */
 #button_colour_change_card_prev:hover,
 #button_colour_change_card_next:hover {
     color: var(--primary-white);
