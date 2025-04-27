@@ -191,8 +191,6 @@ body {
 
 
 
-
-
 /* classes used through out the page */
 
 /* main div styling*/
@@ -202,7 +200,6 @@ main{
 }
 
 /* Heading's styling */
-
 h1,h2{
     font-family: var(--primary-font-fourth) !important;
     color: blue;
@@ -245,6 +242,48 @@ h3{
     padding-left: 40px;
 }
 
+/* Notebox styling */
+#note-box {
+    font-style: italic;
+    font-size: 0.75rem;
+    color: #555;
+    border-left: 4px solid #2FBEC2; /* your site’s teal */
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    opacity: 0.85;
+}
+
+/* Tooltip styling */
+#custom-tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted #999;
+  }
+  
+/* Tooltip text styling */
+#custom-tooltip #tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 115%; /* Position above */
+    left: 0;
+    transition: opacity 0.3s;
+    font-size: 0.8rem;
+}
+
+/* Tooltip hover setting */
+#custom-tooltip:hover #tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* club portal information section styling */
 
@@ -252,7 +291,6 @@ h3{
     box-shadow: 2px 5px 15px;
 
 }
-
 
 #club_portal_list li{
     border: 2px dashed var(--primary-yellow);
