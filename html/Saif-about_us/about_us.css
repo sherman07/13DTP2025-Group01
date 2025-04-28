@@ -186,7 +186,7 @@ body {
     margin: auto;
 }
 
-/* About Us page styling */
+/* About Us page wide classes  */
 
 /* Heading's styling */
 h1,h2{
@@ -214,41 +214,36 @@ main{
 }
 
 
-#about_us_landing{
-    margin: 10px 0px;
-}
 
-/* Styling for the first section of the page*/
+/* Styling for the introduction content of the page */
+
 #about_us_landing_img{
     width: 700px;
     margin: 20px 0;
     box-shadow: 2px 5px 15px;
 }
 
+#about_us_landing{
+    margin: 10px 0px;
+}
+
+/* Our vision and mission section styling */
 
 #our_vision{
-   
     border: 1px solid var(--primary-blue);
     border-left: 0;
     border-radius: 0 10px 10px 0;
-
-
 }
 
 #our_mission{
-   
     border: 1px solid var(--primary-red);
     border-right: 0;
     border-radius: 10px 0 0 10px;
     text-align: end;
-
-
-
 }
 
 .image_large{
     display:inline-block;
-    
 }
 
 #our_vision_img{
@@ -259,12 +254,21 @@ main{
     border-radius: 0 10px 10px 0;
 }
 
-
-
-
 #image_small{
     display: none;
 }
+
+/* Our values section styling*/
+
+/* Styling for the value 'cards' of value section*/
+.values_styling{
+    border: 2px solid var(--primary-yellow);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Constitution section styling */
 
 #constitution{
     border: 3px dashed var(--primary-blue);
@@ -274,15 +278,8 @@ main{
 
 }
 
-/* Styling for the value 'cards' of value section*/
-.values_styling{
-    border: 2px solid var(--primary-yellow);
-    padding: 10px;
-    border-radius: 10px;
-}
-
 /* Link animation */
-.links_animation a {
+#links_animation a {
     color: var(--primary-black);
     font-family: var(--primary-font-third);
     position: relative;
@@ -292,7 +289,7 @@ main{
 }
 
 /* Link animation before */
-.links_animation a::before {
+#links_animation a::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -305,16 +302,79 @@ main{
 }
 
 /* Link animation before with hover on */
-.links_animation a:hover::before {
+#links_animation a:hover::before {
     width: 100%;
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
   
 
+/* Footer styling */
+footer{
+    font-family: var(--primary-font);
+    background-color: var(--primary-white);
+    border: var(--primary-black);
+   
+}
+
+/* Text styling */
+#footer_text{
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: var(--primary-red);
+}
+
+/* Icons styling */
+.media_icons{
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+}
+
+/* Small size logo styling */
+#small_logo{
+    width: 200px;
+}
+
+/* Small size icons styling */
+#mobile_icons{
+    margin-top: 25px;
+}
+
+
+
+/* Media queries */
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 40px; /* Shrink logo */
+    }
+    .navbar-brand {
+        font-size: 14px; /* Smaller text */
+    }
+
+    
+}
 
 /* Small devices (tablets, landscape phones) */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 50px;
+    }
+    .navbar-brand {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (desktops, larger tablets) */
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 60px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+
     #our_vision{
         border: 1px solid var(--primary-blue);
         border-radius: 10px;
@@ -349,76 +409,6 @@ main{
         font-family: var(--primary-font-second) !important;
         color: var(--primary-yellow);
     
-    }
-
-
-
-}
-
-
-
-
-
-/* Footer styling */
-footer{
-    font-family: var(--primary-font);
-    background-color: var(--primary-white);
-    border: var(--primary-black);
-   
-}
-
-/* Text styling */
-#footer_text{
-    margin: 0px 20px;
-    font-size: calc(15px + 0.1vw);
-    color: var(--primary-red);
-}
-
-/* Icons styling */
-.media_icons{
-    width: calc(35px + 0.1vw);
-    margin: 0 10px;
-}
-
-/* Small size logo styling */
-#small_logo{
-    width: 200px;
-}
-
-/* Small size icons styling */
-#mobile_icons{
-    margin-top: 25px;
-}
-
-/* Extra small devices (phones) */
-@media (max-width: 576px) {
-    .navbar-brand img {
-        width: 40px; /* Shrink logo */
-    }
-    .navbar-brand {
-        font-size: 14px; /* Smaller text */
-    }
-
-    
-}
-
-/* Small devices (tablets, landscape phones) */
-@media (max-width: 768px) {
-    .navbar-brand img {
-        width: 50px;
-    }
-    .navbar-brand {
-        font-size: 16px;
-    }
-}
-
-/* Medium devices (desktops, larger tablets) */
-@media (max-width: 992px) {
-    .navbar-brand img {
-        width: 60px;
-    }
-    .navbar-brand {
-        font-size: 18px;
     }
 }
 
