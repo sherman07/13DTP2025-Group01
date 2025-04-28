@@ -1,0 +1,689 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'Phosphate Pro Cond Solid';
+    src: url('font/phosphate_pro_cond_solid_regular_fixed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Phosphate Pro Solid';
+    src: url('font/phosphate_pro_solid_fixed.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('font/bookman_old_style.TTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'Phosphate Pro Cond Inline';
+    src: url('font/phosphate_pro_cond_inline_regular_fixed.otf') format('opentype');
+}
+
+/* The primary colours to make a consistency website colour */
+:root {
+    --primary-font: 'Phosphate Pro Cond Solid', sans-serif;
+    --primary-font-second: 'Phosphate Pro Solid', sans-serif;
+    --primary-font-third: 'Bookman Old Style', sans-serif;
+    --primary-font-fourth: 'Phosphate Pro Cond Inline';
+    --primary-white: #ffffff;
+    --primary-black: #000000;
+    --primary-red: #E42D26;
+    --primary-yellow: #FDC010;
+    --primary-blue: #2FBEC2;
+}
+
+/* Apply the custom font and color */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Changing the colour in navbar */
+.navbar {
+    background: var(--primary-white);
+    font-family: var(--primary-font-second) !important;
+}
+
+/* Remove border from the navbar toggler button */
+.navbar-light .navbar-toggler {
+    border: 0 solid white;
+}
+
+/* Styling for navbar toggler button */
+.nav-toggler {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: .5s ease-in-out;
+
+}
+
+/* Remove focus outlines and borders from navbar toggler */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+/* Remove margin and padding from span  */
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Fixing Navbar Toggler Styling */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38px;
+    width: 65px;
+}
+
+/* ----------- Toggler Icon Bars ----------- */
+
+/* Styling for top bar */
+.top-bar {
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling for middle bar */
+.middle-bar {
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-yellow);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Styling for bottom bar */
+.bottom-bar {
+    height: 5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--primary-red);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ----------- Toggler Animation ----------- */
+
+/* Animation effect when the navbar toggler is active */
+.navbar-toggler:not(.collapsed) .top-bar {
+    transform: translateY(12px) rotate(45deg);
+
+
+}
+
+/* Hide middle bar */
+.navbar-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+
+}
+
+/* Animation effect when the navbar toggler is active */
+.navbar-toggler:not(.collapsed) .bottom-bar {
+    transform: translateY(-12px) rotate(-45deg);
+
+}
+
+/* Reset when collapsed */
+.navbar-toggler.collapsed .top-bar,
+.navbar-toggler.collapsed .bottom-bar {
+    transform: none;
+}
+
+/* Show the bar again after the reset */
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+
+}
+
+/* ----------- Front images and front title----------- */
+
+/* Fullscreen image with overlay text support */
+.front_img {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Large title in the front image section */
+#new_members_intro_title {
+    font-size: 10rem;
+    font-family: var(--primary-font-second) !important;
+    color: var(--primary-yellow);
+    text-align: center;
+
+}
+
+/* Overlay for a dark opacity over background image */
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    margin: auto;
+}
+
+/* Size for New Members title */
+.new_members_title {
+    font-family: var(--primary-font-fourth);
+    font-size: 2.8rem;
+
+}
+
+/* Size for New Members text */
+.new_members_text {
+    font-family: var(--primary-font-third);
+    font-size: 0.935rem;
+}
+
+/* Colour for underline */
+.underline_colour {
+    text-decoration-color: var(--primary-red);
+}
+
+/* Make the card slider visible as defult */
+.card_slider {
+    display: block;
+}
+
+/* Hide the card gallery for mobile by default */
+.card_gallery_mobile {
+    display: none;
+}
+
+/* Background image for card slider's sub-header */
+.background_image_cards {
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    position: relative;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Sub-header title for new members card slider */
+.new_members_cards_title {
+    font-family: var(--primary-font-fourth);
+    color: var(--primary-white);
+    font-size: 2.8rem;
+    text-align: center;
+
+}
+
+/* Style for multiple buttons: yearly fees, mobile fees, payment, submit, and OK */
+#button_colour_yearly_fees,
+#button_colour_yearly_fees_mobile,
+#button_colour_yearly_fees_payment,
+#button_colour_yearly_fees_submit,
+#button_colour_yearly_fees_ok {
+    color: var(--primary-red);
+    border: solid var(--primary-red);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the same set of buttons */
+#button_colour_yearly_fees:hover,
+#button_colour_yearly_fees_mobile:hover,
+#button_colour_yearly_fees_payment:hover,
+#button_colour_yearly_fees_submit:hover,
+#button_colour_yearly_fees_ok:hover {
+    color: var(--primary-white);
+    background-color: var(--primary-red);
+}
+
+/* Red colour for the correct sign */
+.correct_sign {
+    color: red;
+    font-size: 20px;
+}
+
+/* Swiper card slider flex container that  align horizontally and vertically */
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for Swiper card slider, with scaling and transition effects */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    position: relative;
+    transform: scale(0.8);
+}
+
+/* Enlarge the present card with a higehr opacity and z-index */
+.swiper-slide-active {
+    transform: scale(1.1);
+    z-index: 3;
+    opacity: 1;
+}
+
+/* Reduce the hiden card with a higehr opacity and z-index */
+.swiper-slide-prev,
+.swiper-slide-next {
+    transform: scale(0.8) translateX(-10%);
+    z-index: 2;
+    opacity: 0.5;
+}
+
+/* Adjusts the next card's position specifically */
+.swiper-slide-next {
+    transform: scale(0.8) translateX(10%);
+}
+
+/* Hidden the Swiper cards that are not in the active */
+.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+}
+
+/* Styling for the new members form title */
+.new_members_form_title {
+    color: var(--primary-black);
+    font-family: var(--primary-font);
+
+}
+
+/* The carousel card gallery */
+.simple-carousel {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* The carousel card gallery container */
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* Styling for cards in the gallery */
+.carousel-card {
+    min-width: 100%;
+}
+
+
+/* Styling navigation container for carousel controls */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Styling for the previous and next buttons in the gallery */
+#button_colour_change_card_prev,
+#button_colour_change_card_next {
+    color: var(--primary-red); 
+    border: solid var(--primary-red);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 10rem;
+    height: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Hover effect for the previous and next buttons */
+#button_colour_change_card_prev:hover,
+#button_colour_change_card_next:hover {
+    color: var(--primary-white);
+    background-color: var(--primary-red);
+}
+
+/* Styling for the close button in the form */
+#button_form_colour_close {
+    color: var(--primary-black);
+    border: solid var(--primary-black);
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the close button in the form*/
+#button_form_colour_close:hover {
+    color: var(--primary-white);
+    background-color: var(--primary-black);
+}
+
+/*  */
+.new_members_button_text {
+    font-family: var(--primary-font-second);
+}
+
+/* Popup styles matching the video demonstration */
+.popup {
+    width: 300px;
+    background: var(--primary-white);
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 20px;
+    color: var(--primary-black);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1050;
+
+}
+
+/* Styling for popup when the second pop-up is open */
+.popup.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Correct second pop-up image */
+.popup img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Changable Text Container */
+.rotating-text-container {
+    pointer-events: none;
+    /* Allows clicks through to content */
+}
+
+/* The background changeable text's colour, font, and size */
+#new_members_background_text {
+    font-size: 20rem;
+    font-family: var(--primary-font);
+    color: var(--primary-white);
+
+}
+
+/* Individual Rotating Words */
+.rotating-text span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-top: 20vh;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    white-space: nowrap;
+    animation: rotateWords 16s linear infinite;
+    width: max-content;
+}
+
+/* First word that appears */
+.rotating-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+/* Second word that appears */
+.rotating-text span:nth-child(2) {
+    animation-delay: 4s;
+}
+
+/* Third word that appears */
+.rotating-text span:nth-child(3) {
+    animation-delay: 8s;
+}
+
+/* Fourth word that appears */
+.rotating-text span:nth-child(4) {
+    animation-delay: 12s;
+}
+
+/* Keyframes for rotating text animation with fade-in, hold, and fade-out effects */
+@keyframes rotateWords {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Overlay for new club members section */
+.new_members-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 49, 49, 0.73);
+    margin: auto;
+}
+
+/* A content box that act as a container to control the padding for new members club section */
+.content-box {
+    color: var(--primary-white);
+    padding: 15rem;
+    text-align: center;
+}
+
+/* Backgound image for new club members section */
+.new_members_background_img {
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    position: relative;
+    width: 100%;
+
+}
+
+/* Sub-header title for new club members */
+.new_clubs_members_title {
+    font-family: var(--primary-font-fourth);
+    font-size: 4rem;
+    margin-bottom: 8rem;
+
+}
+
+/* Content information for new club members */
+.new_clubs_members_text {
+    font-family: var(--primary-font-third);
+    font-size: 1.5rem;
+
+}
+
+/* ----------- The footer section ----------- */
+
+/* Customize footer section's colour and text font */
+footer {
+    font-family: "Phosphate Pro Cond Solid";
+    background-color: var(--primary-white);
+    border: var(--primary-black);
+
+}
+
+/* Text size in footer section */
+#footer_text {
+    margin: 0px 20px;
+    font-size: calc(15px + 0.1vw);
+    color: var(--primary-red);
+}
+
+/* Size and margin for media icons in large screen */
+.media_icons {
+    width: calc(35px + 0.1vw);
+    margin: 0 10px;
+}
+
+/* Margin for media icons in small screen */
+#mobile_icons {
+    margin-top: 25px;
+}
+
+
+@media (max-width: 1200px) {
+    #new_members_background_text {
+        font-size: 15rem !important;
+    }
+
+    .rotating-text span {
+        margin-top: 25vh !important;
+    }
+
+}
+
+/* Desktop screen size of changing texts, content and images*/
+@media (max-width: 1024px) {
+    .front_img {
+        min-height: 90vh;
+    }
+
+    #new_members_intro_title {
+        font-size: calc(6rem + 1vw);
+    }
+
+    .content-box {
+        padding: 9rem !important;
+    }
+
+    .new_clubs_members_title {
+        font-size: 3rem !important;
+
+    }
+
+    .new_clubs_members_text {
+        font-size: 1.3rem !important;
+
+    }
+
+    .rotating-text span {
+        margin-top: 25vh !important;
+    }
+
+    .card_slider {
+        display: none;
+    }
+
+    .card_gallery_mobile {
+        display: block;
+    }
+
+}
+
+/* Tablet screen size of changing texts, content and images*/
+@media (max-width: 768px) {
+    .front_img {
+        min-height: 80vh;
+    }
+
+    #new_members_intro_title {
+        font-size: calc(5rem + 1vw);
+    }
+
+    .content-box {
+        padding: 3rem !important;
+    }
+
+    .new_clubs_members_title {
+        font-size: 3rem !important;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .new_clubs_members_text {
+        font-size: 1.3rem !important;
+
+    }
+
+    .rotating-text span {
+        margin-top: 30vh !important;
+    }
+
+    .rotating-text {
+        display: none;
+    }
+
+}
+
+/* Smaller mobile screen size of changing texts, content and images */
+@media (max-width: 480px) {
+    .front_img {
+        min-height: 70vh;
+    }
+
+    #new_members_intro_title {
+        font-size: calc(4rem + 1vw);
+    }
+
+    .content-box {
+        padding: 1rem !important;
+    }
+
+    .new_clubs_members_title {
+        font-size: 2.5rem !important;
+
+    }
+
+    .new_clubs_members_text {
+        font-size: 1.1rem !important;
+
+    }
+}
+
+/* Changing the changeable text's margin in 975px */
+@media (max-height: 975px) {
+    .rotating-text span {
+        margin-top: 15vh !important;
+    }
+}
+
+/* Changing the changeable text's margin in 875px */
+@media (max-height: 875px) {
+    .rotating-text span {
+        margin-top: 5vh !important;
+    }
+}
+
+/* Changing the changeable text's margin in 729px */
+@media (max-height: 729px) {
+    .rotating-text span {
+        margin-top: 15vh !important;
+    }
+}
+
+/* Changing the changeable text's margin in 600px */
+@media (max-height: 600px) {
+    .rotating-text span {
+        margin-top: -20vh !important;
+    }
+}
