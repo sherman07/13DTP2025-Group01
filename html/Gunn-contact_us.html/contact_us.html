@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Sherman Zheng, Saif Ahmed, Gunn Jeong">
+    <meta name="keywords" content="keywords, RBOCC, Waka Ama, Community, responsive, culture">
+    <meta name="description" content="A Website for Red Beach Outrigger Canoe Club, a club for Waka Ama">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Red Beach Outrigger Canoe Club</title>
+
+    <!-- The RBOCC icon logo -->
+    <link rel="icon" type="image/x-icon" href="/css/logos/RBOCC_BLACK_COLOUR.png">
+
+    <link rel="stylesheet" href="/css/Gunn-contact_us.css/contact_us.css">
+    <!-- Add Bootstrap libary -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navigation using Bootstrap navbar component -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+              <img src="/css/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70"  class="d-inline-block">
+            </a>
+            <a class="navbar-brand d-none d-sm-block" href="#">
+                Red Beach Outrigger Canoe Club
+            </a>
+
+
+          <!-- Add Toggle button component that can be change into smaller sceen -->
+          <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+             <span class="toggler-icon bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Navigation column size chnage when facing different screens -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
+
+              <!-- Home link -->
+              <li class="nav-item">
+                <a class="nav-link active text-light text-dark" aria-current="page" href="#">Home</a>
+              </li>
+
+              <!-- About us link -->
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">About us</a>
+              </li>
+
+              <!-- Safety link -->
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">Safety</a>
+              </li>
+
+              <!-- Dropdown links for membership -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                <ul class="dropdown-menu">
+
+                  <!-- New member link -->
+                  <li><a class="dropdown-item" href="#">New Member</a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                  <!-- Existing link -->
+                  <li><a class="dropdown-item" href="#">Existing Member</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+            <!-- Front Image for the Contact Us page -->
+            <div class="front_img mt-3" style="background-image: url('/css/images/mens_and_masters_beach.jpg')">
+                <!-- Title Overlay for the Contact Us page -->
+                <div class="color-overlay d-flex justify-content-center align-items-center text-center">
+                    <h1 id="contact_intro_title">Contact Us</h1>
+                </div>
+            </div>
+
+            <!-- Committee Section -->
+            <section class="committee">
+                <div class="container">
+                    <!-- Committee Section Intro -->
+                    <div class="row justify-content-center text-center mt-5 mb-5">
+                        <div class="col-md-8 col-lg-6" id="committee-brief">
+                            <h2 class="display-5 text-center">
+                                <u class="underline_colour">Committee</u>
+                            </h2>
+                            <p id="committee_text">The Red Beach Outrigger Canoe Club is run by a committee of volunteers. If you have any questions or suggestions, please feel free to reach out to us.</p>
+                        </div>
+                    </div>
+
+                <!-- Committee Members Section -->
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" id="committee_members">
+                <!-- Secretary Member -->
+                <div class="col order-2 order-md-1">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Secretary</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Casey Smith</h5>
+                            <p class="mb-2 links_animation">
+                                <a href="mailto:info@rbocc.co.nz" class="text-black">info@rbocc.co.nz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- President Member -->
+                <div class="col order-1 order-md-2">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-danger border-primary">
+                            <h4 class="my-0 fw-normal">President</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Shahram Saboori</h5>
+                            <p class="mb-2 links_animation">
+                                <a href="mailto:president@rbocc.co.nz" class="text-black">president@rbocc.co.nz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Treasurer Member -->
+                <div class="col order-3 order-md-3">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Treasurer</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Charlotte Blanchard</h5>
+                            <p class="mb-2 links_animation">
+                                <a href="mailto:treasurer@rbocc.co.nz" class="text-black">treasurer@rbocc.co.nz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Committee Members Section -->
+            <div class="row row-cols-1 row-cols-md-3 mb-5 text-center d-flex justify-content-center" id="committee_members_additional">
+                <!-- Riley Duff Member -->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Committee Member</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Riley Duff</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gary Conaghan Member -->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Committee Member</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gary Conaghan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Us Button -->
+            <div class="d-grid gap-2 mb-5 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design" data-bs-toggle="modal" data-bs-target="#contact_us_modal" data-bs-whatever="@getbootstrap">
+                    Contact Us
+                </button>
+            </div>
+
+            <!-- Contact Modal Form -->
+            <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal Header with Logo and Title -->
+                        <div class="modal-header">
+                            <img src="/css/logos/RBOCC_BLACK_COLOUR.png" alt="Red Beach Outrigger Canoe Club coloured logo" width="70" class="d-inline-block m-3 display-5">
+                            <div class="modal-title fs-1 fw-bold" id="contact_us_modalLabel">Contact Us</div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+            
+                        <!-- Modal Body with Contact Form -->
+                        <div class="modal-body">
+                            <form>
+                                <!-- First Name Field -->
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">First Name:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+            
+                                <!-- Last Name Field -->
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Last Name:</label>
+                                    <input type="text" class="form-control" id="recipient-name-2">
+                                </div>
+            
+                                <!-- Email Field -->
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Email:</label>
+                                    <input type="text" class="form-control" id="recipient-name-3">
+                                </div>
+            
+                                <!-- Message Field -->
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+            
+                        <!-- Modal Footer with Action Buttons -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact_us">
+        <div class="container py-5">
+            <!-- Section Heading -->
+            <h2 class="display-5 text-center">
+                <u class="underline_colour">Contact Us</u>
+            </h2>
+
+            <!-- Contact Invitation and Details -->
+            <h3 class="text-center p-3 links_animation">
+                Red Beach Outrigger Canoe Club wants to connect with you!<br>
+                For all enquiries please email us at 
+                <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
+                and we will get back to you as soon as we can.
+                <br>Address: Ngapara Street, Red Beach 0932
+                <br>Email: <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
+            </h3>
+        </div>
+    </section>
+
+    <!-- Emergency Phone Numbers Section -->
+    <section class="phone_numbers py-5">
+        <div class="container">
+            <!-- Emergency Box with Phone Numbers -->
+            <div class="emergency-box p-4 rounded-4 shadow text-white text-center">
+                <h2 class="display-6  mb-4">
+                    <u class="underline_colour">Emergency Phone Numbers</u>
+                </h2>
+                <ul class="list-unstyled fs-5">
+                    <li class="mb-3">
+                      <strong>Police (If it's happening now):</strong>
+                      <span class="highlight">
+                        <a href="tel:111" class="text-decoration-none text-reset">Call&nbsp;111</a>
+                      </span>
+                    </li>
+                    <li class="mb-3">
+                      <strong>Police (If it's already happened):</strong>
+                      <span class="highlight">
+                        <a href="tel:105" class="text-decoration-none text-reset">Call&nbsp;105</a>
+                      </span>
+                    </li>
+                    <li>
+                      <strong>Coastguard:</strong>
+                      <span class="highlight">
+                        <a href="tel:093039368" class="text-decoration-none text-reset">Call&nbsp;09&nbsp;303&nbsp;9368</a>
+                      </span>
+                    </li>
+                  </ul>                  
+            </div>
+        </div>
+    </section>
+
+      <div class="container">
+        <footer class=" d-flex flex-wrap  py-3 my-4 border-top">
+  
+            <!-- This is the medium and up screen layout -->
+            <div class="d-flex col-md-12 d-none d-md-flex justify-content-between align-items-center ">
+  
+                <!-- Logo , title and copyright mark for the desktop version -->
+                <div class="col-md-7 d-flex align-items-center">  
+                   <img class="col-2" src="/css/logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">  
+                    <div class="row" id = "footer_text"> 
+                        <span class="mb-4 mb-md-0 text-body-primary h3">Red Beach Outrigger Club </span>
+                        <span class="mb-4 mb-md-0 text-body-tertiary p5">© 2025 Company, Inc</span>
+                    </div>         
+               </div>
+  
+               <!-- Media icons for the Medium and up version -->
+               <div class="nav col-md-4 justify-content-end d-flex">
+                    <a href = "https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/facebook.png" alt="Facebook logo"></a>
+                    <a href = "https://www.instagram.com/redbeach_occ/?hl=zh-cn" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/instagram.png" alt="Instagram Logo"></a>
+                    <a href = "https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/youtube.png" alt="Youtube Logo"></a>
+            
+               </div>
+            </div>
+            <!-- This is the small and below screen layout -->
+            <div class="d-flex d-md-none flex-column align-items-center w-100" >
+              
+                <!-- Logo image -->
+                <div class="col-4 d-flex justify-content-center">
+                    <img class="img-fluid " id = "small_logo" src="/css/logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
+                </div>
+                  
+               <!-- Media icons for the small version -->
+               <div class="nav col-sm-12 justify-content-center d-flex" id = "mobile_icons">
+                    
+                    <a href = "https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/facebook.png" alt="Facebook logo"></a>
+                    <a href = "https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/instagram.png" alt="Instagram Logo"></a>
+                    <a href = "https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/youtube.png" alt="Youtube Logo"></a>
+               </div>
+            </div>
+  
+        </footer>
+      </div>
+
+    <!-- Add Bootstrap libary -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
