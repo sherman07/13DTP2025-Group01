@@ -543,19 +543,36 @@
 
                 <!-- The main things that the form need to be fill out -->
                 <div class="modal-body">
-                    <form>
+                    <form class="needs-validation" novalidate id="membership-form">
+
+                        <!-- The First Name -->
                         <div class="mb-3">
-                            <label for="first-name" class="col-form-label">First Name:</label>
-                            <input type="text" class="form-control" id="first-name">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                            <div class="invalid-feedback">
+                                Please Enter Your First Name
+                            </div>
                         </div>
+
+                        <!-- The Last Name -->
                         <div class="mb-3">
                             <label for="last-name" class="col-form-label">Last Name:</label>
-                            <input type="text" class="form-control" id="last-name">
+                            <input type="text" class="form-control" id="last-name" required>
+                            <div class="invalid-feedback">
+                                Please Enter Your Last Name
+                            </div>
                         </div>
+
+                        <!-- The Email -->
                         <div class="mb-3">
                             <label for="email" class="col-form-label">Email:</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Please Enter A Valid Email Address
+                            </div>
                         </div>
+
+                        <!-- The Message -->
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Message:</label>
                             <textarea class="form-control" id="message-text"></textarea>
@@ -577,7 +594,7 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                         id="button_form_colour_close">Close</button>
                     <button type="submit" class="btn btn-primary" id="button_colour_yearly_fees_submit"
-                        onclick="openPopup()">Submit Application</button>
+                        onclick="validateForm(event)">Submit Application</button>
                 </div>
 
                 <!-- Popup for end users to know their application has been submitted -->
@@ -597,14 +614,37 @@
     <!-- Add Card Slider libary -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- The javascript code for the card slider and pop-up to function -->
     <script>
-        // Get the popup element by its ID
-        const popup = document.getElementById('popup');
 
-        // Function to open the popup (adding the "open-popup" class makes it visible)
-        function openPopup() {
-            popup.classList.add('open-popup');
+        // Bootstrap form validation
+        (function () {
+            'use strict';
+
+            // Fetch all forms to validate
+            var forms = document.querySelectorAll('.needs-validation');
+
+            // Loop over them and prevent submission if invalid
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        // Function to validate form and show popup
+        function validateForm(event) {
+            const form = document.getElementById('membership-form');
+            if (form.checkValidity()) {
+                event.preventDefault();
+                popup.classList.add('open-popup');
+
+            } else {
+                form.classList.add('was-validated');
+            }
         }
 
         // Function to close the popup (removes the "open-popup" class)
