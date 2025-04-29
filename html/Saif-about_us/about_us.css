@@ -207,6 +207,13 @@ h3{
     text-decoration-color: var(--primary-red);
 }
 
+/* Adjusted h-100 class */
+img.h-100 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
 /* main div styling*/
 main{
     margin: 100px auto 0px auto;
@@ -306,6 +313,7 @@ main{
     width: 100%;
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
+
 
   
 
