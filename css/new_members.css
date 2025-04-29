@@ -339,7 +339,7 @@ html {
 /* Styling for the previous and next buttons in the gallery */
 #button_colour_change_card_prev,
 #button_colour_change_card_next {
-    color: var(--primary-red); 
+    color: var(--primary-red);
     border: solid var(--primary-red);
     background-color: transparent;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -572,7 +572,7 @@ footer {
         font-size: calc(6rem + 1vw);
     }
 
-    .content-box {
+    .content_new_members-box {
         padding: 9rem !important;
     }
 
@@ -610,7 +610,7 @@ footer {
         font-size: calc(5rem + 1vw);
     }
 
-    .content-box {
+    .content_new_members-box {
         padding: 3rem !important;
     }
 
@@ -645,7 +645,7 @@ footer {
         font-size: calc(4rem + 1vw);
     }
 
-    .content-box {
+    .content_new_members-box {
         padding: 1rem !important;
     }
 

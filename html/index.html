@@ -1,349 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="author" content="Sherman Zheng, Saif Ahmed, Gunn Jeong">
-    <meta name="keywords" content="keywords, RBOCC, Waka Ama, Community, responsive, culture">
-    <meta name="description" content="A Website for Red Beach Outrigger Canoe Club, a club for Waka Ama">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sherman Zheng, Saif Ahmed, Gunn Jeong">
+  <meta name="keywords" content="keywords, RBOCC, Waka Ama, Community, responsive, culture">
+  <meta name="description" content="A Website for Red Beach Outrigger Canoe Club, a club for Waka Ama">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title of the page -->
-    <title>Red Beach Outrigger Canoe Club</title>
+  <!-- Title of the page -->
+  <title>Red Beach Outrigger Canoe Club</title>
 
-    <!-- The RBOCC icon logo -->
-    <link rel="icon" type="image/x-icon" href="/css/logos/RBOCC_BLACK_COLOUR.png">
+  <!-- The RBOCC icon logo -->
+  <link rel="icon" type="image/x-icon" href="../images/logos/RBOCC_BLACK_COLOUR.png">
 
-    <link rel="stylesheet" href="/css/Gunn-index.css/index.css">
-    <!-- Add Bootstrap libary -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Add Bootstrap libary -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <!-- Navigation using Bootstrap navbar component -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-              <img src="/css/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70"  class="d-inline-block">
-            </a>
-            <a class="navbar-brand d-none d-sm-block" href="#">
-                Red Beach Outrigger Canoe Club
-            </a>
+  <!-- Navigation using Bootstrap navbar component -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
+    <div class="container-fluid">
+
+      <!-- The Navigation RBOCC Logo -->
+      <a href="#" class="navbar-brand">
+        <img src="../images/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC logo" width="70" class="d-inline-block">
+      </a>
+
+      <!-- Appear in large viewport -->
+      <a class="navbar-brand d-none d-sm-block" href="#">
+        Red Beach Outrigger Canoe Club
+      </a>
+
+      <!-- Appear in large viewport -->
+      <a class="navbar-brand d-block d-sm-none" href="#">
+        R.B.O.C.C
+      </a>
 
 
-          <!-- Add Toggle button component that can be change into smaller sceen -->
-          <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-             <span class="toggler-icon bottom-bar"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <!-- Navigation column size chnage when facing different screens -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
+      <!-- Add Toggle button component that can be change into smaller sceen -->
+      <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
 
-              <!-- Home link -->
-              <li class="nav-item">
-                <a class="nav-link active text-light text-dark" aria-current="page" href="#">Home</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Navigation column size chnage when facing different screens -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
+
+          <!-- Home link -->
+          <li class="nav-item">
+            <a class="nav-link active text-light text-dark" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <!-- About us link -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="#">About us</a>
+          </li>
+
+          <!-- Safety link -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="safety.html">Safety</a>
+          </li>
+
+          <!-- Dropdown links for membership -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Membership</a>
+            <ul class="dropdown-menu">
+
+              <!-- New member link -->
+              <li><a class="dropdown-item" href="new_members.html">New
+                  Member</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
 
-              <!-- About us link -->
-              <li class="nav-item">
-                <a class="nav-link active text-dark" href="#">About us</a>
-              </li>
-
-              <!-- Safety link -->
-              <li class="nav-item">
-                <a class="nav-link active text-dark" href="#">Safety</a>
-              </li>
-
-              <!-- Dropdown links for membership -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
-                <ul class="dropdown-menu">
-
-                  <!-- New member link -->
-                  <li><a class="dropdown-item" href="#">New Member</a></li>
-                  <li><hr class="dropdown-divider"></li>
-
-                  <!-- Existing link -->
-                  <li><a class="dropdown-item" href="#">Existing Member</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-dark" href="#">Contact us</a>
-              </li>
+              <!-- Existing link -->
+              <li><a class="dropdown-item" href="#">Existing Member</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
- 
-      
-      <!-- HERO SECTION -->
-      <div class="px-4 pt-5 border-bottom bg-image mt-5" id="hero"> 
-        <!-- Main heading for the Vision section -->
-        <h1 class="display-4 fw-bold text-center">Our Vision</h1>
+          </li>
 
-        <div class="col-lg-6 mx-auto">
-          <!-- Mission statement -->
-          <h4 class="mb-4">
-            To grow the Red Beach Outrigger Canoe Club through inclusive on-water activities for our community whilst promoting safety, education, health, and fitness.
-          </h4>
+          <!-- Contect us link -->
+          <li class="nav-item">
+            <a class="nav-link active text-dark" href="contact_us.html">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- HERO SECTION -->
+  <div class="px-4 pt-5 border-bottom bg-image mt-5" id="hero">
+    <!-- Main heading for the Vision section -->
+    <h1 class="display-4 fw-bold text-center">Our Vision</h1>
+
+    <div class="col-lg-6 mx-auto">
+      <!-- Mission statement -->
+      <h4 class="mb-4">
+        To grow the Red Beach Outrigger Canoe Club through inclusive on-water activities for our community whilst
+        promoting safety, education, health, and fitness.
+      </h4>
+
+      <!-- Learn More Button centered and styled -->
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ABOUT US SECTION -->
+  <section id="about_us">
+    <div class="container text-center text-sm-start container-about_us">
+      <div class="row align-items-center">
+
+        <!-- Text content column -->
+        <div class="col-md-6 p-4">
+          <!-- Section heading with underline -->
+          <h2 class="display-5">
+            <u class="underline_colour">About Us</u>
+          </h2>
+
+          <!-- Club description paragraph -->
+          <p class="lead">
+            Red Beach Outrigger Canoe Club is a young up-and-coming Waka Ama club that was established in 2018 to lead
+            the development and practice of Waka Ama, with a key focus to promote kaupapa waka as a positive activity to
+            support cultural and physical wellbeing within the community.
+          </p>
 
           <!-- Learn More Button centered and styled -->
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design">Learn More</button>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"></div>
+          <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design">Learn More</button>
+        </div>
+
+        <!-- Image column -->
+
+        <div class="col-md-5 d-none d-md-block">
+          <div class="ms-md-2 ms-lg-5 mt-2">
+            <img class="img-fluid rounded-3" src="../images/logos/RBOCC_BLACKONWHITE.png"
+              alt="Red Beach Outrigger Canoe Club black logo on white background">
           </div>
         </div>
+
+
       </div>
+    </div>
+  </section>
 
 
-      <!-- ABOUT US SECTION -->
-      <section id="about_us">
-        <div class="container text-center text-sm-start">
-          <div class="row align-items-center">
-            
-            <!-- Text content column -->
-            <div class="col-md-6 p-4">
-              <!-- Section heading with underline -->
-              <h2 class="display-5">
-                <u class="underline_colour">About Us</u>
-              </h2>
+  <!-- CONTACT US SECTION -->
+  <section id="contact_us">
+    <div class="container container-about_us">
+      <!-- Section heading -->
+      <h2 class="display-5 text-center">
+        <u class="underline_colour">Contact Us</u>
+      </h2>
 
-              <!-- Club description paragraph -->
-              <p class="lead">
-                Red Beach Outrigger Canoe Club is a young up-and-coming Waka Ama club that was established in 2018 to lead the development and practice of Waka Ama, with a key focus to promote kaupapa waka as a positive activity to support cultural and physical wellbeing within the community.
-              </p>
+      <!-- Contact invitation and details -->
+      <h2 class="text-center p-3 links_animation">
+        Red Beach Outrigger Canoe Club wants to connect with you!<br>
+        For all enquiries please email us at
+        <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
+        and we will get back to you as soon as we can.
+        <br>Address: Ngapara Street, Red Beach 0932
+        <br>Email: <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
+      </h2>
 
-              <!-- Learn More Button centered and styled -->
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"></div>
-              <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design">Learn More</button>
-            </div>
-
-            <!-- Image column -->
-
-            <div class="col-md-5 d-none d-md-block">
-              <div class="ms-md-2 ms-lg-5 mt-2">
-                <img class="img-fluid rounded-3" src="/css/logos/RBOCC_BLACKONWHITE.png" alt="Red Beach Outrigger Canoe Club black logo on white background">
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </section>
-
-
-      <!-- CONTACT US SECTION -->
-      <section id="contact_us">
-        <div class="container">
-          <!-- Section heading -->
-          <h2 class="display-5 text-center">
-            <u class="underline_colour">Contact Us</u>
-          </h2>
-
-          <!-- Contact invitation and details -->
-          <h2 class="text-center p-3 links_animation">
-            Red Beach Outrigger Canoe Club wants to connect with you!<br>
-            For all enquiries please email us at 
-            <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
-            and we will get back to you as soon as we can.
-            <br>Address: Ngapara Street, Red Beach 0932
-            <br>Email: <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
-          </h2>
-
-          <!-- Button to trigger contact modal -->
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design" 
-                    data-bs-toggle="modal" 
-                    data-bs-target="#contact_us_modal" 
-                    data-bs-whatever="@getbootstrap">
-              Contact Us
-            </button>
-          </div>   
-
-          <!-- Contact modal form -->
-          <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                
-                <!-- Modal header with logo and title -->
-                <div class="modal-header">
-                  <img src="/css/logos/RBOCC_BLACK_COLOUR.png" alt="Red Beach Outrigger Canoe Club coloured logo" width="70" class="d-inline-block m-3 display-5">
-                  <div class="modal-title fs-1 fw-bold" id="contact_us_modalLabel">Contact Us</div>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <!-- Modal body with contact form -->
-                <div class="modal-body">
-                  <form>
-                    <!-- First Name field -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">First Name:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
-
-                    <!-- Last Name field -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Last Name:</label>
-                      <input type="text" class="form-control" id="recipient-name-2">
-                    </div>
-
-                    <!-- Email field -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Email:</label>
-                      <input type="text" class="form-control" id="recipient-name-3">
-                    </div>
-
-                    <!-- Message field -->
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
-                </div>
-
-                <!-- Modal footer with action buttons -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-danger">Send</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="8" aria-label="Slide 9"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="9" aria-label="Slide 10"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="10" aria-label="Slide 11"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="11" aria-label="Slide 12"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="12" aria-label="Slide 13"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="13" aria-label="Slide 14"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="14" aria-label="Slide 15"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="15" aria-label="Slide 16"></button>
-        </div>
-      
-        <!-- Slides -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/css/images/Masters_crew.jpg" class="d-block w-100 carousel-image" alt="Masters crew">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_and_masters.jpg" class="d-block w-100 carousel-image" alt="Mens and masters">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_and_masters_beach.jpg" class="d-block w-100 carousel-image" alt="Mens and masters beach">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_korero.jpg" class="d-block w-100 carousel-image" alt="Mens korero">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/Mens_korero2.jpg" class="d-block w-100 carousel-image" alt="Mens korero 2">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_paddle.jpg" class="d-block w-100 carousel-image" alt="Mens paddle">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_paddling_beach.jpg" class="d-block w-100 carousel-image" alt="Mens paddling beach">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_paddling_scene.jpg" class="d-block w-100 carousel-image" alt="Mens paddling scene">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_paddling_waves.jpg" class="d-block w-100 carousel-image" alt="Mens paddling waves">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_race.jpg" class="d-block w-100 carousel-image" alt="Mens race">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_race_group.jpg" class="d-block w-100 carousel-image" alt="Mens race group">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/Mens_race_start.jpg" class="d-block w-100 carousel-image" alt="Mens race start">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/Mens_team.jpg" class="d-block w-100 carousel-image" alt="Mens team">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mens_waka.jpg" class="d-block w-100 carousel-image" alt="Mens waka">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/Mixed_crew.jpg" class="d-block w-100 carousel-image" alt="Mixed crew">
-          </div>
-          <div class="carousel-item">
-            <img src="/css/images/mixed_team.jpg" class="d-block w-100 carousel-image" alt="Mixed team">
-          </div>
-        </div>
-      
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+      <!-- Button to trigger contact modal -->
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-lg px-4 me-sm-3 fw-bold button-design" data-bs-toggle="modal"
+          data-bs-target="#contact_us_modal" data-bs-whatever="@getbootstrap">
+          Contact Us
         </button>
       </div>
-      
 
-      <div class="container">
-        <footer class=" d-flex flex-wrap  py-3 my-4 border-top">
-  
-            <!-- This is the medium and up screen layout -->
-            <div class="d-flex col-md-12 d-none d-md-flex justify-content-between align-items-center ">
-  
-                <!-- Logo , title and copyright mark for the desktop version -->
-                <div class="col-md-7 d-flex align-items-center">  
-                   <img class="col-2" src="/css/logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">  
-                    <div class="row" id = "footer_text"> 
-                        <span class="mb-4 mb-md-0 text-body-primary h3">Red Beach Outrigger Club </span>
-                        <span class="mb-4 mb-md-0 text-body-tertiary p5">© 2025 Company, Inc</span>
-                    </div>         
-               </div>
-  
-               <!-- Media icons for the Medium and up version -->
-               <div class="nav col-md-4 justify-content-end d-flex">
-                    <a href = "https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/facebook.png" alt="Facebook logo"></a>
-                    <a href = "https://www.instagram.com/redbeach_occ/?hl=zh-cn" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/instagram.png" alt="Instagram Logo"></a>
-                    <a href = "https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/youtube.png" alt="Youtube Logo"></a>
-            
-               </div>
+      <!-- Contact modal form -->
+      <div class="modal fade" id="contact_us_modal" tabindex="-1" aria-labelledby="contact_us_modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <!-- Modal header with logo and title -->
+            <div class="modal-header">
+              <img src="../images/logos/RBOCC_BLACK_COLOUR.png" alt="Red Beach Outrigger Canoe Club coloured logo"
+                width="70" class="d-inline-block m-3 display-5">
+              <div class="modal-title fs-1 fw-bold" id="contact_us_modalLabel">Contact Us</div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <!-- This is the small and below screen layout -->
-            <div class="d-flex d-md-none flex-column align-items-center w-100" >
-              
-                <!-- Logo image -->
-                <div class="col-4 d-flex justify-content-center">
-                    <img class="img-fluid " id = "small_logo" src="/css/logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
+
+            <!-- Modal body with contact form -->
+            <div class="modal-body">
+              <form>
+                <!-- First Name field -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">First Name:</label>
+                  <input type="text" class="form-control" id="recipient-name">
                 </div>
-                  
-               <!-- Media icons for the small version -->
-               <div class="nav col-sm-12 justify-content-center d-flex" id = "mobile_icons">
-                    
-                    <a href = "https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/facebook.png" alt="Facebook logo"></a>
-                    <a href = "https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/instagram.png" alt="Instagram Logo"></a>
-                    <a href = "https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img class=" img-fluid media_icons" src="/css/icons/youtube.png" alt="Youtube Logo"></a>
-               </div>
+
+                <!-- Last Name field -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Last Name:</label>
+                  <input type="text" class="form-control" id="recipient-name-2">
+                </div>
+
+                <!-- Email field -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Email:</label>
+                  <input type="text" class="form-control" id="recipient-name-3">
+                </div>
+
+                <!-- Message field -->
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
             </div>
-  
-        </footer>
+
+            <!-- Modal footer with action buttons -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="10" aria-label="Slide 11"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="11" aria-label="Slide 12"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="12" aria-label="Slide 13"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="13" aria-label="Slide 14"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="14" aria-label="Slide 15"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="15" aria-label="Slide 16"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/Masters_crew.jpg" class="d-block w-100 carousel-image" alt="Masters crew">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_and_masters.jpg" class="d-block w-100 carousel-image" alt="Mens and masters">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_and_masters_beach.jpg" class="d-block w-100 carousel-image"
+          alt="Mens and masters beach">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_korero.jpg" class="d-block w-100 carousel-image" alt="Mens korero">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/Mens_korero2.jpg" class="d-block w-100 carousel-image" alt="Mens korero 2">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_paddle.jpg" class="d-block w-100 carousel-image" alt="Mens paddle">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_paddling_beach.jpg" class="d-block w-100 carousel-image" alt="Mens paddling beach">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_paddling_scene.jpg" class="d-block w-100 carousel-image" alt="Mens paddling scene">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_paddling_waves.jpg" class="d-block w-100 carousel-image" alt="Mens paddling waves">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_race.jpg" class="d-block w-100 carousel-image" alt="Mens race">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mens_race_group.jpg" class="d-block w-100 carousel-image" alt="Mens race group">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/Mens_race_start.jpg" class="d-block w-100 carousel-image" alt="Mens race start">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/Mens_team.jpg" class="d-block w-100 carousel-image" alt="Mens team">
+      </div>
+      <div class="carousel-item">
+        <img src="../images//mens_waka.jpg" class="d-block w-100 carousel-image" alt="Mens waka">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/Mixed_crew.jpg" class="d-block w-100 carousel-image" alt="Mixed crew">
+      </div>
+      <div class="carousel-item">
+        <img src="../images/mixed_team.jpg" class="d-block w-100 carousel-image" alt="Mixed team">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container">
+    <footer class=" d-flex flex-wrap  py-3 my-4 border-top">
+
+      <!-- This is the medium and up screen layout -->
+      <div class="d-flex col-md-12 d-none d-md-flex justify-content-between align-items-center ">
+
+        <!-- Logo , title and copyright mark for the desktop version -->
+        <div class="col-md-7 d-flex align-items-center">
+          <img class="col-2" src="../images/logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
+          <div class="row" id="footer_text">
+            <span class="mb-4 mb-md-0 text-body-primary h3">Red Beach Outrigger Club </span>
+            <span class="mb-4 mb-md-0 text-body-tertiary p5">© 2025 Company, Inc</span>
+          </div>
+        </div>
+
+        <!-- Media icons for the Medium and up version -->
+        <div class="nav col-md-4 justify-content-end d-flex">
+          <a href="https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons"
+              src="../icons/facebook.png" alt="Facebook logo"></a>
+          <a href="https://www.instagram.com/redbeach_occ/?hl=zh-cn" target="_blank"><img class=" img-fluid media_icons"
+              src="../icons/instagram.png" alt="Instagram Logo"></a>
+          <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img
+              class=" img-fluid media_icons" src="../icons/youtube.png" alt="Youtube Logo"></a>
+
+        </div>
+      </div>
+      <!-- This is the small and below screen layout -->
+      <div class="d-flex d-md-none flex-column align-items-center w-100">
+
+        <!-- Logo image -->
+        <div class="col-4 d-flex justify-content-center">
+          <img class="img-fluid " id="small_logo" src="../images/logos/RBOCC_WHITEONBLACK.png"
+            alt="Black on white logo">
+        </div>
+
+        <!-- Media icons for the small version -->
+        <div class="nav col-sm-12 justify-content-center d-flex" id="mobile_icons">
+
+          <a href="https://www.facebook.com/groups/317417045528757/" target="_blank"><img class=" img-fluid media_icons"
+              src="../icons/facebook.png" alt="Facebook logo"></a>
+          <a href="https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank"><img class=" img-fluid media_icons"
+              src="../icons/instagram.png" alt="Instagram Logo"></a>
+          <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img
+              class=" img-fluid media_icons" src="../icons/youtube.png" alt="Youtube Logo"></a>
+        </div>
       </div>
 
-    <!-- Add Bootstrap libary -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    </footer>
+  </div>
+
+  <!-- Add Bootstrap libary -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

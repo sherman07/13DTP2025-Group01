@@ -281,7 +281,7 @@ html {
 #recommended_clothing_background_img.visible {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     opacity: 1;
-    background-image: url('./images-resized-compressed/Mens_korero2.jpg');
+    background-image: url('../images/Mens_korero2.jpg');
 }
 
 /* Colour for recommended clothing title */
