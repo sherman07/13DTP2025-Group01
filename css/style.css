@@ -415,6 +415,7 @@ html {
     font-size: 10rem;
     font-family: var(--primary-font-second) !important;
     color: var(--primary-yellow);
+    text-align: center;
 
 }
 
@@ -946,7 +947,7 @@ main{
 }
 
 /* Heading's styling */
-h1,h2{
+h1{
     font-family: var(--primary-font-fourth) !important;
     color: blue;
 }
@@ -1443,7 +1444,7 @@ footer {
 
 /* Even smaller mobile screen size of changing texts, content and images*/
 @media (max-width: 280px) {
-    #safety_intro_title {
+    #intro_title {
         font-size: calc(3rem + 1vw);
     }
 
