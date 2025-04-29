@@ -575,6 +575,35 @@ html {
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
+/* Link animation */
+.links_animation_black a {
+    color: var(--primary-black);
+    font-family: var(--primary-font-third);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 0.4rem;
+}
+
+/* Link animation before */
+.links_animation_black a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 25%;
+    height: 0.25rem;
+    background-color: var(--primary-blue);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+/* Link animation before with hover on */
+.links_animation_black a:hover::before {
+    width: 100%;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
 /* ----------- New Members ----------- */
 
 /* Size for New Members text */
@@ -906,6 +935,198 @@ html {
 
 }
 
+/* ----------- Existing Members ----------- */
+
+/* classes used through out the page */
+
+/* main div styling*/
+main{
+    margin: 100px auto 0px auto;
+    font-family: var(--primary-font-third);
+}
+
+/* Heading's styling */
+h1,h2{
+    font-family: var(--primary-font-fourth) !important;
+    color: blue;
+}
+
+h3{
+    font-family: var(--primary-font-third);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+
+}
+
+/* Underline styling */
+.underline_styling{
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+}
+
+
+/* Styling for the Fees due date section of the page */
+
+#existing_members_landing{
+    margin: 10px 0px;
+}
+
+.existing_members_landing_img{
+    width: 700px;
+    margin: 20px 0;
+    box-shadow: 2px 5px 15px;
+}
+
+
+/* ID card section styling */
+
+#id_cards_start{
+    margin: 0;
+}
+
+.indent{
+    padding-left: 40px;
+}
+
+/* Notebox styling */
+#note-box {
+    font-style: italic;
+    font-size: 0.75rem;
+    color: #555;
+    border-left: 4px solid #2FBEC2; /* your site’s teal */
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    opacity: 0.85;
+}
+
+/* Tooltip styling */
+#custom-tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom: 1px dotted #999;
+  }
+  
+/* Tooltip text styling */
+#custom-tooltip #tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 115%; /* Position above */
+    left: 0;
+    transition: opacity 0.3s;
+    font-size: 0.8rem;
+}
+
+/* Tooltip hover setting */
+#custom-tooltip:hover #tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* club portal information section styling */
+
+.club_portal_img{
+    box-shadow: 2px 5px 15px;
+
+}
+
+#club_portal_list li{
+    border: 2px dashed var(--primary-yellow);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Styling for Club portal link */
+
+#club_portal_link{
+    border: 3px dashed var(--primary-red);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ----------- About Us ----------- */
+
+/* Adjusted h-100 class */
+img.h-100 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the introduction content of the page */
+
+#about_us_landing_img{
+    width: 700px;
+    margin: 20px 0;
+    box-shadow: 2px 5px 15px;
+}
+
+#about_us_landing{
+    margin: 10px 0px;
+}
+
+/* Our vision and mission section styling */
+
+#our_vision{
+    border: 1px solid var(--primary-blue);
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+#our_mission{
+    border: 1px solid var(--primary-red);
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    text-align: end;
+}
+
+.image_large{
+    display:inline-block;
+}
+
+#our_vision_img{
+    border-radius: 10px 0 0 10px;
+}
+
+#our_mission_img{
+    border-radius: 0 10px 10px 0;
+}
+
+#image_small{
+    display: none;
+}
+
+/* Our values section styling*/
+
+/* Styling for the value 'cards' of value section*/
+.values_styling{
+    border: 2px solid var(--primary-yellow);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Constitution section styling */
+
+#constitution{
+    border: 3px dashed var(--primary-blue);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
 /* ----------- The footer section ----------- */
 
 /* Customize footer section's colour and text font */
@@ -1005,6 +1226,42 @@ footer {
 
     
 }
+
+/* Medium devices (desktops, larger tablets) */
+@media (max-width: 992px) {
+    #our_vision{
+        border: 1px solid var(--primary-blue);
+        border-radius: 10px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    #our_mission{   
+        border: 1px solid var(--primary-red);
+        border-radius: 10px;
+        margin: 5px 0;
+        text-align: center;  
+    }
+
+    .image_large{
+        display:none;
+    }
+
+    #image_small{
+        display:inline;
+       
+           
+    }
+
+    #image_small img{
+        box-shadow: 1px 2px 10px;
+
+    }
+
+}
+
+
+
 
 /* Tablet screen size of changing texts, content and images*/
 @media (max-width: 980px) {

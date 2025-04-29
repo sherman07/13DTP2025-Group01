@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Sherman Zheng, Saif Ahmed, Gunn Jeong">
+    <meta name="keywords" content="keywords, RBOCC, Waka Ama, Community, responsive, culture, About us page,Introduction of the Red Beach Outrigger Club, Club constitution, Vision and mission of the club ,Club's values">
+    <meta name="description" content=" The About us page of Red Beach Outrigger Club">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>About Us</title>
+
+    <!-- The RBOCC icon logo -->
+    <link rel="The RBOCC Icon" type="image/x-icon" href="../images/logos/RBOCC_BLACK_COLOUR.png" >
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Add Bootstrap libary -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navigation using Bootstrap navbar component -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="../images/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70" class="d-inline-block">
+            </a>
+            <!-- Appear in large viewport -->
+            <a class="navbar-brand d-none d-sm-block" href="#">
+                Red Beach Outrigger Canoe Club
+            </a>
+
+            <!-- Appear in large viewport -->
+            <a class="navbar-brand d-block d-sm-none" href="#">
+                R.B.O.C.C
+            </a>
+
+            <!-- Add Toggle button component that can be change into smaller sceen -->
+            <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Navigation column size chnage when facing different screens -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
+
+                    <!-- Home link -->
+                    <li class="nav-item">
+                        <a class="nav-link active text-light text-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About us link -->
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="about_us.html">About us</a>
+                    </li>
+
+                    <!-- Safety link -->
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="safety.html">Safety</a>
+                    </li>
+
+                    <!-- Dropdown links for membership -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active text-dark" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Membership</a>
+                        <ul class="dropdown-menu">
+
+                            <!-- New member link -->
+                            <li><a class="dropdown-item" href="new_members.html">New Member</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <!-- Existing link -->
+                            <li><a class="dropdown-item" href="existing_members.html">Existing Member</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="contact_us.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Front image for the about us page -->
+			<div class="front_img col-md-12" style="background-image: url(../images/mens_paddling_beach.jpg)">
+
+				<!-- Title of the about us page -->
+					<div class="color-overlay d-flex justify-content-center align-items-center">
+					<h1 id="intro_title">About Us</h1>
+					</div>
+
+			</div>
+
+	<!-- Main section of the page -->
+    <main class= "row mx-auto container col-md-8 col-12 d-flex justify-content-center align-items-center">
+	
+        <div class="row">
+
+			<!-- Introduction and our vision and mission section -->
+			<div  class="col-md-12 col-12 text-justify d-flex justify-content-center row mt-5" id = "about_us_landing">
+			
+			<h1 class="underline_styling ">Introduction</h1>
+
+			<!-- Page introduction body text -->
+			<p>
+				Red Beach Outrigger Canoe Club is a young up-and-coming Waka Ama club that was established in 2018
+				to lead the development and practice of Waka Ama, With a key focus to promote kaupapa waka as a positive
+				activity to support cultural and physical well-being within the community. <br><br>
+  
+				Waka Ama has proven to be a growing team sport across New Zealand, The sport presents a rich history 
+				where identity, tradition and community is at its core and as a result, for many, Waka Ama is not just
+				a sport but also a lifestyle.<br><br>
+				
+				Red Beach Outrigger Canoe Club was established in 2018 and is situated in Red Beach Whangaparoa, Auckland New Zealand.
+				
+			</p>
+
+			<!-- Landing section image -->
+			<div class = "col-12 col-md-10 col-lg-8 my-2">
+				<img class="img-fluid" id = "about_us_landing_img" src="../images/RedBeach_surf_club.jpg" alt="Close up of the Red Beach surf club building.">
+			</div> 
+
+			<!-- Our vision section -->
+			<div class="row mt-3">
+
+				<!-- Image for larger viewports -->
+				<div class="col-lg-5 col-12 image_large">
+					<img id = "our_vision_img" class="img-fluid h-100"  src="../images/mens_and_masters.jpg" alt="Beach with two boats in the water and a island in the distance.">
+				</div>
+
+				<!-- Our vision text content -->
+				<div id = "our_vision" class="col-lg-7 col-md-12 col-12 d-flex flex-column ">
+					<h1 class="underline_styling ">Our Vision</h1>
+					<p> Develop, educate, practice, and promote all aspects of Waka Ama so that it becomes the leading choice of water sport. </p>
+				
+				</div>
+				
+			</div>
+
+			<!-- Our mission section -->
+			<div class="row mt-lg-5">
+
+				<!-- Our mission text content -->
+				<div id = "our_mission" class=" col-lg-7  col-md-12 col-12 ">
+					<h1 class="underline_styling ">Our Mission</h1>
+					<p>To grow the Red Beach Outrigger Canoe Club through inclusive on-water activities for our community whilst promoting safety, education, health and fitness.</p>
+			
+				</div>
+
+				<!-- Image for larger viewports -->
+				<div class="col-md-12 col-lg-5 col-12 image_large">
+					<img id =  "our_mission_img" class="img-fluid h-100"  src="../images/Mens_korero2.jpg" alt="Waka Ama team working together at the beach.">
+				</div>
+
+				<!-- Image for smaller viewports -->
+				<div id= "image_small" class="col-12 px-0 mt-3">
+					<img class="img-fluid h-100"  src="../images/mixed_team.jpg" alt="Close up of a Waka Ama team paddling in the water.">
+				</div>
+
+				
+			</div>
+
+		
+			
+			<!-- Our values section -->
+			<div class="row justify-content-center text-center col-md-12 col-12 mx-auto my-3">
+
+				<h1 class="underline_styling ">Our Values</h1>
+
+					<div class="values_styling col-10 col-md-5 mx-1 my-2 ">
+						<h3>Manaakitanga</h3>
+						<p>We encourage hospitality, kindness and generosity through sharing of ourselves and our resources nurturing all people and accepting our differences.	</p>
+
+					</div>
+
+					<div class="values_styling col-10 col-md-5 mx-1 my-2">
+						<h3>Hauora</h3>
+						<p>We believe in the four dimensions of Hauora which promote the physical, mental,
+							emotional and spiritual well-being of all our participants</p>
+
+					</div>
+					
+					<div  class="values_styling col-10 col-md-10 my-2">
+						<h3>Whanaungatanga </h3>
+						<p>Is our sense of belonging, identification and collective strength</p>
+
+					</div>
+
+					<div class="values_styling col-10 col-md-5 mx-1 my-2">
+						<h3>Wairuatanga </h3>
+						<p>Wairuatanga meaning being in touch with the spiritual element, including respect and love for the ocean. To look after each other on and off the water</p>
+
+					</div>
+
+					<div class="values_styling col-10 col-md-5 mx-1 my-2">
+						<h3>Tu Tangata </h3>
+						<p>We are accountable for our actions, we have respect for each other, our resources and our environment.</p>
+
+					</div>
+									
+			</div>
+
+			<!-- Constitution section -->
+			<div id = "constitution" class="row justify-content-center  col-md-12 col-10 mx-auto my-3">
+				<h1 class="underline_styling ">Constitution</h1>
+
+
+				<p>This document is the official constitution of the Red Beach Outrigger Canoe Club Incorporated. It outlines the club's purpose, governance structure, membership rules, values, and operational procedures, ensuring alignment with Waka Ama NZ within the Auckland region.</p>
+
+				<!-- Link for the constitution document -->
+				<div class ="links_animation_black">
+					<a  href="../rbocc_constitution/Red_Beach_Outrigger_Canoe_Club_Constitution_20231201.pdf" target="_blank">Click here to view the document</a>
+				</div>
+			</div>
+
+		</div>
+
+    </main>
+
+	<div class="container">
+        <footer class=" d-flex flex-wrap  py-3 my-4 border-top">
+
+            <!-- This is the medium and up screen layout -->
+            <div class="d-flex col-md-12 d-none d-md-flex justify-content-between align-items-center ">
+
+                <!-- Logo , title and copyright mark for the desktop version -->
+                <div class="col-md-7 d-flex align-items-center">
+                    <img class="col-2" src="../images/logos/RBOCC_WHITEONBLACK.png" alt="Black on white logo">
+                    <div class="row" id="footer_text">
+                        <span class="mb-4 mb-md-0 text-body-primary h3">Red Beach Outrigger Club </span>
+                        <span class="mb-4 mb-md-0 text-body-tertiary p5">© 2025 Company, Inc</span>
+                    </div>
+                </div>
+
+                <!-- Media icons for the Medium and up version -->
+                <div class="nav col-md-4 justify-content-end d-flex">
+                    <a href="https://www.facebook.com/groups/317417045528757/" target="_blank"><img
+                            class=" img-fluid media_icons" src="../icons/facebook.png" alt="Facebook logo"></a>
+                    <a href="https://www.instagram.com/redbeach_occ/?hl=zh-cn" target="_blank"><img
+                            class=" img-fluid media_icons" src="../icons/instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img
+                            class=" img-fluid media_icons" src="../icons/youtube.png" alt="Youtube Logo"></a>
+
+                </div>
+            </div>
+            <!-- This is the small and below screen layout -->
+            <div class="d-flex d-md-none flex-column align-items-center w-100">
+
+                <!-- Logo image -->
+                <div class="col-4 d-flex justify-content-center">
+                    <img class="img-fluid " id="small_logo" src="../images/logos/RBOCC_WHITEONBLACK.png"
+                        alt="Black on white logo">
+                </div>
+
+                <!-- Media icons for the small version -->
+                <div class="nav col-sm-12 justify-content-center d-flex" id="mobile_icons">
+
+                    <a href="https://www.facebook.com/groups/317417045528757/" target="_blank"><img
+                            class=" img-fluid media_icons" src="../icons/facebook.png" alt="Facebook logo"></a>
+                    <a href="https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank"><img
+                            class=" img-fluid media_icons" src="../icons/instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank"><img
+                            class=" img-fluid media_icons" src="../icons/youtube.png" alt="Youtube Logo"></a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <!-- Add Bootstrap libary -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>

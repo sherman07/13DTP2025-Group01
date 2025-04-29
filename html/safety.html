@@ -59,80 +59,73 @@
 
 <body>
 
-  <!-- Navigation using Bootstrap navbar component -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
-    <div class="container-fluid">
+    <!-- Navigation using Bootstrap navbar component -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg fixed-top">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+              <img src="../images/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70" class="d-inline-block">
+          </a>
+          <!-- Appear in large viewport -->
+          <a class="navbar-brand d-none d-sm-block" href="#">
+              Red Beach Outrigger Canoe Club
+          </a>
 
-      <!-- The Navigation RBOCC Logo -->
-      <a href="#" class="navbar-brand">
-        <img src="../images/logos/RBOCC_BLACK_COLOUR.png" alt="RBOCC_logo" width="70" class="d-inline-block">
-      </a>
+          <!-- Appear in large viewport -->
+          <a class="navbar-brand d-block d-sm-none" href="#">
+              R.B.O.C.C
+          </a>
 
-      <!-- Appear in large viewport -->
-      <a class="navbar-brand d-none d-sm-block" href="#">
-        Red Beach Outrigger Canoe Club
-      </a>
+          <!-- Add Toggle button component that can be change into smaller sceen -->
+          <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+          </button>
 
-      <!-- Appear in large viewport -->
-      <a class="navbar-brand d-block d-sm-none" href="#">
-        R.B.O.C.C
-      </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+              <!-- Navigation column size chnage when facing different screens -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
 
-      <!-- Add Toggle button component that can be change into smaller sceen -->
-      <button class="navbar-toggler collapsed ms-auto" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="toggler-icon top-bar"></span>
-        <span class="toggler-icon middle-bar"></span>
-        <span class="toggler-icon bottom-bar"></span>
-      </button>
+                  <!-- Home link -->
+                  <li class="nav-item">
+                      <a class="nav-link active text-light text-dark" aria-current="page" href="index.html">Home</a>
+                  </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- About us link -->
+                  <li class="nav-item">
+                      <a class="nav-link active text-dark" href="about_us.html">About us</a>
+                  </li>
 
-        <!-- Navigation column size chnage when facing different screens -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-brand">
+                  <!-- Safety link -->
+                  <li class="nav-item">
+                      <a class="nav-link active text-dark" href="safety.html">Safety</a>
+                  </li>
 
-          <!-- Home link -->
-          <li class="nav-item">
-            <a class="nav-link active text-light text-dark" aria-current="page" href="index.html">Home</a>
-          </li>
+                  <!-- Dropdown links for membership -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active text-dark" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">Membership</a>
+                      <ul class="dropdown-menu">
 
-          <!-- About us link -->
-          <li class="nav-item">
-            <a class="nav-link active text-dark" href="#">About us</a>
-          </li>
+                          <!-- New member link -->
+                          <li><a class="dropdown-item" href="new_members.html">New Member</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
 
-          <!-- Safety link -->
-          <li class="nav-item">
-            <a class="nav-link active text-dark" href="safety.html">Safety</a>
-          </li>
-
-          <!-- Dropdown links for membership -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active text-dark" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Membership</a>
-            <ul class="dropdown-menu">
-
-              <!-- New member link -->
-              <li><a class="dropdown-item" href="new_members.html">New Member</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-
-              <!-- Existing link -->
-              <li><a class="dropdown-item" href="#">Existing Member</a></li>
-            </ul>
-          </li>
-
-          <!-- Contect us link -->
-          <li class="nav-item">
-            <a class="nav-link active text-dark" href="contact_us.html">Contact us</a>
-          </li>
-
-        </ul>
+                          <!-- Existing link -->
+                          <li><a class="dropdown-item" href="existing_members.html">Existing Member</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active text-dark" href="contact_us.html">Contact us</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </div>
   </nav>
 
 
