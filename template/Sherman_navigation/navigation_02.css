@@ -1,0 +1,54 @@
+/* Define the custom font using @font-face */
+@font-face {
+    font-family: 'Phosphate'; /* Phosphate font */
+    src: url('/Users/zhenghui/Desktop/13DTP2025-Group01/font/phosphate_pro_solid_fixed.otf'); /* font link in the folder */
+}
+
+/* Apply the custom font to elements */
+* {
+    font-family: 'Phosphate'; 
+    font-size: 1.1em;
+}
+
+/* The primary colours to make a consistency website colour */
+:root{
+    background-color: white;
+    --primary-red: #E42D26;
+    --primary-yellow: #FDC010;
+    --primary-blue: #2FBEC2;
+}
+
+/* Style for the sidebar links */
+.nav-link {
+    color: #ffffff; /* Default text color */
+    padding: 10px 15px; /* Add padding for better spacing */
+    border-radius: 5px; /* Make corners are rounded */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the sidebar links */
+.nav-link:hover {
+    transform: translateX(5px); /* Move the link slightly to the right */
+}
+
+/* Change navbar colour */
+.navbar{
+    background-color: var(--primary-yellow);
+}
+
+/* Change offcanvas colour */
+.offcanvas{
+    background-color: var(--primary-blue) !important;
+    opacity: 0.8;
+}
+
+/* Changing dropdown colour */
+.dropdown-menu{
+    background-color: var(--primary-red) !important;
+}
+
+/* Changing the colour in dropdown */
+.dropdown-item{
+    background-color: var(--primary-red) !important;
+
+}
