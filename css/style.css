@@ -213,6 +213,10 @@ html {
     font-family: var(--primary-font-third) !important;
 }
 
+.title_font{
+    font-family: var(--primary-font-fourth);
+}
+
 /* Button Design */
 .button-design {
     position: relative;
@@ -458,7 +462,6 @@ html {
 /* Colour for underline */
 .underline_colour {
     text-decoration-color: var(--primary-red);
-    font-family: var(--primary-font-fourth) !important;
 }
 
 /* ----------- Divider Breakdown ----------- */
@@ -679,6 +682,10 @@ html {
     opacity: 0;
     visibility: hidden;
     transform: scale(0.5);
+}
+
+.new_members_button_text {
+    font-family: var(--primary-font-second);
 }
 
 /* Styling for the new members form title */
