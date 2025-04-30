@@ -213,7 +213,7 @@ html {
     font-family: var(--primary-font-third) !important;
 }
 
-.title_font{
+.title_font {
     font-family: var(--primary-font-fourth);
 }
 
@@ -941,18 +941,18 @@ html {
 /* classes used through out the page */
 
 /* main div styling*/
-main{
+main {
     margin: 100px auto 0px auto;
     font-family: var(--primary-font-third);
 }
 
 /* Heading's styling */
-h1{
+h1 {
     font-family: var(--primary-font-fourth) !important;
     color: blue;
 }
 
-h3{
+h3 {
     font-family: var(--primary-font-third);
     text-decoration: underline;
     text-decoration-color: var(--primary-red);
@@ -960,7 +960,7 @@ h3{
 }
 
 /* Underline styling */
-.underline_styling{
+.underline_styling {
     text-decoration: underline;
     text-decoration-color: var(--primary-red);
 }
@@ -968,11 +968,11 @@ h3{
 
 /* Styling for the Fees due date section of the page */
 
-#existing_members_landing{
+#existing_members_landing {
     margin: 10px 0px;
 }
 
-.existing_members_landing_img{
+.existing_members_landing_img {
     width: 700px;
     margin: 20px 0;
     box-shadow: 2px 5px 15px;
@@ -981,11 +981,11 @@ h3{
 
 /* ID card section styling */
 
-#id_cards_start{
+#id_cards_start {
     margin: 0;
 }
 
-.indent{
+.indent {
     padding-left: 40px;
 }
 
@@ -994,7 +994,8 @@ h3{
     font-style: italic;
     font-size: 0.75rem;
     color: #555;
-    border-left: 4px solid #2FBEC2; /* your site’s teal */
+    border-left: 4px solid #2FBEC2;
+    /* your site’s teal */
     padding-left: 1rem;
     margin-top: 0.5rem;
     opacity: 0.85;
@@ -1005,8 +1006,8 @@ h3{
     position: relative;
     cursor: help;
     border-bottom: 1px dotted #999;
-  }
-  
+}
+
 /* Tooltip text styling */
 #custom-tooltip #tooltip-text {
     visibility: hidden;
@@ -1019,7 +1020,8 @@ h3{
     padding: 8px;
     position: absolute;
     z-index: 1;
-    bottom: 115%; /* Position above */
+    bottom: 115%;
+    /* Position above */
     left: 0;
     transition: opacity 0.3s;
     font-size: 0.8rem;
@@ -1034,12 +1036,12 @@ h3{
 
 /* club portal information section styling */
 
-.club_portal_img{
+.club_portal_img {
     box-shadow: 2px 5px 15px;
 
 }
 
-#club_portal_list li{
+#club_portal_list li {
     border: 2px dashed var(--primary-yellow);
     margin-top: 10px;
     padding: 10px;
@@ -1049,7 +1051,7 @@ h3{
 
 /* Styling for Club portal link */
 
-#club_portal_link{
+#club_portal_link {
     border: 3px dashed var(--primary-red);
     border-radius: 10px;
     padding: 10px;
@@ -1067,51 +1069,51 @@ img.h-100 {
 
 /* Styling for the introduction content of the page */
 
-#about_us_landing_img{
+#about_us_landing_img {
     width: 700px;
     margin: 20px 0;
     box-shadow: 2px 5px 15px;
 }
 
-#about_us_landing{
+#about_us_landing {
     margin: 10px 0px;
 }
 
 /* Our vision and mission section styling */
 
-#our_vision{
+#our_vision {
     border: 1px solid var(--primary-blue);
     border-left: 0;
     border-radius: 0 10px 10px 0;
 }
 
-#our_mission{
+#our_mission {
     border: 1px solid var(--primary-red);
     border-right: 0;
     border-radius: 10px 0 0 10px;
     text-align: end;
 }
 
-.image_large{
-    display:inline-block;
+.image_large {
+    display: inline-block;
 }
 
-#our_vision_img{
+#our_vision_img {
     border-radius: 10px 0 0 10px;
 }
 
-#our_mission_img{
+#our_mission_img {
     border-radius: 0 10px 10px 0;
 }
 
-#image_small{
+#image_small {
     display: none;
 }
 
 /* Our values section styling*/
 
 /* Styling for the value 'cards' of value section*/
-.values_styling{
+.values_styling {
     border: 2px solid var(--primary-yellow);
     padding: 10px;
     border-radius: 10px;
@@ -1120,7 +1122,7 @@ img.h-100 {
 
 /* Constitution section styling */
 
-#constitution{
+#constitution {
     border: 3px dashed var(--primary-blue);
     border-radius: 10px;
     padding: 10px;
@@ -1225,36 +1227,36 @@ footer {
         display: block;
     }
 
-    
+
 }
 
 /* Medium devices (desktops, larger tablets) */
 @media (max-width: 992px) {
-    #our_vision{
+    #our_vision {
         border: 1px solid var(--primary-blue);
         border-radius: 10px;
         margin: 10px 0;
         text-align: center;
     }
-    
-    #our_mission{   
+
+    #our_mission {
         border: 1px solid var(--primary-red);
         border-radius: 10px;
         margin: 5px 0;
-        text-align: center;  
+        text-align: center;
     }
 
-    .image_large{
-        display:none;
+    .image_large {
+        display: none;
     }
 
-    #image_small{
-        display:inline;
-       
-           
+    #image_small {
+        display: inline;
+
+
     }
 
-    #image_small img{
+    #image_small img {
         box-shadow: 1px 2px 10px;
 
     }
