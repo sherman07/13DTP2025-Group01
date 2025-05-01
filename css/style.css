@@ -829,7 +829,7 @@ html {
 
 /* The background changeable text's colour, font, and size */
 #new_members_background_text {
-    font-size: 20rem;
+    font-size: 18rem;
     font-family: var(--primary-font);
     color: var(--primary-white);
 
@@ -1197,6 +1197,10 @@ footer {
         min-height: 100vh;
     }
 
+    #new_members_background_text{
+        font-size: 11rem !important;
+    }
+
     .content-box {
         padding: 9rem;
     }
@@ -1470,27 +1474,35 @@ footer {
 /* Changing the changeable text's margin in 975px */
 @media (max-height: 975px) {
     .rotating-text span {
-        margin-top: 15vh !important;
+        margin-top: 10vh !important;
     }
 }
 
 /* Changing the changeable text's margin in 875px */
 @media (max-height: 875px) {
     .rotating-text span {
+        margin-top: 10vh !important;
+    }
+}
+
+/* Changing the changeable text's margin in 875px */
+@media (max-height: 800px) {
+    .rotating-text span {
         margin-top: 5vh !important;
     }
 }
 
+
 /* Changing the changeable text's margin in 729px */
 @media (max-height: 729px) {
     .rotating-text span {
-        margin-top: 15vh !important;
+        margin-top: 0vh !important;
     }
 }
 
 /* Changing the changeable text's margin in 600px */
 @media (max-height: 600px) {
     .rotating-text span {
-        margin-top: -20vh !important;
+        margin-top: 0vh !important;
     }
 }
