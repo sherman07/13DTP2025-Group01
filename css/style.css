@@ -541,7 +541,7 @@ html {
 }
 
 /* A container box to style and center content */
-.content-box {
+.content-box_recommended_clothing {
     color: white;
     padding: 13rem;
     border-radius: 5px;
@@ -1201,7 +1201,7 @@ footer {
         font-size: 11rem !important;
     }
 
-    .content-box {
+    .content-box, .content-box_recommended_clothing {
         padding: 9rem;
     }
 
@@ -1296,7 +1296,7 @@ footer {
         min-height: 110vh;
     }
 
-    .content-box {
+    .content-box,.content-box_recommended_clothing {
         padding: 5.5rem;
     }
 
@@ -1331,7 +1331,7 @@ footer {
         min-height: 130vh;
     }
 
-    .content-box {
+    .content-box,.content-box_recommended_clothing {
         padding: 5.5rem;
     }
 
@@ -1416,7 +1416,7 @@ footer {
         min-height: 115vh;
     }
 
-    .content-box {
+    .content-box,.content-box_recommended_clothing {
         padding: 4rem;
     }
 
@@ -1443,7 +1443,7 @@ footer {
         min-height: 130vh;
     }
 
-    .content-box {
+    .content-box,.content-box_recommended_clothing {
         padding: 2.5rem;
     }
 }
@@ -1454,7 +1454,7 @@ footer {
         font-size: calc(3rem + 1vw);
     }
 
-    .content-box {
+    .content-box,.content-box_recommended_clothing {
         padding: 2rem;
     }
 
