@@ -1162,8 +1162,8 @@ footer {
 
 
 /* Changing the recommended clothing background image min-height in 420px */
-@media (max-width:768px) and (max-height:700px) {
-    #recommended_clothing_background_img {
+@media (max-width:768px) and (max-height:1024px) {
+    .safety_grid_structure_img {
         min-height: 40vh !important;
     }
 }
@@ -1416,13 +1416,6 @@ footer {
 
 }
 
-@media (max-width: 576px), (max-height: 570px) {
-    .safety_grid_structure_img {
-        min-height: 40vh !important;
-    }
-}
-
-
 /* Mobile screen size of changing texts, content and images*/
 @media (max-width: 480px) {
     .front_img {
@@ -1510,14 +1503,7 @@ footer {
 
 @media (min-height: 1024px) {
     .safety_grid_structure_img{
-        min-height: 40vh;
-    }
-}
-
-
-@media (max-height: 1024px) {
-    .safety_grid_structure_img{
-        min-height: 55vh;
+        min-height: 35vh !important;
     }
 }
 
@@ -1528,7 +1514,7 @@ footer {
     }
 }
 
-/* Changing the changeable text's margin in 875px */
+/* Changing the changeable text's margin and grid structure image in 875px */
 @media (max-height: 875px) {
     .rotating-text span {
         margin-top: 10vh !important;
@@ -1563,7 +1549,7 @@ footer {
     }
 }
 
-/* Changing the changeable text's margin in 600px, and the recommended clothing background image min-height in 660px */
+/* Changing the changeable text's margin in 600px, and the recommended clothing background image min-height, and grid structure image in 660px */
 @media (max-height: 600px) {
     .rotating-text span {
         margin-top: 0vh !important;
@@ -1583,13 +1569,13 @@ footer {
 /* Changing the recommended clothing background image min-height in 500px */
 @media (max-height: 500px) {
     #recommended_clothing_background_img {
-        min-height: 200vh !important;
+        min-height: 150vh !important;
     }
 }
 
 /* Changing the recommended clothing background image min-height in 420px */
 @media (max-height: 420px) {
     #recommended_clothing_background_img {
-        min-height: 240vh;
+        min-height: 240vh !important;
     }
 }
