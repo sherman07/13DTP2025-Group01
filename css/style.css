@@ -1500,9 +1500,32 @@ footer {
     }
 }
 
-/* Changing the changeable text's margin in 600px */
+/* Changing the recommended clothing background image min-height in 660px */
+@media (max-height: 660px) {
+    #recommended_clothing_background_img {
+        min-height: 150vh;
+    }
+}
+
+/* Changing the changeable text's margin in 600px, and the recommended clothing background image min-height in 660px */
 @media (max-height: 600px) {
     .rotating-text span {
         margin-top: 0vh !important;
+    }
+    #recommended_clothing_background_img {
+        min-height: 170vh;
+    }
+}
+
+/* Changing the recommended clothing background image min-height in 500px */
+@media (max-height: 500px) {
+    #recommended_clothing_background_img {
+        min-height: 200vh;
+    }
+}
+/* Changing the recommended clothing background image min-height in 420px */
+@media (max-height: 420px) {
+    #recommended_clothing_background_img {
+        min-height: 240vh;
     }
 }
