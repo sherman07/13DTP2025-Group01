@@ -453,7 +453,7 @@ html {
 /* Image size for grid structure */
 .safety_grid_structure_img {
     width: 100%;
-    min-height: 73.5vh;
+    min-height: 45vh;
     padding: 10px;
     position: relative;
     background-size: cover;
@@ -1160,6 +1160,21 @@ footer {
 
 /* Media Queries */
 
+
+/* Changing the recommended clothing background image min-height in 420px */
+@media (max-width:768px) and (max-height:700px) {
+    #recommended_clothing_background_img {
+        min-height: 40vh !important;
+    }
+}
+
+/* Large devices (large desktops) */
+@media (max-width: 1440px) {
+    .safety_grid_structure_img{
+        min-height: -100vh !important;
+    }
+}
+
 /* Large devices (large desktops) */
 @media (max-width: 1200px) {
     #new_members_background_text {
@@ -1286,7 +1301,7 @@ footer {
     }
 
     .safety_title {
-        font-size: calc(2rem + 1vw);
+        font-size: calc(1.6rem + 1vw);
     }
 
     .safety_text {
@@ -1303,7 +1318,7 @@ footer {
     }
 
     .safety_grid_structure_img {
-        min-height: 70vh;
+        min-height: 82vh !important;
     }
 }
 
@@ -1322,11 +1337,11 @@ footer {
     }
 
     .safety_title {
-        font-size: calc(2rem + 1vw);
+        font-size: calc(1.6rem + 1vw);
     }
 
     .safety_text {
-        font-size: calc(0.7rem + 0.5vw);
+        font-size: calc(0.5rem + 0.5vw);
     }
 
     #recommended_clothing_background_img {
@@ -1339,7 +1354,7 @@ footer {
     }
 
     .safety_grid_structure_img {
-        min-height: 50vh;
+        min-height: 50vh !important;
     }
 
     .carousal-image {
@@ -1374,6 +1389,10 @@ footer {
     .rotating-text {
         display: none;
     }
+    .safety_grid_structure_img{
+        min-height: 60vh !important;
+    }
+
 }
 
 /* Extra small devices (phones) */
@@ -1391,7 +1410,18 @@ footer {
     .container-about_us {
         padding: 2rem 1rem;
     }
+    .safety_grid_structure_img{
+        min-height: 40vh !important;
+    }
+
 }
+
+@media (max-width: 576px), (max-height: 570px) {
+    .safety_grid_structure_img {
+        min-height: 40vh !important;
+    }
+}
+
 
 /* Mobile screen size of changing texts, content and images*/
 @media (max-width: 480px) {
@@ -1477,6 +1507,20 @@ footer {
     }
 }
 
+
+@media (min-height: 1024px) {
+    .safety_grid_structure_img{
+        min-height: 40vh;
+    }
+}
+
+
+@media (max-height: 1024px) {
+    .safety_grid_structure_img{
+        min-height: 55vh;
+    }
+}
+
 /* Changing the changeable text's margin in 975px */
 @media (max-height: 975px) {
     .rotating-text span {
@@ -1488,6 +1532,9 @@ footer {
 @media (max-height: 875px) {
     .rotating-text span {
         margin-top: 10vh !important;
+    }
+    .safety_grid_structure_img{
+        min-height: 60vh;
     }
 }
 
@@ -1511,6 +1558,9 @@ footer {
     #recommended_clothing_background_img {
         min-height: 150vh;
     }
+    .safety_grid_structure_img{
+        min-height: 90vh;
+    }
 }
 
 /* Changing the changeable text's margin in 600px, and the recommended clothing background image min-height in 660px */
@@ -1524,10 +1574,16 @@ footer {
     }
 }
 
+@media (max-height: 570px) {
+    .safety_grid_structure_img{
+        min-height: 60vh !important;
+    }
+}
+
 /* Changing the recommended clothing background image min-height in 500px */
 @media (max-height: 500px) {
     #recommended_clothing_background_img {
-        min-height: 200vh;
+        min-height: 200vh !important;
     }
 }
 
